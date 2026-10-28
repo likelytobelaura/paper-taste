@@ -251,8 +251,9 @@ def _blog_item(src, title, link, published, desc, body):
     body_text = strip_html(body)
     summary = strip_html(desc) or body_text
     title = " ".join(strip_html(title).split())
-    if src["type"] == "html":  # "<post title> | Lab Name"
-        title = SITE_SUFFIX.sub("", title)
+    if src["type"] == "html":  # "<post title> | Blog | Lab Name"
+        for _ in range(2):
+            title = SITE_SUFFIX.sub("", title)
     return {
         "id": "blog:" + re.sub(r"^https?://(www\.)?", "", link).rstrip("/"),
         "kind": "blog",
@@ -350,10 +351,13 @@ def enrich(item, cache, max_chars=20000):
         item["body_text"], item["body_chars"] = text, len(text)
 
 
-def fetch_blogs(sources, since, seen, max_enrich=12):
+def fetch_blogs(sources, since, seen, max_enrich=12, workers=12):
+    """All sources in parallel (each source is fetched by one worker, so per-site load is unchanged)."""
+    from concurrent.futures import ThreadPoolExecutor
     from .score import CUSTOMER, NOT_RESEARCH
-    items, cache = [], {}
-    for src in sources:
+    cache = {}
+
+    def one(src):
         try:
             got = fetch_html_index(src, since, seen) if src["type"] == "html" else fetch_feed(src, since)
             short = [i for i in got if i["body_chars"] < 1500
@@ -361,9 +365,19 @@ def fetch_blogs(sources, since, seen, max_enrich=12):
             for i in short[:max_enrich]:
                 enrich(i, cache)
             log(f"{src['name']}: {len(got)} posts since {since.date()}")
-            items += got
+            return got
         except Exception as e:
             log(f"{src['name']}: FAILED {type(e).__name__}: {e}")
+            return []
+
+    with ThreadPoolExecutor(workers) as ex:
+        results = list(ex.map(one, sources))
+    seen_ids, items = set(), []
+    for got in results:  # the same post can come from two sources (e.g. a lab's feed and its index page)
+        for i in got:
+            if i["id"] not in seen_ids:
+                seen_ids.add(i["id"])
+                items.append(i)
     return items
 
 

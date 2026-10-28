@@ -1,6 +1,7 @@
 """`update`: fetch new items, score them, keep the best, write data/ and DIGEST.md."""
 
 import json
+import re
 import tomllib
 from collections import defaultdict
 from datetime import datetime, timedelta, timezone
@@ -15,6 +16,10 @@ DATA = ROOT / "data"
 ITEMS = DATA / "items"
 SEEN = DATA / "seen.json"
 X_STATE = DATA / "x_state.json"
+AI_PAPER = re.compile(
+    r"\b(neural|deep learning|machine learning|language models?|llms?|transformer|reinforcement learning|"
+    r"diffusion|foundation models?|generative|self-supervised|representation learning|fine-tun|embedding|"
+    r"agents?\b|in-context|prompt|gpt|multimodal|vision-language|speech recognition|learned|training)", re.I)
 HISTORY_DAYS = 60
 DROP_FIELDS = ("body_text",)
 
@@ -47,6 +52,13 @@ def run(config=None, use_s2=True, now=None):
     ax = cfg["arxiv"]
     since = (now - timedelta(days=ax["lookback_days"])).replace(hour=0, minute=0, second=0, microsecond=0)
     papers = fetch.fetch_arxiv(ax["categories"], since)
+    if ax.get("extra_categories"):
+        # adjacent fields (security, HCI, speech, …): only papers that are about ML/AI
+        have = {p["id"] for p in papers}
+        extra = [p for p in fetch.fetch_arxiv(ax["extra_categories"], since)
+                 if p["id"] not in have and AI_PAPER.search(p["title"] + " " + p["summary"])]
+        log(f"arxiv extra categories: {len(extra)} AI-related papers")
+        papers += extra
     hf = fetch.fetch_hf_daily(fetch.utc_days(ax["lookback_days"] + 2, now))
     blog_since = now - timedelta(days=cfg.get("blogs", {}).get("lookback_days", 21))
     blogs = fetch.fetch_blogs(cfg.get("blog", []), blog_since, seen)
@@ -55,9 +67,11 @@ def run(config=None, use_s2=True, now=None):
     log(f"fetched {len(papers)} arXiv papers, {n_blogs} blog posts ({len(blogs)} research)")
     crawl_days = {p["published"][:10] for p in papers}
 
-    # X timeline: attention signal, plus candidates the crawl missed.
+    # Shares on X, in newsletters and on HN/Reddit/Lobsters: attention signal, plus candidates
+    # the crawl missed.
     xcfg = cfg.get("x", {})
-    x_state = xsource.update(xcfg, json.loads(X_STATE.read_text()) if X_STATE.exists() else {}, now)
+    x_state = xsource.update(xcfg, json.loads(X_STATE.read_text()) if X_STATE.exists() else {}, now,
+                             cfg.get("aggregators"))
     mentions = x_state["mentions"]
     x_on = xsource.credentials() is not None or bool(mentions)
     papers, blogs = papers + _x_papers(mentions, papers, now, xcfg), blogs + _x_blogs(mentions, blogs, blog_since, xcfg)
@@ -129,9 +143,16 @@ def _x_blogs(mentions, blogs, since, xcfg):
     """Posts from blogs we don't track, shared on X by enough accounts to be worth a look."""
     have = {b["id"] for b in blogs} | {i["id"] for i in load_items(60) if i["kind"] == "blog"}
     min_sharers = xcfg.get("min_sharers_new_blog", 2)
+    min_points = xcfg.get("min_points_new_blog", 100)  # one HN/Reddit submission this popular is enough
+
+    def worth_a_look(m):
+        return len(m["by"]) >= min_sharers or \
+            any(":" in s and s.split(":")[0] in ("hn", "reddit", "lobsters") and p >= min_points
+                for s, p in m["by"].items())
+
     cands = sorted(((k, m) for k, m in mentions.items()
-                    if k.startswith("blog:") and k not in have and len(m["by"]) >= min_sharers),
-                   key=lambda km: -len(km[1]["by"]))[:xcfg.get("max_new_blogs", 15)]
+                    if k.startswith("blog:") and k not in have and worth_a_look(m)),
+                   key=lambda km: (-len(km[1]["by"]), -sum(km[1]["by"].values())))[:xcfg.get("max_new_blogs", 15)]
     out = []
     for key, m in cands:
         domain = key.removeprefix("blog:").split("/")[0]
@@ -196,9 +217,9 @@ def write_digest(now=None):
     lines += [fmt_item(k + 1, i, now) for k, i in enumerate(papers)]
     lines += ["\n## Blog posts & lab write-ups (last 14 days)\n"]
     lines += [fmt_item(k + 1, i, now) for k, i in enumerate(blogs)] or ["_None yet._\n"]
-    on_x = [i for i in items if any(r.startswith("shared on X") for r in i["reasons"])]
+    on_x = [i for i in items if any(r.startswith(xsource.SOCIAL_REASONS) for r in i["reasons"])]
     if on_x:
-        lines += ["\n## Shared on X (last 14 days: AI-Twitter recaps, plus your timeline if configured)\n"]
+        lines += ["\n## Shared on X, in newsletters & on HN/Reddit (last 14 days)\n"]
         lines += [fmt_item(k + 1, i, now) for k, i in enumerate(top(14, 12, None, now, on_x))]
     text = "\n".join(lines)
     (ROOT / "DIGEST.md").write_text(text)

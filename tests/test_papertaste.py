@@ -5,7 +5,7 @@ from datetime import datetime, timedelta, timezone
 from pathlib import Path
 from unittest import mock
 
-from papertaste import fetch, pipeline, recommend, score, xsource
+from papertaste import fetch, pipeline, recommend, score, social, xsource
 
 NOW = datetime(2026, 10, 28, 12, tzinfo=timezone.utc)
 
@@ -138,16 +138,16 @@ class XTest(unittest.TestCase):
         self.assertEqual(len(m["by"]), 2)
         self.assertEqual(sorted(m["by"].values()), [7, 50])
         self.assertTrue(all(h.startswith("#") for h in m["by"]))  # no handles in public data by default
-        self.assertNotIn("alice", xsource.signal(m)[1])
+        self.assertNotIn("alice", xsource.signal(m)[1][0])
         named = xsource.merge_mentions({}, posts, users, NOW, public_handles=True)["arxiv:2610.00001"]
-        self.assertIn("@alice", xsource.signal(named)[1])
+        self.assertIn("@alice", xsource.signal(named)[1][0])
 
     def test_signal_grows_with_sharers(self):
         one = xsource.signal({"by": {"#a": 3}})[0]
         five = xsource.signal({"by": {f"#{k}": 3 for k in range(5)}})[0]
         self.assertGreater(five, one)
         self.assertLessEqual(xsource.signal({"by": {f"#{k}": 10 ** 6 for k in range(500)}})[0], 1.0)
-        self.assertEqual(xsource.signal(None), (0.0, None))
+        self.assertEqual(xsource.signal(None), (0.0, []))
 
     def test_x_attention_raises_quality(self):
         p = paper("We study X with baselines.")
@@ -220,6 +220,34 @@ class XTest(unittest.TestCase):
         self.assertEqual(len(out["mentions"]["arxiv:2610.00001"]["by"]), 2)
         self.assertEqual(len(out["mentions"]["arxiv:2610.00009"]["by"]), 1)  # linked by the newsletter itself
         self.assertEqual(again["mentions"], out["mentions"])
+
+    def test_reasons_per_platform(self):
+        _, reasons = xsource.signal({"by": {"#a": 3, "hn:1": 250, "hn:2": 40, "reddit:x": 90, "nl:Import AI": 0}})
+        self.assertEqual(reasons, ["shared on X by 1 account", "Hacker News: 2 submissions, 290 points",
+                                   "Reddit: 1 submission, 90 points", "in newsletters: Import AI"])
+
+    def test_platform_sharers_are_not_hashed(self):
+        posts = [{"id": "1", "author_id": "hn:42", "public_metrics": {"like_count": 300},
+                  "entities": {"urls": [{"expanded_url": "https://arxiv.org/abs/2610.00002"}]}}]
+        m = xsource.merge_mentions({}, posts, {}, NOW)
+        self.assertEqual(m["arxiv:2610.00002"]["by"], {"hn:42": 300})
+
+    def test_hn_keeps_only_ai_stories(self):
+        rows = {"nbPages": 1, "hits": [
+            {"objectID": "1", "title": "Scaling laws for LLM agents", "url": "https://a.org/x", "points": 300},
+            {"objectID": "2", "title": "My sourdough recipe", "url": "https://b.org/y", "points": 900}]}
+        with mock.patch.object(social, "http_get", return_value=json.dumps(rows).encode()):
+            posts = social.hacker_news(NOW - timedelta(days=4))
+        self.assertEqual([p["id"] for p in posts], ["hn:1"])
+
+    def test_one_popular_submission_qualifies_untracked_blog(self):
+        now = datetime.now(timezone.utc)
+        mentions = {"blog:a.org/x": {"by": {"hn:1": 300}, "url": "https://a.org/x"},
+                    "blog:b.org/y": {"by": {"hn:2": 30}, "url": "https://b.org/y"}}
+        with mock.patch.object(fetch, "fetch_page_item", return_value=None) as get, \
+                mock.patch.object(pipeline, "load_items", return_value=[]):
+            pipeline._x_blogs(mentions, [], now - timedelta(days=21), {})
+        self.assertEqual([c.args[0] for c in get.call_args_list], ["https://a.org/x"])
 
     def test_non_article_links_ignored(self):
         for link in ("https://huggingface.co/openbmb/MiniCPM", "https://forms.gle/abc", "https://youtu.be/x"):

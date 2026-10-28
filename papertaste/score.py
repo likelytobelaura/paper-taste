@@ -72,7 +72,7 @@ def _sat(x, k):
 def signals(item, novelty=None, hf=None, s2=None, x=None):
     """Compute named 0..1 signals plus human-readable reasons for one item.
 
-    x: (0..1 attention, reason) from the X timeline, or None when X isn't configured.
+    x: (0..1 attention, reason or [reasons]) from X / newsletters / aggregators, or None when off.
     """
     text = " ".join([item.get("title", ""), item.get("summary", ""), item.get("comment", ""),
                      item.get("body_text", "")[:20000]])
@@ -131,7 +131,7 @@ def signals(item, novelty=None, hf=None, s2=None, x=None):
         if x:
             sig["community"] = x[0]
     if x and x[1]:
-        reasons.append(x[1])
+        reasons += [x[1]] if isinstance(x[1], str) else list(x[1])
 
     if novelty is not None:
         max_sim, n_close = novelty

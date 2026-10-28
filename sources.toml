@@ -11,11 +11,23 @@
 [arxiv]
 categories = ["cs.LG", "cs.CL", "cs.AI", "cs.CV", "stat.ML", "cs.NE", "cs.RO", "cs.MA"]
 lookback_days = 4
+# adjacent categories: only papers whose abstract is about ML/AI are kept
+extra_categories = ["cs.IR", "cs.SD", "eess.AS", "eess.IV", "eess.SP", "cs.CR", "cs.HC", "cs.CY", "cs.DC",
+                    "cs.SE", "cs.PL", "cs.GT", "cs.DS", "math.OC", "stat.ME", "q-bio.NC", "q-bio.QM",
+                    "physics.comp-ph"]
 # keep this fraction of each day's arXiv papers (by quality) in data/items
 keep_fraction = 0.35
 
 [blogs]
 lookback_days = 21
+
+# Community aggregators: free, unauthenticated; feed the same attention signal as X shares.
+[aggregators]
+lookback_days = 4
+hacker_news = true
+hn_min_points = 20
+reddit = ["MachineLearning", "LocalLLaMA", "mlscaling", "reinforcementlearning", "computervision", "LanguageTechnology"]
+lobsters = ["ai", "ml"]
 
 # X / AI Twitter (see papertaste/xsource.py).
 # Free by default: recap newsletters that read AI Twitter daily are scanned for the posts they
@@ -263,3 +275,523 @@ name = "Gwern"
 type = "rss"
 url = "https://gwern.net/feed"
 tier = 2
+
+# ---- added sources (paper-taste source sweep, 2026-10-28) ----
+
+[[blog]]
+name = "Apple Machine Learning Research"
+type = "rss"
+url = "https://machinelearning.apple.com/rss.xml"
+tier = 2
+
+[[blog]]
+name = "NVIDIA Research"
+type = "rss"
+url = "https://research.nvidia.com/rss.xml"
+tier = 2
+
+[[blog]]
+name = "NVIDIA Technical Blog"
+type = "rss"
+url = "https://developer.nvidia.com/blog/feed"
+tier = 3
+
+[[blog]]
+name = "Amazon Science"
+type = "rss"
+url = "https://www.amazon.science/index.rss"
+tier = 3
+
+[[blog]]
+name = "IBM Research"
+type = "rss"
+url = "https://research.ibm.com/rss"
+tier = 3
+
+[[blog]]
+name = "Salesforce AI Research"
+type = "rss"
+url = "https://www.salesforce.com/blog/category/ai-research/feed/"
+tier = 3
+
+[[blog]]
+name = "Databricks"
+type = "rss"
+url = "https://www.databricks.com/feed"
+tier = 3
+
+[[blog]]
+name = "Meta Engineering (ML)"
+type = "rss"
+url = "https://engineering.fb.com/category/ml-applications/feed/"
+tier = 3
+
+[[blog]]
+name = "Netflix Tech Blog"
+type = "rss"
+url = "https://netflixtechblog.com/feed"
+tier = 3
+
+[[blog]]
+name = "Spotify Research"
+type = "rss"
+url = "https://research.atspotify.com/feed/"
+tier = 3
+
+[[blog]]
+name = "Character.AI"
+type = "rss"
+url = "https://blog.character.ai/rss/"
+tier = 2
+
+[[blog]]
+name = "Sakana AI"
+type = "rss"
+url = "https://sakana.ai/feed.xml"
+tier = 1
+
+[[blog]]
+name = "Qwen"
+type = "rss"
+url = "https://qwenlm.github.io/blog/index.xml"
+tier = 2
+
+[[blog]]
+name = "Weaviate"
+type = "rss"
+url = "https://weaviate.io/blog/rss.xml"
+tier = 3
+
+[[blog]]
+name = "Weights & Biases"
+type = "rss"
+url = "https://wandb.ai/fully-connected/rss.xml"
+tier = 3
+
+[[blog]]
+name = "Mozilla.ai"
+type = "rss"
+url = "https://blog.mozilla.ai/rss/"
+tier = 3
+
+[[blog]]
+name = "DeepMind Safety Research"
+type = "rss"
+url = "https://deepmindsafetyresearch.medium.com/feed"
+tier = 1
+
+[[blog]]
+name = "FAR.AI"
+type = "rss"
+url = "https://www.far.ai/blog/rss.xml"
+tier = 1
+
+[[blog]]
+name = "MIRI"
+type = "rss"
+url = "https://intelligence.org/feed/"
+tier = 2
+
+[[blog]]
+name = "Palisade Research"
+type = "rss"
+url = "https://palisaderesearch.org/feed.xml"
+tier = 2
+
+[[blog]]
+name = "Forethought"
+type = "rss"
+url = "https://www.forethought.org/feed"
+tier = 2
+
+[[blog]]
+name = "LessWrong (curated)"
+type = "rss"
+url = "https://www.lesswrong.com/feed.xml?view=curated-rss"
+tier = 2
+
+[[blog]]
+name = "Stanford CRFM"
+type = "rss"
+url = "https://crfm.stanford.edu/feed.xml"
+tier = 1
+
+[[blog]]
+name = "MIT News (AI)"
+type = "rss"
+url = "https://news.mit.edu/rss/topic/artificial-intelligence2"
+tier = 3
+
+[[blog]]
+name = "Vector Institute"
+type = "rss"
+url = "https://vectorinstitute.ai/feed/"
+tier = 3
+
+[[blog]]
+name = "Toyota Research Institute"
+type = "rss"
+url = "https://medium.com/feed/toyotaresearch"
+tier = 2
+
+[[blog]]
+name = "The Gradient"
+type = "rss"
+url = "https://thegradient.pub/rss/"
+tier = 2
+
+[[blog]]
+name = "fast.ai"
+type = "rss"
+url = "https://www.fast.ai/index.xml"
+tier = 2
+
+[[blog]]
+name = "Jacob Steinhardt (Bounded Regret)"
+type = "rss"
+url = "https://bounded-regret.ghost.io/rss/"
+tier = 1
+
+[[blog]]
+name = "Tim Dettmers"
+type = "rss"
+url = "https://timdettmers.com/feed/"
+tier = 1
+
+[[blog]]
+name = "Tri Dao"
+type = "rss"
+url = "https://tridao.me/feed.xml"
+tier = 1
+
+[[blog]]
+name = "Horace He (Thonking)"
+type = "rss"
+url = "https://www.thonking.ai/feed"
+tier = 1
+
+[[blog]]
+name = "Jason Wei"
+type = "rss"
+url = "https://www.jasonwei.net/blog?format=rss"
+tier = 1
+
+[[blog]]
+name = "Yi Tay"
+type = "rss"
+url = "https://www.yitay.net/blog?format=rss"
+tier = 1
+
+[[blog]]
+name = "Neel Nanda"
+type = "rss"
+url = "https://www.neelnanda.io/blog?format=rss"
+tier = 1
+
+[[blog]]
+name = "Eric Jang"
+type = "rss"
+url = "https://evjang.com/feed.xml"
+tier = 1
+
+[[blog]]
+name = "Jeremy Bernstein"
+type = "rss"
+url = "https://jeremybernste.in/feed.xml"
+tier = 1
+
+[[blog]]
+name = "Jascha Sohl-Dickstein"
+type = "rss"
+url = "https://sohl-dickstein.github.io/feed.xml"
+tier = 1
+
+[[blog]]
+name = "Ben Recht (arg min)"
+type = "rss"
+url = "https://www.argmin.net/feed"
+tier = 1
+
+[[blog]]
+name = "Sebastian Ruder"
+type = "rss"
+url = "https://newsletter.ruder.io/feed"
+tier = 1
+
+[[blog]]
+name = "Paul Christiano"
+type = "rss"
+url = "https://ai-alignment.com/feed"
+tier = 1
+
+[[blog]]
+name = "Daniel Paleka"
+type = "rss"
+url = "https://newsletter.danielpaleka.com/feed"
+tier = 2
+
+[[blog]]
+name = "Cameron Wolfe (Deep Learning Focus)"
+type = "rss"
+url = "https://cameronrwolfe.substack.com/feed"
+tier = 2
+
+[[blog]]
+name = "Artificial Fintelligence (Finbarr Timbers)"
+type = "rss"
+url = "https://www.artfintel.com/feed"
+tier = 2
+
+[[blog]]
+name = "Chip Huyen"
+type = "rss"
+url = "https://huyenchip.com/feed.xml"
+tier = 2
+
+[[blog]]
+name = "Eugene Yan"
+type = "rss"
+url = "https://eugeneyan.com/rss/"
+tier = 2
+
+[[blog]]
+name = "Hamel Husain"
+type = "rss"
+url = "https://hamel.dev/index.xml"
+tier = 2
+
+[[blog]]
+name = "Alex Irpan"
+type = "rss"
+url = "https://www.alexirpan.com/feed.xml"
+tier = 2
+
+[[blog]]
+name = "Gregory Gundersen"
+type = "rss"
+url = "https://gregorygundersen.com/feed.xml"
+tier = 2
+
+[[blog]]
+name = "Shakir Mohamed"
+type = "rss"
+url = "https://blog.shakirm.com/feed/"
+tier = 2
+
+[[blog]]
+name = "François Chollet"
+type = "rss"
+url = "https://fchollet.substack.com/feed"
+tier = 2
+
+[[blog]]
+name = "AI Snake Oil"
+type = "rss"
+url = "https://www.aisnakeoil.com/feed"
+tier = 2
+
+[[blog]]
+name = "Understanding AI (Timothy B. Lee)"
+type = "rss"
+url = "https://www.understandingai.org/feed"
+tier = 3
+
+[[blog]]
+name = "One Useful Thing (Ethan Mollick)"
+type = "rss"
+url = "https://www.oneusefulthing.org/feed"
+tier = 3
+
+[[blog]]
+name = "Simon Willison"
+type = "rss"
+url = "https://simonwillison.net/atom/everything/"
+tier = 3
+
+[[blog]]
+name = "Dwarkesh Patel"
+type = "rss"
+url = "https://www.dwarkesh.com/feed"
+tier = 3
+
+[[blog]]
+name = "Gary Marcus"
+type = "rss"
+url = "https://garymarcus.substack.com/feed"
+tier = 3
+
+[[blog]]
+name = "Meta AI Blog"
+type = "html"
+url = "https://ai.meta.com/blog/"
+link = '^(https://ai\.meta\.com)?/blog/[a-z0-9-]{6,}/?$'
+tier = 2
+
+[[blog]]
+name = "Epoch AI (Gradient Updates)"
+type = "html"
+url = "https://epoch.ai/gradient-updates"
+link = '^/gradient-updates/[a-z0-9-]{6,}$'
+tier = 1
+
+[[blog]]
+name = "Epoch AI (Publications)"
+type = "html"
+url = "https://epoch.ai/blog"
+link = '^/(blog|publications)/[a-z0-9-]{6,}$'
+tier = 1
+
+[[blog]]
+name = "Physical Intelligence"
+type = "html"
+url = "https://www.pi.website/blog"
+link = '^/blog/[a-z0-9-]{3,}$'
+tier = 1
+
+[[blog]]
+name = "UK AI Security Institute"
+type = "html"
+url = "https://www.aisi.gov.uk/blog"
+link = '^/blog/[a-z0-9-]{6,}$'
+tier = 1
+
+[[blog]]
+name = "Anthropic Frontier Red Team"
+type = "html"
+url = "https://red.anthropic.com/"
+link = '^/research/[a-z0-9-]{4,}$'
+tier = 1
+
+[[blog]]
+name = "Transluce"
+type = "html"
+url = "https://transluce.org/"
+link = '^/[a-z0-9]+(-[a-z0-9]+)+$'
+tier = 1
+
+[[blog]]
+name = "GovAI"
+type = "html"
+url = "https://www.governance.ai/research"
+link = '^/research-paper/[a-z0-9-]{6,}$'
+tier = 2
+
+[[blog]]
+name = "vLLM"
+type = "html"
+url = "https://vllm.ai/blog"
+link = '^/blog/20\d\d-\d\d-\d\d-[a-z0-9-]+$'
+tier = 2
+
+[[blog]]
+name = "Prime Intellect"
+type = "html"
+url = "https://www.primeintellect.ai/blog"
+link = '^/blog/[a-z0-9-]{4,}$'
+tier = 2
+
+[[blog]]
+name = "Liquid AI"
+type = "html"
+url = "https://www.liquid.ai/blog"
+link = '^/blog/[a-z0-9-]{4,}$'
+tier = 2
+
+[[blog]]
+name = "Cohere Labs"
+type = "html"
+url = "https://cohere.com/research"
+link = '^/research/[a-z0-9-]{3,}$'
+tier = 2
+
+[[blog]]
+name = "Nous Research"
+type = "html"
+url = "https://nousresearch.com/blog/"
+link = '^(https://nousresearch\.com)?/[a-z0-9]+(-[a-z0-9]+)+/?$'
+tier = 2
+
+[[blog]]
+name = "Cartesia"
+type = "html"
+url = "https://cartesia.ai/blog"
+link = '^/blog/[a-z0-9-]{3,}$'
+tier = 2
+
+[[blog]]
+name = "xAI"
+type = "html"
+url = "https://x.ai/news"
+link = '^/news/[a-z0-9-]{3,}$'
+tier = 3
+
+[[blog]]
+name = "Stability AI"
+type = "html"
+url = "https://stability.ai/news"
+link = '^/news-updates/[a-z0-9-]{6,}$'
+tier = 3
+
+[[blog]]
+name = "Contextual AI"
+type = "html"
+url = "https://contextual.ai/blog/"
+link = '^/blog/[a-z0-9-]{6,}/?$'
+tier = 3
+
+[[blog]]
+name = "Cerebras"
+type = "html"
+url = "https://www.cerebras.ai/blog"
+link = '^/blog/[A-Za-z0-9-]{4,}$'
+tier = 3
+
+[[blog]]
+name = "Fireworks AI"
+type = "html"
+url = "https://fireworks.ai/blog"
+link = '^/blog/[a-z0-9-]{6,}/?$'
+tier = 3
+
+[[x.curated_feeds]]
+name = "Import AI"
+url = "https://importai.substack.com/feed"
+
+[[x.curated_feeds]]
+name = "Last Week in AI"
+url = "https://lastweekin.ai/feed"
+
+[[x.curated_feeds]]
+name = "TheSequence"
+url = "https://thesequence.substack.com/feed"
+
+[[x.curated_feeds]]
+name = "Ben's Bites"
+url = "https://www.bensbites.com/feed"
+
+[[x.curated_feeds]]
+name = "Guide to AI (Nathan Benaich)"
+url = "https://nathanbenaich.substack.com/feed"
+
+[[x.curated_feeds]]
+name = "Don't Worry About the Vase (Zvi)"
+url = "https://thezvi.substack.com/feed"
+
+[[x.curated_feeds]]
+name = "AI Supremacy"
+url = "https://www.ai-supremacy.com/feed"
+resolve_x = false
+
+[[x.curated_feeds]]
+name = "The Rundown AI"
+url = "https://rss.beehiiv.com/feeds/2R3C6Bt5wj.xml"
+
+[[x.curated_feeds]]
+name = "TLDR AI"
+url = "https://tldr.tech/api/rss/ai"
+resolve_x = false
+
+[[x.curated_feeds]]
+name = "Latent Space (non-AINews)"
+url = "https://www.latent.space/feed"
+resolve_x = false

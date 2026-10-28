@@ -123,7 +123,9 @@ def item_key(link):
     host_path = re.sub(r"^https?://(www\.)?", "", link.split("?")[0].split("#")[0]).rstrip("/")
     not_articles = ("x.com", "twitter.com", "t.co", "youtu", "github.com", "huggingface.co", "forms.gle",
                     "docs.google.com", "linkedin.com", "instagram.com", "threads.", "discord.", "apps.apple.com",
-                    "play.google.com", "pic.x.com", "lu.ma", "luma.com")
+                    "play.google.com", "pic.x.com", "lu.ma", "luma.com", "colab.research.google.com",
+                    "drive.google.com", "imgur.com", "i.redd.it", "v.redd.it", "reddit.com", "redd.it",
+                    "news.ycombinator.com", "lobste.rs", "bsky.app", "open.spotify.com", "podcasts.apple.com")
     if host_path.count("/") >= 1 and not host_path.startswith(not_articles):
         return "blog:" + host_path
     return None
@@ -139,8 +141,11 @@ def merge_mentions(mentions, posts, users, now, public_handles=False):
     salt = (os.environ.get("X_API_SECRET") or os.environ.get("X_BEARER_TOKEN") or "").encode()
     for p in posts:
         handle = (users.get(p.get("author_id")) or {}).get("username") or p.get("author_id", "?")
-        sharer = handle if public_handles else \
-            "#" + hmac.new(salt, handle.lower().encode(), hashlib.sha256).hexdigest()[:10]
+        if ":" in handle:  # platform-prefixed public submission (hn:…, reddit:…, nl:…), not a person you follow
+            sharer = handle
+        else:
+            sharer = handle if public_handles else \
+                "#" + hmac.new(salt, handle.lower().encode(), hashlib.sha256).hexdigest()[:10]
         likes = (p.get("public_metrics") or {}).get("like_count", 0)
         keys = {}
         for link in post_links(p):
@@ -158,16 +163,34 @@ def prune(mentions, now, days=30):
     return {k: v for k, v in mentions.items() if v["first_seen"] >= cutoff}
 
 
+PLATFORMS = {"hn": "Hacker News", "reddit": "Reddit", "lobsters": "Lobsters", "nl": "newsletters"}
+# reason prefixes that mark an item as socially shared (used for the digest section)
+SOCIAL_REASONS = ("shared on X", "Hacker News:", "Reddit:", "Lobsters:", "in newsletters:")
+
+
 def signal(mention):
-    """0..1 attention score: distinct sharers matter most, likes break ties."""
+    """(0..1 attention, [reasons]): distinct sharers matter most, likes/points break ties."""
     if not mention:
-        return 0.0, None
+        return 0.0, []
     by = mention["by"]
     raw = len(by) + 0.5 * math.log1p(sum(by.values())) / math.log(10)
-    named = [h for h in sorted(by, key=lambda h: -by[h]) if not h.startswith("#")][:3]
-    who = f" ({', '.join('@' + h for h in named)})" if named else ""
-    n = len(by)
-    return min(1.0, math.log1p(raw) / math.log1p(8)), f"shared on X by {n} account{'s' * (n != 1)}{who}"
+    groups = {}
+    for sharer, score in by.items():
+        plat = sharer.split(":", 1)[0] if ":" in sharer else "x"
+        groups.setdefault(plat, []).append((sharer, score))
+    reasons = []
+    if "x" in groups:
+        named = [h for h, _ in sorted(groups["x"], key=lambda hs: -hs[1]) if not h.startswith("#")][:3]
+        who = f" ({', '.join('@' + h for h in named)})" if named else ""
+        n = len(groups["x"])
+        reasons.append(f"shared on X by {n} account{'s' * (n != 1)}{who}")
+    for plat in ("hn", "reddit", "lobsters"):
+        if plat in groups:
+            pts, n = sum(s for _, s in groups[plat]), len(groups[plat])
+            reasons.append(f"{PLATFORMS[plat]}: {n} submission{'s' * (n != 1)}" + (f", {pts} points" if pts else ""))
+    if "nl" in groups:
+        reasons.append("in newsletters: " + ", ".join(s.split(":", 1)[1] for s, _ in groups["nl"]))
+    return min(1.0, math.log1p(raw) / math.log1p(8)), reasons
 
 
 # ---------- free path: AI-X recap newsletters, resolved through FxTwitter ----------
@@ -229,12 +252,13 @@ def fetch_curated(cfg, state, now):
                     not title.startswith(feed.get("title_prefix", "")):
                 continue
             body = item.findtext(f"{CONTENT}encoded") or item.findtext("description") or ""
-            got = list(dict.fromkeys(STATUS_LINK.findall(body)))
+            got = list(dict.fromkeys(STATUS_LINK.findall(body))) if feed.get("resolve_x", True) else []
             ids += got
-            # papers the newsletter links directly count as one share by the newsletter itself
-            direct.append({"id": link, "author_id": feed["name"], "public_metrics": {"like_count": 0},
-                           "entities": {"urls": [{"expanded_url": u} for u in re.findall(r'href="([^"]+)"', body)
-                                                 if ARXIV_LINK.search(u)]}})
+            # papers and articles the newsletter links directly count as one share by the newsletter
+            own = re.sub(r"^https?://(www\.)?", "", feed["url"]).split("/")[0]
+            direct.append({"id": link, "author_id": f"nl:{feed['name']}", "public_metrics": {"like_count": 0},
+                           "entities": {"urls": [{"expanded_url": u} for u in re.findall(r'href="(https?://[^"]+)"', body)
+                                                 if own not in u and "substack.com" not in u]}})
             done.add(link)
             log(f"x curated: {feed['name']}: {title[:60]} ({len(got)} posts)")
     ids = list(dict.fromkeys(ids))[:cfg.get("max_lookups", 300)]
@@ -250,8 +274,9 @@ def fetch_curated(cfg, state, now):
     return posts + direct, users
 
 
-def update(cfg, state, now=None):
-    """Fold new X data into state['mentions']: free recap newsletters, plus the timeline if credentialed."""
+def update(cfg, state, now=None, social_cfg=None):
+    """Fold new share data into state['mentions']: recap newsletters, community aggregators
+    (social_cfg), and the X timeline if credentialed."""
     now = now or datetime.now(timezone.utc)
     state = {**state, "mentions": prune(state.get("mentions", {}), now)}
     if not cfg.get("enabled", True):
@@ -263,6 +288,9 @@ def update(cfg, state, now=None):
             merge_mentions(mentions, posts, users, now, public)
         except Exception as e:
             log(f"x curated: FAILED {type(e).__name__}: {e}")
+    if social_cfg:
+        from . import social
+        merge_mentions(mentions, social.fetch_all(social_cfg, now), {}, now, public)
     creds = credentials()
     if not creds:
         log("x: no API credentials; timeline skipped (curated recaps only)")
