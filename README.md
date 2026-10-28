@@ -5,6 +5,7 @@ A daily, quality-ranked feed of new AI research, built to be read by **your codi
 1. **Scan**: every new arXiv submission in cs.LG / cs.CL / cs.AI / cs.CV / stat.ML / cs.NE / cs.RO / cs.MA,
    plus ~35 lab and researcher blogs (Anthropic, Transformer Circuits, DeepMind, Google Research, OpenAI,
    Thinking Machines, Goodfire, METR, Redwood, Lilian Weng, Karpathy, Sander Dieleman, …). See [`sources.toml`](sources.toml).
+   Optionally, also your **X timeline**: papers and posts the people you follow are sharing.
 2. **Filter**: each item gets a 0–100 quality score from visible evidence of thoroughness (ablations,
    tuned baselines, seeds and error bars, scale sweeps, theory, released code, length, venue), community
    attention (Hugging Face daily-paper upvotes), novelty against the last 60 days, and a hype penalty.
@@ -43,7 +44,7 @@ python3 -m papertaste update                                # re-fetch + re-scor
 | signal | papers | blogs | what it looks for |
 |---|---|---|---|
 | rigor | 30% | 25% | ablations, tuned/compute-matched baselines, multi-benchmark, scale sweeps, seeds/CIs, theory, controlled experiments, negative results, contamination checks |
-| community | 20% | – | Hugging Face daily-paper upvotes (log-scaled) |
+| community | 20% | 15%* | Hugging Face daily-paper upvotes (log-scaled), combined with X timeline shares |
 | novelty | 15% | 15% | TF-IDF distance to the nearest item in the last 60 days |
 | depth | 13% | 15% | page/figure count, accepted at a main venue (workshop counts less); post length |
 | artifacts | 12% | 5% | code, weights, or data released |
@@ -51,7 +52,7 @@ python3 -m papertaste update                                # re-fetch + re-scor
 | source tier | – | 40% | prior for the outlet (see `sources.toml`) |
 | hype | −12 pts max | | "revolutionary", "unprecedented", "is all you need", … |
 
-Missing signals are dropped and the remaining weights renormalised. Each item records the `reasons`
+\* only when the X timeline is configured. Missing signals are dropped and the remaining weights renormalised. Each item records the `reasons`
 and `flags` behind its score, so you can see why it ranked where it did. Blog posts must pass a
 research gate that filters product launches, customer stories, and event recaps.
 
@@ -63,10 +64,40 @@ The heuristic is a prior; the taste comes from the second pass in [TASTE.md](TAS
 the new `data/` and `DIGEST.md`. Add an `S2_API_KEY` repository secret to enable the author signal.
 Each day keeps the top 35% of arXiv papers by quality, plus anything with ≥5 HF upvotes.
 
+## X timeline
+
+With X credentials set, each run reads new posts from your home timeline. It extracts arXiv,
+Hugging Face papers, alphaXiv, and blog links, and uses them three ways:
+
+- **Attention signal:** how many distinct accounts shared an item, with likes as a tiebreaker. For
+  papers this is combined with HF upvotes.
+- **Candidates the crawl missed:** shared arXiv papers up to 30 days old or outside the 8 categories,
+  and posts from blogs not in `sources.toml` once at least 2 accounts share them. These still have to
+  pass the research gate.
+- **A digest section,** "On your X timeline".
+
+Credentials, as env vars or repo secrets:
+
+| mode | variables | reads |
+|---|---|---|
+| OAuth 1.0a user context (recommended for CI; tokens don't expire) | `X_API_KEY`, `X_API_SECRET`, `X_ACCESS_TOKEN`, `X_ACCESS_TOKEN_SECRET` | your home timeline |
+| OAuth 2.0 user token (local runs; expires after 2 h) | `X_USER_TOKEN` | your home timeline |
+| App-only bearer token + `[x] list_id` | `X_BEARER_TOKEN` | an X List (e.g. one of AI researchers) |
+
+Get the four OAuth 1.0a values from the X developer console: create an app, give it Read permission,
+then generate the Access Token and Secret for your own account.
+
+**Cost:** the X API bills per post read (about $0.005 each in 2026). Runs read at most `[x] max_posts`
+(default 200, about $1/day) and never re-read posts from earlier runs.
+
+**Privacy:** `data/` is public, so only aggregates are stored: share counts, likes, and *hashed* sharer
+IDs. No post text is stored. Set `public_handles = true` to show @handles instead.
+
 ## Layout
 
 ```
-papertaste/   fetch.py (arXiv, HF, RSS, HTML index pages) · score.py · pipeline.py · recommend.py · cli.py
+papertaste/   fetch.py (arXiv, HF, RSS, HTML index pages) · xsource.py (X timeline) · score.py · pipeline.py · recommend.py · cli.py
+data/x_state.json   X read cursor + per-item share aggregates (hashed sharers)
 data/items/   <published-date>.jsonl, scored items
 data/seen.json   first-seen dates for blog posts without machine-readable dates
 DIGEST.md     current top list (archived under data/digests/)

@@ -5,7 +5,7 @@ from datetime import datetime, timedelta, timezone
 from pathlib import Path
 from unittest import mock
 
-from papertaste import fetch, pipeline, recommend, score
+from papertaste import fetch, pipeline, recommend, score, xsource
 
 NOW = datetime(2026, 10, 28, 12, tzinfo=timezone.utc)
 
@@ -110,6 +110,116 @@ class FetchTest(unittest.TestCase):
         self.assertEqual([i["title"] for i in first], ["Post a"])  # site suffix stripped
         self.assertEqual(len([k for k in seen if k.startswith("blog:")]), 16)
         self.assertEqual([i["title"] for i in second], ["Post a"])  # undated backlog never resurfaces as new
+
+
+class XTest(unittest.TestCase):
+    def test_item_keys(self):
+        self.assertEqual(xsource.item_key("https://arxiv.org/abs/2610.12345v2"), "arxiv:2610.12345")
+        self.assertEqual(xsource.item_key("https://huggingface.co/papers/2610.12345"), "arxiv:2610.12345")
+        self.assertEqual(xsource.item_key("https://www.alphaxiv.org/abs/2610.1234"), "arxiv:2610.1234")
+        self.assertEqual(xsource.item_key("https://sander.ai/2026/10/01/post.html?ref=x"),
+                         "blog:sander.ai/2026/10/01/post.html")
+        self.assertIsNone(xsource.item_key("https://x.com/someone/status/1"))
+        self.assertIsNone(xsource.item_key("https://github.com/org/repo"))
+        self.assertIsNone(xsource.item_key("https://example.com"))
+
+    def test_mentions_dedupe_and_hash_handles(self):
+        users = {"1": {"id": "1", "username": "alice"}, "2": {"id": "2", "username": "bob"}}
+        posts = [
+            {"id": "10", "author_id": "1", "public_metrics": {"like_count": 50},
+             "entities": {"urls": [{"expanded_url": "https://arxiv.org/abs/2610.00001"},
+                                   {"expanded_url": "https://arxiv.org/pdf/2610.00001v1"}]}},
+            {"id": "11", "author_id": "1", "public_metrics": {"like_count": 5},
+             "text": "again https://arxiv.org/abs/2610.00001"},
+            {"id": "12", "author_id": "2", "public_metrics": {"like_count": 7},
+             "entities": {"urls": [{"unwound_url": "https://huggingface.co/papers/2610.00001"}]}},
+        ]
+        m = xsource.merge_mentions({}, posts, users, NOW)["arxiv:2610.00001"]
+        self.assertEqual(len(m["by"]), 2)
+        self.assertEqual(sorted(m["by"].values()), [7, 50])
+        self.assertTrue(all(h.startswith("#") for h in m["by"]))  # no handles in public data by default
+        self.assertNotIn("alice", xsource.signal(m)[1])
+        named = xsource.merge_mentions({}, posts, users, NOW, public_handles=True)["arxiv:2610.00001"]
+        self.assertIn("@alice", xsource.signal(named)[1])
+
+    def test_signal_grows_with_sharers(self):
+        one = xsource.signal({"by": {"#a": 3}})[0]
+        five = xsource.signal({"by": {f"#{k}": 3 for k in range(5)}})[0]
+        self.assertGreater(five, one)
+        self.assertLessEqual(xsource.signal({"by": {f"#{k}": 10 ** 6 for k in range(500)}})[0], 1.0)
+        self.assertEqual(xsource.signal(None), (0.0, None))
+
+    def test_x_attention_raises_quality(self):
+        p = paper("We study X with baselines.")
+        sig0, _, f0 = score.signals(p, (0.1, 0), None, None, (0.0, None))
+        sig1, reasons, f1 = score.signals(p, (0.1, 0), None, None, xsource.signal({"by": {"#a": 9, "#b": 2}}))
+        self.assertGreater(score.quality(p, sig1, f1), score.quality(p, sig0, f0))
+        self.assertIn("shared on X by 2 accounts", reasons)
+
+    def test_credentials_precedence(self):
+        o1 = {"X_API_KEY": "k", "X_API_SECRET": "s", "X_ACCESS_TOKEN": "t", "X_ACCESS_TOKEN_SECRET": "ts"}
+        self.assertEqual(xsource.credentials({**o1, "X_BEARER_TOKEN": "b"})["mode"], "oauth1")
+        self.assertEqual(xsource.credentials({"X_USER_TOKEN": "u", "X_BEARER_TOKEN": "b"})["mode"], "user")
+        self.assertEqual(xsource.credentials({"X_BEARER_TOKEN": "b"})["mode"], "app")
+        self.assertIsNone(xsource.credentials({"X_API_KEY": "k"}))
+
+    def test_oauth1_signature_matches_x_docs_example(self):
+        # Worked example from X's "Creating a signature" documentation.
+        header = xsource._oauth1_header(
+            "POST", "https://api.twitter.com/1.1/statuses/update.json",
+            {"include_entities": "true", "status": "Hello Ladies + Gentlemen, a signed OAuth request!"},
+            "xvz1evFS4wEEPTGEFPHBog", "kAcSOqF21Fu85e7zjz7ZN2U4ZRhfV3WpwPAoE3Z7kBw",
+            "370773112-GmHxMAgYyLbNEtIKZeRNFsMKPR9EyMZeS9weJAEb", "LswwdoUaIvS8ltyTt5jkRh4J50vUPVVHtR2YPi5kE",
+            nonce="kYjzVBB8Y0ZFabxSWbWovY3uYSQ2pTgmZeNu2VS4cg", timestamp=1318622958)
+        self.assertIn('oauth_signature="hCtSmYh%2BiHYCEqBWrE7C7hYmtUk%3D"', header)
+
+    def test_fetch_posts_paginates_and_respects_cap(self):
+        pages = [
+            {"data": [{"id": str(i)} for i in range(300, 200, -1)], "meta": {"next_token": "p2"},
+             "includes": {"users": [{"id": "1", "username": "a"}]}},
+            {"data": [{"id": str(i)} for i in range(200, 100, -1)], "meta": {"next_token": "p3"}},
+        ]
+        calls = []
+
+        def fake_get(path, params, creds):
+            calls.append((path, dict(params)))
+            return {"data": {"id": "42"}} if path == "/users/me" else pages[len(calls) - 2]
+
+        with mock.patch.object(xsource, "_get", side_effect=fake_get):
+            posts, users, newest = xsource.fetch_posts({"max_posts": 150}, {"mode": "user", "token": "t"},
+                                                        since_id="99")
+        self.assertEqual(len(posts), 150)
+        self.assertEqual(newest, "300")
+        self.assertEqual(calls[1][0], "/users/42/timelines/reverse_chronological")
+        self.assertEqual(calls[1][1]["since_id"], "99")
+        self.assertEqual(calls[2][1]["max_results"], 50)  # second page only asks for what the cap allows
+
+    def test_untracked_blog_needs_enough_sharers(self):
+        now = datetime.now(timezone.utc)
+        mentions = {
+            "blog:new.blog/post-a": {"by": {"#a": 1, "#b": 2}, "url": "https://new.blog/post-a"},
+            "blog:new.blog/post-b": {"by": {"#a": 1}, "url": "https://new.blog/post-b"},
+        }
+
+        def page(url, source, tier=3):
+            return {"id": "blog:redirected", "kind": "blog", "source": source, "tier": tier,
+                    "title": "Scaling laws for X", "summary": "We train models and find results.",
+                    "url": url, "published": now.isoformat(), "body_chars": 0, "body_text": ""}
+
+        with mock.patch.object(fetch, "fetch_page_item", side_effect=page) as get, \
+                mock.patch.object(pipeline, "load_items", return_value=[]):
+            out = pipeline._x_blogs(mentions, [], now - timedelta(days=21), {})
+        self.assertEqual([i["id"] for i in out], ["blog:new.blog/post-a"])  # keyed like the mention
+        self.assertEqual(get.call_count, 1)
+
+    def test_update_without_credentials_keeps_and_prunes_state(self):
+        old = (NOW - timedelta(days=40)).isoformat()
+        state = {"since_id": "5", "mentions": {"arxiv:1": {"by": {"#a": 1}, "first_seen": NOW.isoformat()},
+                                               "arxiv:2": {"by": {"#a": 1}, "first_seen": old}}}
+        with mock.patch.dict("os.environ", {}, clear=True):
+            out = xsource.update({}, state, NOW)
+        self.assertEqual(list(out["mentions"]), ["arxiv:1"])
+        self.assertEqual(out["since_id"], "5")
 
 
 class RecommendTest(unittest.TestCase):

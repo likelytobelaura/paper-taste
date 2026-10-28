@@ -95,6 +95,38 @@ def fetch_arxiv(categories, since, page=500, max_pages=30):
     return items
 
 
+def fetch_arxiv_ids(ids, since=None):
+    """Specific papers (e.g. ones shared on X), optionally only those first published after `since`."""
+    items = []
+    for k in range(0, len(ids), 100):
+        params = urllib.parse.urlencode({"id_list": ",".join(ids[k:k + 100]), "max_results": 100})
+        root = ET.fromstring(http_get(f"https://export.arxiv.org/api/query?{params}", timeout=90))
+        for e in root.findall(f"{ATOM}entry"):
+            if e.findtext(f"{ATOM}published"):
+                it = _arxiv_entry(e)
+                if not since or it["published"] >= since.isoformat():
+                    items.append(it)
+        time.sleep(3)
+    return items
+
+
+def fetch_page_item(url, source, tier=3):
+    """A single post page (e.g. a blog link shared on X) as a blog item, or None."""
+    try:
+        post = http_get(url, headers={"User-Agent": "Mozilla/5.0 " + UA}, retries=1, timeout=20)
+        post = post.decode("utf-8", "replace")
+    except Exception:
+        return None
+    m = META_DATE.search(post)
+    published = parse_date(next((g for g in m.groups() if g), None)) if m else None
+    t, d = TITLE.search(post), META_DESC.search(post)
+    if not published or not t:
+        return None
+    a = ARTICLE.search(post)
+    src = {"name": source, "type": "html", "tier": tier}
+    return _blog_item(src, t.group(1), url, published, d.group(1) if d else "", a.group(2) if a else post)
+
+
 def _arxiv_entry(e):
     raw_id = e.findtext(f"{ATOM}id", "").rsplit("/abs/", 1)[-1]
     aid = re.sub(r"v\d+$", "", raw_id)

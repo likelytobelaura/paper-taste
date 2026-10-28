@@ -43,6 +43,9 @@ Requirements: Python ≥ 3.11, stdlib only. No API keys or `pip install` needed.
 - The heuristic `quality` is a prior, not a verdict. It rewards visible evidence of thoroughness and
   community attention (HF daily-paper upvotes) and penalises hype. A great paper with a terse abstract
   can score low; that's what step 4 is for.
+- A reason like "shared on X by N accounts" means people on the repo owner's X timeline are sharing
+  the item. That's useful attention, but it's attention, not evidence: still check the paper.
+  Running `update` with the user's own X credentials (see README) personalises this to their timeline.
 - Blog posts and papers are scored on different scales. `recommend` compares them by within-kind
   percentile.
 - Data layout: `data/items/<published-date>.jsonl`, one JSON object per line, sorted by quality.

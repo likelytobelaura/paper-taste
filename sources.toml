@@ -17,6 +17,17 @@ keep_fraction = 0.35
 [blogs]
 lookback_days = 21
 
+# X timeline (see papertaste/xsource.py for credentials). Inactive until X credentials are set.
+# The X API bills per post read (~$0.005 each as of 2026): 200 posts/day is roughly $1/day.
+[x]
+enabled = true
+max_posts = 200              # per run, newest first; runs never re-read older posts
+paper_max_age_days = 30      # shared arXiv papers older than this are ignored
+min_sharers_new_blog = 2     # an untracked blog post needs this many sharers to be fetched
+max_new_blogs = 15
+public_handles = false       # true = store/display @handles of sharers (data/ is public)
+# list_id = "123..."         # with X_BEARER_TOKEN: read this X List instead of a home timeline
+
 [[blog]]
 name = "Anthropic Research"
 type = "html"

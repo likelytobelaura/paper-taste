@@ -69,8 +69,11 @@ def _sat(x, k):
     return x / (x + k) if x > 0 else 0.0
 
 
-def signals(item, novelty=None, hf=None, s2=None):
-    """Compute named 0..1 signals plus human-readable reasons for one item."""
+def signals(item, novelty=None, hf=None, s2=None, x=None):
+    """Compute named 0..1 signals plus human-readable reasons for one item.
+
+    x: (0..1 attention, reason) from the X timeline, or None when X isn't configured.
+    """
     text = " ".join([item.get("title", ""), item.get("summary", ""), item.get("comment", ""),
                      item.get("body_text", "")[:20000]])
     sig, reasons, flags = {}, [], []
@@ -109,6 +112,8 @@ def signals(item, novelty=None, hf=None, s2=None):
         sig["community"] = min(1.0, math.log1p(up) / math.log1p(150))
         if up:
             reasons.append(f"HF daily papers: {up} upvotes")
+        if x:  # independent attention signals: either one being high is enough
+            sig["community"] = 1 - (1 - sig["community"]) * (1 - x[0])
         if s2:
             sig["authors"] = min(1.0, s2["max_h"] / 60)
             if s2["max_h"] >= 40:
@@ -123,6 +128,10 @@ def signals(item, novelty=None, hf=None, s2=None):
             reasons.append(f"long-form ({chars // 1000}k chars)")
         sig["source"] = TIER_PRIOR.get(item.get("tier", 3), 0.4)
         reasons.append(f"source tier {item.get('tier', 3)}")
+        if x:
+            sig["community"] = x[0]
+    if x and x[1]:
+        reasons.append(x[1])
 
     if novelty is not None:
         max_sim, n_close = novelty
@@ -139,7 +148,7 @@ def signals(item, novelty=None, hf=None, s2=None):
 
 WEIGHTS = {
     "paper": {"rigor": 0.30, "artifacts": 0.12, "depth": 0.13, "community": 0.20, "authors": 0.10, "novelty": 0.15},
-    "blog": {"source": 0.40, "rigor": 0.25, "artifacts": 0.05, "depth": 0.15, "novelty": 0.15},
+    "blog": {"source": 0.40, "rigor": 0.25, "artifacts": 0.05, "depth": 0.15, "novelty": 0.15, "community": 0.15},
 }
 
 

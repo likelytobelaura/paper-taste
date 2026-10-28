@@ -6,7 +6,7 @@ from collections import defaultdict
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
 
-from . import fetch, score
+from . import fetch, score, xsource
 from .fetch import log
 from .text import TfIdf, nearest_neighbours, tokens
 
@@ -14,6 +14,7 @@ ROOT = Path(__file__).resolve().parent.parent
 DATA = ROOT / "data"
 ITEMS = DATA / "items"
 SEEN = DATA / "seen.json"
+X_STATE = DATA / "x_state.json"
 HISTORY_DAYS = 60
 DROP_FIELDS = ("body_text",)
 
@@ -30,7 +31,7 @@ def load_items(days=None, now=None):
     out = []
     for f in sorted(ITEMS.glob("*.jsonl")):
         if f.stem >= cutoff:
-            out += [json.loads(line) for line in f.open() if line.strip()]
+            out += [json.loads(line) for line in f.read_text().splitlines() if line.strip()]
     return out
 
 
@@ -52,6 +53,14 @@ def run(config=None, use_s2=True, now=None):
     n_blogs = len(blogs)
     blogs = [b for b in blogs if score.is_research_post(b)]
     log(f"fetched {len(papers)} arXiv papers, {n_blogs} blog posts ({len(blogs)} research)")
+    crawl_days = {p["published"][:10] for p in papers}
+
+    # X timeline: attention signal, plus candidates the crawl missed.
+    xcfg = cfg.get("x", {})
+    x_state = xsource.update(xcfg, json.loads(X_STATE.read_text()) if X_STATE.exists() else {}, now)
+    mentions = x_state["mentions"]
+    x_on = xsource.credentials() is not None or bool(mentions)
+    papers, blogs = papers + _x_papers(mentions, papers, now, xcfg), blogs + _x_blogs(mentions, blogs, blog_since, xcfg)
 
     # Novelty: compare each new item against the batch plus the stored history.
     fresh_ids = {i["id"] for i in papers + blogs}
@@ -64,7 +73,8 @@ def run(config=None, use_s2=True, now=None):
 
     def scored(item, s2=None):
         aid = item["id"].removeprefix("arxiv:")
-        sig, reasons, flags = score.signals(item, novelty.get(item["id"]), hf.get(aid), s2)
+        x = xsource.signal(mentions.get(item["id"])) if x_on else None
+        sig, reasons, flags = score.signals(item, novelty.get(item["id"]), hf.get(aid), s2, x)
         q = score.quality(item, sig, flags)
         extra = {"hf": hf[aid]} if aid in hf else {}
         return {**{k: v for k, v in item.items() if k not in DROP_FIELDS}, **extra,
@@ -87,14 +97,51 @@ def run(config=None, use_s2=True, now=None):
     for day_items in by_day.values():
         day_items.sort(key=lambda i: -i["quality"])
         n = max(20, int(len(day_items) * ax.get("keep_fraction", 0.25)))
-        kept += [i for k, i in enumerate(day_items) if k < n or i.get("hf", {}).get("upvotes", 0) >= 5]
+        kept += [i for k, i in enumerate(day_items)
+                 if k < n or i.get("hf", {}).get("upvotes", 0) >= 5 or i["id"] in mentions]
     kept += [scored(b) for b in blogs]
 
-    write_items(kept, {i["published"][:10] for i in out})
+    write_items(kept, crawl_days)
     SEEN.write_text(json.dumps(dict(sorted(seen.items())), indent=0) + "\n")
+    X_STATE.write_text(json.dumps(x_state, indent=0, sort_keys=True) + "\n")
     write_digest(now)
     log(f"kept {len(kept)} items")
     return kept
+
+
+def _x_papers(mentions, papers, now, xcfg):
+    """arXiv papers shared on X that the category crawl didn't return (older, or other categories)."""
+    have = {p["id"] for p in papers}
+    ids = [k.removeprefix("arxiv:") for k in mentions if k.startswith("arxiv:") and k not in have]
+    if not ids:
+        return []
+    since = now - timedelta(days=xcfg.get("paper_max_age_days", 30))
+    try:
+        got = fetch.fetch_arxiv_ids(ids, since)
+    except Exception as e:
+        log(f"x: arXiv lookup failed: {e}")
+        return []
+    log(f"x: {len(got)} extra papers from the timeline")
+    return got
+
+
+def _x_blogs(mentions, blogs, since, xcfg):
+    """Posts from blogs we don't track, shared on X by enough accounts to be worth a look."""
+    have = {b["id"] for b in blogs} | {i["id"] for i in load_items(60) if i["kind"] == "blog"}
+    min_sharers = xcfg.get("min_sharers_new_blog", 2)
+    cands = sorted(((k, m) for k, m in mentions.items()
+                    if k.startswith("blog:") and k not in have and len(m["by"]) >= min_sharers),
+                   key=lambda km: -len(km[1]["by"]))[:xcfg.get("max_new_blogs", 15)]
+    out = []
+    for key, m in cands:
+        domain = key.removeprefix("blog:").split("/")[0]
+        item = fetch.fetch_page_item(m["url"], domain, tier=3)
+        if item and item["published"] >= since.isoformat() and score.is_research_post(item):
+            item["id"] = key  # the id X mentions are keyed by, even if the page redirected
+            out.append(item)
+    if cands:
+        log(f"x: {len(out)}/{len(cands)} shared posts from untracked blogs passed the research gate")
+    return out
 
 
 def write_items(items, refreshed_days):
@@ -119,7 +166,8 @@ def write_items(items, refreshed_days):
 def top(days=7, n=25, kind=None, now=None, items=None):
     now = now or datetime.now(timezone.utc)
     items = items if items is not None else load_items(days, now)
-    items = [i for i in items if kind in (None, i["kind"])]
+    cutoff = (now - timedelta(days=days)).strftime("%Y-%m-%d")
+    items = [i for i in items if kind in (None, i["kind"]) and i["published"][:10] >= cutoff]
     return sorted(items, key=lambda i: -score.rank_score(i, now))[:n]
 
 
@@ -148,6 +196,10 @@ def write_digest(now=None):
     lines += [fmt_item(k + 1, i, now) for k, i in enumerate(papers)]
     lines += ["\n## Blog posts & lab write-ups (last 14 days)\n"]
     lines += [fmt_item(k + 1, i, now) for k, i in enumerate(blogs)] or ["_None yet._\n"]
+    on_x = [i for i in items if any(r.startswith("shared on X") for r in i["reasons"])]
+    if on_x:
+        lines += ["\n## On your X timeline (last 14 days)\n"]
+        lines += [fmt_item(k + 1, i, now) for k, i in enumerate(top(14, 12, None, now, on_x))]
     text = "\n".join(lines)
     (ROOT / "DIGEST.md").write_text(text)
     (DATA / "digests").mkdir(parents=True, exist_ok=True)

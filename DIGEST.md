@@ -6,7 +6,7 @@ Ranked by heuristic quality × recency (10-day half-life). Scores are a first pa
 
 1. **[S3AC: Stabilized, Selective, and Scalable Actor-Critic for LLM Reasoning](https://arxiv.org/abs/2610.35518)** — quality 60  
    Shuo Shen, Guangran Cheng, Chengqi Lyu et al. · 2026-10-26  
-   _why:_ strong baselines; model-scale sweep; negative results / limitations; code released; HF daily papers: 27 upvotes  
+   _why:_ strong baselines; model-scale sweep; negative results / limitations; code released; HF daily papers: 29 upvotes  
    > Critic-free methods are widely used in reinforcement learning with verifiable rewards (RLVR) for long chain-of-thought (CoT) reasoning, avoiding difficult and costly critic training. Common alternatives lack token-level credit assignment and typically rely on grouped rollouts to…
 
 2. **[Hy-Nomas: Towards Free-form Interactive World Generation](https://arxiv.org/abs/2610.36729)** — quality 57  
@@ -36,7 +36,7 @@ Ranked by heuristic quality × recency (10-day half-life). Scores are a first pa
 
 7. **[DynaFlow: Learning Free-Form Multi-Agent Orchestration](https://arxiv.org/abs/2610.34467)** — quality 56  
    Ruhao Liu, Qi Li, Shizun Wang et al. · 2026-10-25  
-   _why:_ strong baselines; code released; HF daily papers: 202 upvotes  
+   _why:_ strong baselines; code released; HF daily papers: 203 upvotes  
    > Multi-agent systems often rely on predefined collaboration structures, limiting their ability to adapt to diverse task requirements. We introduce DynaFlow, a framework that integrates free-form executable workflow synthesis into the action space of the main agent. The agent…
 
 8. **[MatAnyone-E: Sparse Memory Propagation for Efficient High-Resolution Video Matting](https://arxiv.org/abs/2610.35724)** — quality 52  
@@ -69,9 +69,9 @@ Ranked by heuristic quality × recency (10-day half-life). Scores are a first pa
    _why:_ code released; HF daily papers: 311 upvotes; 20-author team  
    > Multimodal intelligence can be viewed as human-guided co-evolution between worlds and agents through interaction. However, scaling this process faces two bottlenecks: constructing heterogeneous, verifiable environments is costly, and manual Harness iteration cannot keep pace…
 
-14. **[EmbeddingGemma 2: Unified and Efficient Multimodal Representations](https://arxiv.org/abs/2610.37364)** — quality 46  
+14. **[EmbeddingGemma 2: Unified and Efficient Multimodal Representations](https://arxiv.org/abs/2610.37364)** — quality 47  
    Henrique Schechter Vera, Sahil Dua, Jovan Andonov et al. · 2026-10-27  
-   _why:_ ablations; weights/data released; 28 pages; HF daily papers: 9 upvotes; 73-author team  
+   _why:_ ablations; weights/data released; 28 pages; HF daily papers: 11 upvotes; 73-author team  
    > We present EmbeddingGemma 2, an open multimodal embedding model which natively represents text, images, audio, video, and combinations thereof in a unified space. Our approach introduces improvements such as simplified per-layer embeddings and a multi-stage curriculum with…
 
 15. **[SearchHorizonBench: A Benchmark for Search Value in AI Agents](https://arxiv.org/abs/2610.34714)** — quality 52  
@@ -81,7 +81,7 @@ Ranked by heuristic quality × recency (10-day half-life). Scores are a first pa
 
 16. **[Work Agents: Systems, Capabilities, and Optimization](https://arxiv.org/abs/2610.35845)** — quality 49  
    Zishan Xu, Enjun Du, Mingqi Gao et al. · 2026-10-26  
-   _why:_ code released; HF daily papers: 116 upvotes; 16-author team  
+   _why:_ code released; HF daily papers: 117 upvotes; 16-author team  
    > As foundation models evolve from information generation to digital work execution, agents are increasingly capable of completing complex tasks across tools, applications, and workflows. However, existing research lacks a unified perspective on how agents reliably accomplish…
 
 17. **[Channel Selection for Mixture-of-Experts Decoding Needs No Calibration Data](https://arxiv.org/abs/2610.37386)** — quality 46  
@@ -126,7 +126,7 @@ Ranked by heuristic quality × recency (10-day half-life). Scores are a first pa
 
 25. **[VibeVideoBench: Evaluating Multimodal Agents on Code-Driven Video Generation](https://arxiv.org/abs/2610.35864)** — quality 47  
    Muxi Diao, Wenbin Xu, Lele Yang et al. · 2026-10-26  
-   _why:_ human evaluation; HF daily papers: 148 upvotes; 24-author team  
+   _why:_ human evaluation; HF daily papers: 167 upvotes; 24-author team  
    > Diffusion video models produce striking clips, but they cannot reliably render an exact formula, a correct chart, a rule-consistent game or narration synchronized to on-screen events. A different route is emerging: multimodal agents that write code to render every frame and…
 
 
