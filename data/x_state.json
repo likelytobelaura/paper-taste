@@ -453,7 +453,7 @@
 },
 "blog:arstechnica.com/ai/2026/10/google-ai-gets-cagey-when-asked-who-won-the-2020-elections": {
 "by": {
-"hn:50280178": 108
+"hn:50280178": 113
 },
 "first_seen": "2026-10-28T22:44:54.349664+00:00",
 "url": "https://arstechnica.com/ai/2026/10/google-ai-gets-cagey-when-asked-who-won-the-2020-elections/"
@@ -540,7 +540,7 @@
 },
 "blog:bettascore.ai/research/reliability-reviewers-vs-owners": {
 "by": {
-"hn:50266780": 112
+"hn:50266780": 113
 },
 "first_seen": "2026-10-28T22:44:54.349664+00:00",
 "url": "https://www.bettascore.ai/research/reliability-reviewers-vs-owners"
@@ -576,7 +576,7 @@
 },
 "blog:blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-carbon": {
 "by": {
-"hn:50276792": 721
+"hn:50276792": 735
 },
 "first_seen": "2026-10-28T22:44:54.349664+00:00",
 "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-carbon/"
@@ -612,7 +612,7 @@
 },
 "blog:brangus.io/survival-llm": {
 "by": {
-"hn:50264853": 511
+"hn:50264853": 514
 },
 "first_seen": "2026-10-28T22:44:54.349664+00:00",
 "url": "https://www.brangus.io/survival-llm"
@@ -745,10 +745,17 @@
 },
 "blog:cursor.com/blog/agent-sdk": {
 "by": {
-"hn:50273731": 84
+"hn:50273731": 85
 },
 "first_seen": "2026-10-28T22:44:54.349664+00:00",
 "url": "https://cursor.com/blog/agent-sdk"
+},
+"blog:dahlian00.github.io/PetFacePage": {
+"by": {
+"reddit:1xcjrvb": 0
+},
+"first_seen": "2026-10-28T23:10:34.681335+00:00",
+"url": "https://dahlian00.github.io/PetFacePage/"
 },
 "blog:dailycal.org/news/campus/academics/ai-use-leads-uc-berkeley-math-professor-to-see-no-point-in-grading-homework/article_bdf1eae2-c08b-491f-b9f1-81a7cea177de.html": {
 "by": {
@@ -1379,7 +1386,7 @@
 },
 "blog:religionnews.com/2026/10/26/in-a-first-a-humanist-granted-a-religious-exemption-from-using-ai": {
 "by": {
-"hn:50273396": 396
+"hn:50273396": 403
 },
 "first_seen": "2026-10-28T22:44:54.349664+00:00",
 "url": "https://religionnews.com/2026/10/26/in-a-first-a-humanist-granted-a-religious-exemption-from-using-ai/"
@@ -1387,7 +1394,7 @@
 "blog:research.google/blog/the-sleep-framework-a-new-way-for-llms-to-retain-knowledge-in-continual-learning": {
 "by": {
 "#9fc78a4634": 2305,
-"hn:50272479": 25
+"hn:50272479": 27
 },
 "first_seen": "2026-10-28T22:05:34.255750+00:00",
 "url": "https://research.google/blog/the-sleep-framework-a-new-way-for-llms-to-retain-knowledge-in-continual-learning/?utm_source=twitter&utm_medium=social&utm_campaign=social_post&utm_content=gr-acct"
@@ -1401,7 +1408,7 @@
 },
 "blog:restofworld.org/2026/ai-datacenters-water-resistance-global": {
 "by": {
-"hn:50278754": 44
+"hn:50278754": 46
 },
 "first_seen": "2026-10-28T22:44:54.349664+00:00",
 "url": "https://restofworld.org/2026/ai-datacenters-water-resistance-global/"
@@ -1474,7 +1481,7 @@
 "by": {
 "#bd58758e87": 1174,
 "#e3cb4b9385": 41,
-"hn:50242939": 1700,
+"hn:50242939": 1701,
 "nl:AI Supremacy": 0,
 "nl:Don't Worry About the Vase (Zvi)": 0,
 "nl:The Rundown AI": 0
@@ -1778,7 +1785,7 @@
 },
 "blog:surgehq.ai/blog/dayjob-tax": {
 "by": {
-"hn:50275626": 173
+"hn:50275626": 177
 },
 "first_seen": "2026-10-28T22:44:54.349664+00:00",
 "url": "https://surgehq.ai/blog/dayjob-tax"
@@ -2081,7 +2088,7 @@
 },
 "blog:wired.com/story/massive-leak-exposes-41000-homeland-security-workers-including-undercover-ice-agents": {
 "by": {
-"hn:50280864": 187
+"hn:50280864": 224
 },
 "first_seen": "2026-10-28T22:44:54.349664+00:00",
 "url": "https://www.wired.com/story/massive-leak-exposes-41000-homeland-security-workers-including-undercover-ice-agents/"

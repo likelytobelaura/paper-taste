@@ -94,15 +94,15 @@ Ranked by heuristic quality × recency (10-day half-life). Scores are a first pa
    _why:_ code released; 37 pages; HF daily papers: 11 upvotes  
    > Mixture-of-Experts (MoE) models are bottlenecked by loading routed-expert weights from memory during interactive decoding at small batch sizes. Because most intermediate channels in a routed expert contribute little to any single token, channel selectors predict which channels…
 
-19. **[ParetoRSI-Gym: Can AI Agents Improve Language Models Across Multiple Domains?](https://arxiv.org/abs/2610.34386)** — quality 52  
+19. **[More Memory, Better Videos? A Controlled Study of Visual Memory in Long-Video Generation](https://arxiv.org/abs/2610.35001)** — quality 50  
+   Yuzhuo Chen, Huafeng Shi, Xinyu Wang et al. · 2026-10-26  
+   _why:_ controlled experiments; code released; HF daily papers: 23 upvotes  
+   > Long-video generators increasingly retrieve past visual observations to prevent identity drift. The intuition is compelling: more access to history should make future video more consistent. But an image can be faithful to the past and wrong for the present. Does visual memory…
+
+20. **[ParetoRSI-Gym: Can AI Agents Improve Language Models Across Multiple Domains?](https://arxiv.org/abs/2610.34386)** — quality 52  
    Haojin Wang, Yangzhen Wu, Zeyi Chen et al. · 2026-10-25  
    _why:_ multiple benchmarks; variance / significance; code released; HF daily papers: 13 upvotes  
    > Recursive self-improvement (RSI) requires an agentic system to design, train, and evaluate its own successor. Data-driven post-training is a central part of that loop, yet existing evaluations measure it on a single benchmark, where an agent selects from a static pool or…
-
-20. **[More Memory, Better Videos? A Controlled Study of Visual Memory in Long-Video Generation](https://arxiv.org/abs/2610.35001)** — quality 50  
-   Yuzhuo Chen, Huafeng Shi, Xinyu Wang et al. · 2026-10-26  
-   _why:_ controlled experiments; code released; HF daily papers: 22 upvotes  
-   > Long-video generators increasingly retrieve past visual observations to prevent identity drift. The intuition is compelling: more access to history should make future video more consistent. But an image can be faithful to the past and wrong for the present. Does visual memory…
 
 21. **[Spatial Audio Generation and Editing with Executable Plans and Self-Distilling Transfusion](https://arxiv.org/abs/2610.34415)** — quality 52  
    Kam Man Wu, Yu Zhang, Pengjun Fang et al. · 2026-10-25  
@@ -116,7 +116,7 @@ Ranked by heuristic quality × recency (10-day half-life). Scores are a first pa
 
 23. **[RynnVLA-Latent: Scaling Robotic Manipulation Foundation Models with 3D-Grounded Latent Actions](https://arxiv.org/abs/2610.34356)** — quality 51  
    Haoyu Zhao, Xingyue Zhao, Zhian Su et al. · 2026-10-25  
-   _why:_ ablations; code released; HF daily papers: 28 upvotes  
+   _why:_ ablations; code released; HF daily papers: 29 upvotes  
    > Scaling vision-language-action (VLA) models is constrained by scarce action-labeled demonstrations and incompatible control spaces across robot embodiments. We present RynnVLA-Latent, a framework that turns heterogeneous interaction videos into scalable supervision for robot…
 
 24. **[Cross-modal Steering Vectors Exist Across Both Image and Text Generation](https://arxiv.org/abs/2610.36269)** — quality 47  
@@ -144,7 +144,7 @@ Ranked by heuristic quality × recency (10-day half-life). Scores are a first pa
 
 3. **[The sleep framework: A new way for LLMs to retain knowledge in continual learning](https://research.google/blog/the-sleep-framework-a-new-way-for-llms-to-retain-knowledge-in-continual-learning/)** — quality 59  
    Google Research · 2026-10-27  
-   _why:_ strong baselines; mechanistic / causal analysis; source tier 2; shared on X by 1 account; Hacker News: 1 submission, 25 points  
+   _why:_ strong baselines; mechanistic / causal analysis; source tier 2; shared on X by 1 account; Hacker News: 1 submission, 27 points  
    > Education Innovation
 
 4. **[From Tokens to Bytes I: Scaling Hierarchical Networks](https://cartesia.ai/blog/from-tokens-to-bytes-part-1)** — quality 57  
@@ -152,7 +152,7 @@ Ranked by heuristic quality × recency (10-day half-life). Scores are a first pa
    _why:_ strong baselines; model-scale sweep; reproduction / replication; contamination check; long-form (51k chars); source tier 2  
    > A newer generation of H-Nets learns directly from raw bytes, and matches an open-source 3B Transformer with 10x less compute and data.
 
-5. **[Introducing LFM3: Every Modality for Specialized Intelligence | Blog](https://www.liquid.ai/blog/lfm3)** — quality 57  
+5. **[Introducing LFM3: Every Modality for Specialized Intelligence](https://www.liquid.ai/blog/lfm3)** — quality 56  
    Liquid AI · 2026-10-27  
    _why:_ multiple benchmarks; long-form (31k chars); source tier 2; Hacker News: 1 submission, 166 points  
    > LFM3 is Liquid AI’s new open-weight model family: 2B-class text, vision, audio, omni, and decision models built to fine-tune and run fast on any device.
@@ -167,7 +167,7 @@ Ranked by heuristic quality × recency (10-day half-life). Scores are a first pa
    _why:_ source tier 1  
    > Why we deny that election forecasts are primarily for entertainment.
 
-8. **[Can AI coding agents rebuild biological AI tools from a paper?](https://www.aisi.gov.uk/blog/can-ai-coding-agents-rebuild-biological-ai-tools-from-a-paper)** — quality 58  
+8. **[Can AI coding agents rebuild biological AI tools from a paper?](https://www.aisi.gov.uk/blog/can-ai-coding-agents-rebuild-biological-ai-tools-from-a-paper)** — quality 57  
    UK AI Security Institute · 2026-10-26  
    _why:_ strong baselines; reproduction / replication; contamination check; source tier 1  
    > Can AI coding agents rebuild biological AI tools from a paper? | AISI Work Read the Frontier AI Trends Report Please enable javascript for this website. A A About Research Grants Blog Contact Careers Home About Research Grants Blog Careers Blog Chem-Bio Can AI coding agents…
@@ -197,10 +197,10 @@ Ranked by heuristic quality × recency (10-day half-life). Scores are a first pa
 
 1. **[The sleep framework: A new way for LLMs to retain knowledge in continual learning](https://research.google/blog/the-sleep-framework-a-new-way-for-llms-to-retain-knowledge-in-continual-learning/)** — quality 59  
    Google Research · 2026-10-27  
-   _why:_ strong baselines; mechanistic / causal analysis; source tier 2; shared on X by 1 account; Hacker News: 1 submission, 25 points  
+   _why:_ strong baselines; mechanistic / causal analysis; source tier 2; shared on X by 1 account; Hacker News: 1 submission, 27 points  
    > Education Innovation
 
-2. **[Introducing LFM3: Every Modality for Specialized Intelligence | Blog](https://www.liquid.ai/blog/lfm3)** — quality 57  
+2. **[Introducing LFM3: Every Modality for Specialized Intelligence](https://www.liquid.ai/blog/lfm3)** — quality 56  
    Liquid AI · 2026-10-27  
    _why:_ multiple benchmarks; long-form (31k chars); source tier 2; Hacker News: 1 submission, 166 points  
    > LFM3 is Liquid AI’s new open-weight model family: 2B-class text, vision, audio, omni, and decision models built to fine-tune and run fast on any device.
@@ -225,32 +225,32 @@ Ranked by heuristic quality × recency (10-day half-life). Scores are a first pa
    _why:_ strong baselines; mechanistic / causal analysis; negative results / limitations; source tier 2; Hacker News: 1 submission, 842 points  
    > Over 11 hours of coding videos on evaluation, inference-time scaling, reinforcement learning, and distillation, with Python and PyTorch.
 
-7. **[Working with academic communities to build scientific understanding](https://openai.com/index/building-scientific-understanding-with-academic-communities)** — quality 50  
-   OpenAI · 2026-10-26  
-   _why:_ theory; mechanistic / causal analysis; source tier 3; shared on X by 2 accounts; Hacker News: 1 submission, 1144 points; in newsletters: The Rundown AI ⚠ hype: groundbreaking  
-   > OpenAI shares model results on the Kakeya conjecture, Exponential Time Hypothesis, and quantum chromodynamics—and how researchers can verify and build on them.
-
-8. **[Announcing Artificial Analysis Intelligence Index v5](https://artificialanalysis.ai/articles/artificial-analysis-intelligence-index-v5)** — quality 47  
+7. **[Announcing Artificial Analysis Intelligence Index v5](https://artificialanalysis.ai/articles/artificial-analysis-intelligence-index-v5)** — quality 47  
    artificialanalysis.ai · 2026-10-27  
    _why:_ contamination check; source tier 3; Hacker News: 1 submission, 90 points; Reddit: 1 submission  
    > Index v5 features 2 new benchmarks and 3 upgrades. For the first time, the majority of the Index is built on private datasets
 
-9. **[Rethinking Verification in Agent Harnesses](https://arxiv.org/abs/2610.34577)** — quality 49  
+8. **[Rethinking Verification in Agent Harnesses](https://arxiv.org/abs/2610.34577)** — quality 49  
    Zhengxin Zhang, Erkang Zhu, Yin Lin et al. · 2026-10-25  
    _why:_ strong baselines; 65 pages; HF daily papers: 9 upvotes; shared on X by 1 account  
    > Agent harnesses enable large language models to act through tools, observe the results, and iteratively work toward a task goal. Verification checks and revises agents' work to improve output quality. Yet there is limited guidance on how harnesses should organize this effort. We…
 
-10. **[Introducing GPT-6.1 Terra](https://openai.com/index/introducing-gpt-6-1-terra)** — quality 47  
+9. **[Introducing GPT-6.1 Terra](https://openai.com/index/introducing-gpt-6-1-terra)** — quality 47  
    OpenAI · 2026-10-26  
    _why:_ negative results / limitations; source tier 3; Hacker News: 1 submission, 633 points; in newsletters: Ben's Bites, The Rundown AI  
    > Bringing fast and capable computer use to everyone
+
+10. **[AI Promised Less Work. I Have Never Worked More.](https://oioannou.com/blog/ai-promised-less-work/)** — quality 44  
+   oioannou.com · 2026-10-27  
+   _why:_ strong baselines; source tier 3; Hacker News: 1 submission, 662 points  
+   > Agents made implementation cheap, so I started doing far more of it in parallel. My GitHub history since 2019 shows what that did: as VP of Technology I am back at my full-stack engineer pace, with bursts, burnout and a low season that is no longer low.
 
 11. **[Serving DeepSeek-V4.1-Flash at Scale: vLLM Matches DeepInfer and Scales to GB300 NVL72](https://vllm.ai/blog/2026-10-23-deepseek-v41-flash-pd-wide-ep)** — quality 55  
    vLLM · 2026-10-23  
    _why:_ source tier 2; shared on X by 2 accounts  
    > With P/D disaggregation and Wide-EP on a GB300 NVL72 rack, vLLM serves DeepSeek-V4.1-Flash on SemiAnalysis AgentX at 954K tokens/s per GPU at a P90 of 196 token
 
-12. **[How Much Does the Hint Matter? Scope Conditions for Hindsight Self-Distillation in Financial Reasoning](https://arxiv.org/abs/2610.36082)** — quality 42  
-   Johnny Yu, Cyril Gorlla · 2026-10-26  
-   _why:_ code released; HF daily papers: 3 upvotes; Reddit: 1 submission  
-   > Financial institutions operating under data-residency constraints are restricted to open-weight models small enough to locally host, which trail frontier systems on multi-step quantitative reasoning. On-policy distillation narrows such gaps by supervising a student on its own…
+12. **[Working with academic communities to build scientific understanding](https://openai.com/index/building-scientific-understanding-with-academic-communities)** — quality 42  
+   OpenAI · 2026-10-26  
+   _why:_ source tier 3; shared on X by 2 accounts; Hacker News: 1 submission, 1144 points; in newsletters: The Rundown AI  
+   > OpenAI shares model results on the Kakeya conjecture, Exponential Time Hypothesis, and quantum chromodynamics—and how researchers can verify and build on them.
