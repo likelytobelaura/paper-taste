@@ -1,0 +1,16 @@
+[project]
+name = "papertaste"
+version = "0.1.0"
+description = "Daily quality-ranked feed of new AI research, built for agents"
+requires-python = ">=3.11"
+dependencies = []
+
+[project.scripts]
+papertaste = "papertaste.cli:main"
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+packages = ["papertaste"]

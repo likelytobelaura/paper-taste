@@ -1,0 +1,41 @@
+name: update
+
+on:
+  schedule:
+    - cron: "30 3 * * *"  # after the arXiv announcement (~00:00 UTC)
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: update
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: python -m unittest discover tests
+      - name: Fetch and score
+        env:
+          S2_API_KEY: ${{ secrets.S2_API_KEY }}
+          X_API_KEY: ${{ secrets.X_API_KEY }}
+          X_API_SECRET: ${{ secrets.X_API_SECRET }}
+          X_ACCESS_TOKEN: ${{ secrets.X_ACCESS_TOKEN }}
+          X_ACCESS_TOKEN_SECRET: ${{ secrets.X_ACCESS_TOKEN_SECRET }}
+          X_BEARER_TOKEN: ${{ secrets.X_BEARER_TOKEN }}
+        run: python -m papertaste update
+      - name: Commit
+        run: |
+          git config user.name "paper-taste bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data DIGEST.md
+          git diff --cached --quiet && exit 0
+          git commit -m "data: $(date -u +%F)"
+          git push
