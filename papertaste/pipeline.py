@@ -198,7 +198,7 @@ def write_digest(now=None):
     lines += [fmt_item(k + 1, i, now) for k, i in enumerate(blogs)] or ["_None yet._\n"]
     on_x = [i for i in items if any(r.startswith("shared on X") for r in i["reasons"])]
     if on_x:
-        lines += ["\n## On your X timeline (last 14 days)\n"]
+        lines += ["\n## Shared on X (last 14 days: AI-Twitter recaps, plus your timeline if configured)\n"]
         lines += [fmt_item(k + 1, i, now) for k, i in enumerate(top(14, 12, None, now, on_x))]
     text = "\n".join(lines)
     (ROOT / "DIGEST.md").write_text(text)

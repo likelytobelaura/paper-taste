@@ -1,6 +1,9 @@
-"""X (Twitter) timeline as a source: papers and posts people you follow are sharing.
+"""X (Twitter) as a source: papers and posts AI Twitter, or the people you follow, are sharing.
 
-Reads the authenticated user's home timeline (or an X List) through the X API v2, pulls out
+Free by default: reads AI-X recap newsletters (AINews etc.) and resolves the posts they link via
+FxTwitter (see fetch_curated). With X API credentials it also reads your own home timeline.
+
+The timeline path reads the authenticated user's home timeline (or an X List) through the X API v2, pulls out
 arXiv / Hugging Face papers / blog links, and keeps per-item mention aggregates. Only aggregates
 are stored (distinct sharers, likes, a few public handles) — never post text.
 
@@ -23,6 +26,7 @@ import re
 import secrets
 import time
 import urllib.parse
+import urllib.request
 from datetime import datetime, timedelta, timezone
 
 from .fetch import http_get, log
@@ -117,7 +121,10 @@ def item_key(link):
     if m:
         return f"arxiv:{m.group(1)}"
     host_path = re.sub(r"^https?://(www\.)?", "", link.split("?")[0].split("#")[0]).rstrip("/")
-    if host_path.count("/") >= 1 and not host_path.startswith(("x.com", "twitter.com", "t.co", "youtu", "github.com")):
+    not_articles = ("x.com", "twitter.com", "t.co", "youtu", "github.com", "huggingface.co", "forms.gle",
+                    "docs.google.com", "linkedin.com", "instagram.com", "threads.", "discord.", "apps.apple.com",
+                    "play.google.com", "pic.x.com", "lu.ma", "luma.com")
+    if host_path.count("/") >= 1 and not host_path.startswith(not_articles):
         return "blog:" + host_path
     return None
 
@@ -163,22 +170,110 @@ def signal(mention):
     return min(1.0, math.log1p(raw) / math.log1p(8)), f"shared on X by {n} account{'s' * (n != 1)}{who}"
 
 
+# ---------- free path: AI-X recap newsletters, resolved through FxTwitter ----------
+#
+# Newsletters like AINews (Latent Space) read AI Twitter every day and link the posts that
+# mattered. Each linked post is looked up on api.fxtwitter.com (free, no auth) to get its links
+# and like count. You get the AI-X consensus rather than your own timeline, at no cost.
+
+STATUS_LINK = re.compile(r"(?:x|twitter)\.com/\w+/status/(\d+)")
+SHORTENERS = {"t.co", "goo.gle", "buff.ly", "bit.ly", "ow.ly", "dlvr.it", "lnkd.in", "tinyurl.com", "trib.al",
+              "shorturl.at", "rb.gy", "is.gd", "hubs.la", "msft.it", "amzn.to"}
+
+
+def expand(link):
+    """Follow a URL shortener's redirect; other links come back unchanged."""
+    host = re.sub(r"^https?://(www\.)?", "", link).split("/")[0].lower()
+    if host not in SHORTENERS:
+        return link
+    try:
+        req = urllib.request.Request(link, method="HEAD", headers={"User-Agent": "Mozilla/5.0"})
+        with urllib.request.urlopen(req, timeout=10) as r:
+            return r.geturl()
+    except Exception:
+        return link
+
+
+def fx_post(status_id):
+    """One public post via FxTwitter, as {id, author_id, text, public_metrics, entities.urls}, or None."""
+    try:
+        t = json.loads(http_get(f"https://api.fxtwitter.com/status/{status_id}", retries=2, backoff=5))["tweet"]
+    except Exception:
+        return None
+    urls = []
+    for tw in (t, t.get("quote") or {}):
+        for f in (tw.get("raw_text") or {}).get("facets") or []:
+            if f.get("type") == "url" and (f.get("replacement") or f.get("original")):
+                urls.append({"expanded_url": expand(f.get("replacement") or f["original"])})
+    return {"id": str(t.get("id", status_id)), "author_id": (t.get("author") or {}).get("screen_name", "?"),
+            "text": t.get("text", ""), "public_metrics": {"like_count": t.get("likes") or 0},
+            "entities": {"urls": urls}}
+
+
+def fetch_curated(cfg, state, now):
+    """New recap issues -> (posts, users). Marks issues done in state['curated_seen']."""
+    from .fetch import CONTENT, _parse_xml, parse_date
+    since = now - timedelta(days=cfg.get("curated_lookback_days", 3))
+    done = set(state.get("curated_seen", []))
+    ids, direct = [], []
+    for feed in cfg.get("curated_feeds", []):
+        try:
+            root = _parse_xml(http_get(feed["url"]))
+        except Exception as e:
+            log(f"x curated: {feed['name']}: FAILED {e}")
+            continue
+        for item in root.iter("item"):
+            link, title = item.findtext("link", ""), item.findtext("title", "")
+            published = parse_date(item.findtext("pubDate"))
+            if link in done or not published or published < since or \
+                    not title.startswith(feed.get("title_prefix", "")):
+                continue
+            body = item.findtext(f"{CONTENT}encoded") or item.findtext("description") or ""
+            got = list(dict.fromkeys(STATUS_LINK.findall(body)))
+            ids += got
+            # papers the newsletter links directly count as one share by the newsletter itself
+            direct.append({"id": link, "author_id": feed["name"], "public_metrics": {"like_count": 0},
+                           "entities": {"urls": [{"expanded_url": u} for u in re.findall(r'href="([^"]+)"', body)
+                                                 if ARXIV_LINK.search(u)]}})
+            done.add(link)
+            log(f"x curated: {feed['name']}: {title[:60]} ({len(got)} posts)")
+    ids = list(dict.fromkeys(ids))[:cfg.get("max_lookups", 300)]
+    posts = []
+    for status_id in ids:
+        p = fx_post(status_id)
+        if p:
+            posts.append(p)
+        time.sleep(0.3)  # free community service: be gentle
+    state["curated_seen"] = sorted(done)[-200:]
+    users = {p["author_id"]: {"username": p["author_id"]} for p in posts + direct}
+    log(f"x curated: resolved {len(posts)}/{len(ids)} posts")
+    return posts + direct, users
+
+
 def update(cfg, state, now=None):
-    """Read new timeline posts into state['mentions']. Returns state; no-op without credentials."""
+    """Fold new X data into state['mentions']: free recap newsletters, plus the timeline if credentialed."""
     now = now or datetime.now(timezone.utc)
+    state = {**state, "mentions": prune(state.get("mentions", {}), now)}
+    if not cfg.get("enabled", True):
+        return state
+    mentions, public = state["mentions"], cfg.get("public_handles", False)
+    if cfg.get("curated", True) and cfg.get("curated_feeds"):
+        try:
+            posts, users = fetch_curated(cfg, state, now)
+            merge_mentions(mentions, posts, users, now, public)
+        except Exception as e:
+            log(f"x curated: FAILED {type(e).__name__}: {e}")
     creds = credentials()
-    mentions = prune(state.get("mentions", {}), now)
-    if not creds or not cfg.get("enabled", True):
-        if not creds:
-            log("x: no credentials, using stored mentions only")
-        return {**state, "mentions": mentions}
+    if not creds:
+        log("x: no API credentials; timeline skipped (curated recaps only)")
+        return state
     start = (now - timedelta(days=2)).strftime("%Y-%m-%dT%H:%M:%SZ")
     try:
         posts, users, newest = fetch_posts(cfg, creds, state.get("since_id"), start)
     except Exception as e:
         log(f"x: FAILED {type(e).__name__}: {e}")
-        return {**state, "mentions": mentions}
-    merge_mentions(mentions, posts, users, now, cfg.get("public_handles", False))
+        return state
+    merge_mentions(mentions, posts, users, now, public)
     linked = sum(1 for p in posts if any(item_key(l) for l in post_links(p)))
     log(f"x: read {len(posts)} posts ({creds['mode']}), {linked} with paper/blog links, {len(mentions)} items tracked")
-    return {"since_id": newest, "mentions": mentions}
+    return {**state, "since_id": newest}

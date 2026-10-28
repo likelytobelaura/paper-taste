@@ -1,3 +1,406 @@
 {
-"mentions": {}
+"curated_seen": [
+"https://latent.space/p/ainews-anthropic-ends-coding-interviews-hunger-beats-tenure/",
+"https://latent.space/p/ainews-anthropic-s1/"
+],
+"mentions": {
+"arxiv:2409.06203": {
+"by": {
+"#57158543a5": 1321,
+"#c4e858f04e": 22571
+},
+"first_seen": "2026-10-28T22:05:34.255750+00:00",
+"url": "http://arxiv.org/abs/2409.06203"
+},
+"arxiv:2610.24365": {
+"by": {
+"#eafd9cb41c": 238
+},
+"first_seen": "2026-10-28T22:05:34.255750+00:00",
+"url": "https://arxiv.org/abs/2610.24365"
+},
+"arxiv:2610.26754": {
+"by": {
+"#7453cef0b1": 0
+},
+"first_seen": "2026-10-28T22:05:34.255750+00:00",
+"url": "https://arxiv.org/abs/2610.26754?utm_source=latent.space&amp;utm_medium=ainews&amp;utm_campaign=lsbeehiiv"
+},
+"arxiv:2610.31421": {
+"by": {
+"#d9eb6558e0": 118
+},
+"first_seen": "2026-10-28T22:05:34.255750+00:00",
+"url": "https://arxiv.org/abs/2610.31421"
+},
+"arxiv:2610.31633": {
+"by": {
+"#657bc8ac6d": 141
+},
+"first_seen": "2026-10-28T22:05:34.255750+00:00",
+"url": "https://alphaxiv.org/abs/2610.31633"
+},
+"arxiv:2610.32555": {
+"by": {
+"#017fd49b99": 127
+},
+"first_seen": "2026-10-28T22:05:34.255750+00:00",
+"url": "https://arxiv.org/abs/2610.32555"
+},
+"arxiv:2610.32813": {
+"by": {
+"#d9eb6558e0": 428
+},
+"first_seen": "2026-10-28T22:05:34.255750+00:00",
+"url": "https://arxiv.org/abs/2610.32813"
+},
+"arxiv:2610.34073": {
+"by": {
+"#d9eb6558e0": 490
+},
+"first_seen": "2026-10-28T22:05:34.255750+00:00",
+"url": "https://arxiv.org/abs/2610.34073"
+},
+"arxiv:2610.34577": {
+"by": {
+"#017fd49b99": 216
+},
+"first_seen": "2026-10-28T22:05:34.255750+00:00",
+"url": "https://arxiv.org/abs/2610.34577"
+},
+"blog:a16z.news/p/charts-of-the-week-attention-is-all": {
+"by": {
+"#f93dee6a5e": 900
+},
+"first_seen": "2026-10-28T22:05:34.255750+00:00",
+"url": "https://www.a16z.news/p/charts-of-the-week-attention-is-all"
+},
+"blog:academy.dair.ai/papers/harnessmm-recursive-self-improvement-for-harness-token-efficiency-2610.32813": {
+"by": {
+"#d9eb6558e0": 428
+},
+"first_seen": "2026-10-28T22:05:34.255750+00:00",
+"url": "https://academy.dair.ai/papers/harnessmm-recursive-self-improvement-for-harness-token-efficiency-2610.32813"
+},
+"blog:academy.dair.ai/papers/how-depth-growth-and-looping-shape-in-context-learning-in-language-models-2610.31421": {
+"by": {
+"#d9eb6558e0": 118
+},
+"first_seen": "2026-10-28T22:05:34.255750+00:00",
+"url": "https://academy.dair.ai/papers/how-depth-growth-and-looping-shape-in-context-learning-in-language-models-2610.31421"
+},
+"blog:academy.dair.ai/papers/memory-tax-dissecting-the-net-value-of-agent-memory-2610.34073": {
+"by": {
+"#d9eb6558e0": 490
+},
+"first_seen": "2026-10-28T22:05:34.255750+00:00",
+"url": "https://academy.dair.ai/papers/memory-tax-dissecting-the-net-value-of-agent-memory-2610.34073"
+},
+"blog:academy.dair.ai/papers/rethinking-verification-in-agent-harnesses-2610.34577": {
+"by": {
+"#017fd49b99": 216
+},
+"first_seen": "2026-10-28T22:05:34.255750+00:00",
+"url": "https://academy.dair.ai/papers/rethinking-verification-in-agent-harnesses-2610.34577"
+},
+"blog:academy.dair.ai/papers/tool-calling-llm-agents-under-realistic-mcp-faults-scale-does-not-purchase-fault-2610.32555": {
+"by": {
+"#017fd49b99": 127
+},
+"first_seen": "2026-10-28T22:05:34.255750+00:00",
+"url": "https://academy.dair.ai/papers/tool-calling-llm-agents-under-realistic-mcp-faults-scale-does-not-purchase-fault-2610.32555"
+},
+"blog:aei.org/economics/chart-of-the-day-or-century-8": {
+"by": {
+"#57158543a5": 1321,
+"#c4e858f04e": 22571
+},
+"first_seen": "2026-10-28T22:05:34.255750+00:00",
+"url": "http://aei.org/economics/chart-of-the-day-or-century-8"
+},
+"blog:aistudio.google.com/learn/introducing-the-gemini-api-cli": {
+"by": {
+"#931b813213": 1792
+},
+"first_seen": "2026-10-28T22:05:34.255750+00:00",
+"url": "https://aistudio.google.com/learn/introducing-the-gemini-api-cli?e=0"
+},
+"blog:anthropic.com/news/expanding-partnership-gsa": {
+"by": {
+"#c29be7a000": 2053
+},
+"first_seen": "2026-10-28T22:05:34.255750+00:00",
+"url": "https://www.anthropic.com/news/expanding-partnership-gsa"
+},
+"blog:anthropic.com/news/s1-sec": {
+"by": {
+"#00b4752113": 898,
+"#3b223b639b": 141,
+"#3bf44bcb2a": 972,
+"#c29be7a000": 18184,
+"#dc560eff39": 51,
+"#eb067295c7": 6341
+},
+"first_seen": "2026-10-28T22:05:34.255750+00:00",
+"url": "https://www.anthropic.com/news/s1-sec"
+},
+"blog:anthropic.com/research/early-progress-drug-development": {
+"by": {
+"#00b4752113": 850,
+"#c29be7a000": 9900,
+"#f7dee99825": 54
+},
+"first_seen": "2026-10-28T22:05:34.255750+00:00",
+"url": "https://www.anthropic.com/research/early-progress-drug-development"
+},
+"blog:axiommath.ai/research/the-enormous-theorem-formalized": {
+"by": {
+"#851d85372e": 297
+},
+"first_seen": "2026-10-28T22:05:34.255750+00:00",
+"url": "https://axiommath.ai/research/the-enormous-theorem-formalized/"
+},
+"blog:bfl.ai/blog/flux-3-image-klein": {
+"by": {
+"#8de1f8b8c0": 3
+},
+"first_seen": "2026-10-28T22:05:34.255750+00:00",
+"url": "https://bfl.ai/blog/flux-3-image-klein"
+},
+"blog:blogs.oracle.com/cloud-infrastructure/positron-atlas-oci-ai-inference": {
+"by": {
+"#b8840f7090": 142
+},
+"first_seen": "2026-10-28T22:05:34.255750+00:00",
+"url": "https://blogs.oracle.com/cloud-infrastructure/positron-atlas-oci-ai-inference"
+},
+"blog:buff.ly/BwV89Tk": {
+"by": {
+"#5d746172c8": 1057
+},
+"first_seen": "2026-10-28T22:05:34.255750+00:00",
+"url": "https://buff.ly/BwV89Tk"
+},
+"blog:coderabbit.ai/blog/one-million-security-scans-and-fixes": {
+"by": {
+"#4fcf67e6c5": 28
+},
+"first_seen": "2026-10-28T22:05:34.255750+00:00",
+"url": "https://www.coderabbit.ai/blog/one-million-security-scans-and-fixes"
+},
+"blog:cohere.com/blog/concerning-behaviour-popular-open-weight-ai-model": {
+"by": {
+"#3698cc543c": 118,
+"#96e0ae1817": 11038,
+"#a8b4b4172b": 1163,
+"#b42884a31a": 598,
+"#c1e1dd8a04": 220
+},
+"first_seen": "2026-10-28T22:05:34.255750+00:00",
+"url": "http://cohere.com/blog/concerning-behaviour-popular-open-weight-ai-model"
+},
+"blog:deepmind.google/blog/genie-4-a-new-generation-of-world-simulation": {
+"by": {
+"#00b4752113": 498,
+"#45e2dacaf2": 1289,
+"#931b813213": 70
+},
+"first_seen": "2026-10-28T22:05:34.255750+00:00",
+"url": "https://deepmind.google/blog/genie-4-a-new-generation-of-world-simulation/?utm_source=x&utm_medium=social&utm_campaign=&utm_content="
+},
+"blog:epoch.ai/benchmarks": {
+"by": {
+"#0b85a61a8d": 688
+},
+"first_seen": "2026-10-28T22:05:34.255750+00:00",
+"url": "https://epoch.ai/benchmarks/"
+},
+"blog:facebookresearch.github.io/RAM/blogs/hackbench": {
+"by": {
+"#d2eb61b631": 335
+},
+"first_seen": "2026-10-28T22:05:34.255750+00:00",
+"url": "https://facebookresearch.github.io/RAM/blogs/hackbench"
+},
+"blog:felixrieseberg.com/hunger-beats-tenure-advice-for-junior-engineers": {
+"by": {
+"#d1c0d8ff6c": 12603
+},
+"first_seen": "2026-10-28T22:05:34.255750+00:00",
+"url": "https://felixrieseberg.com/hunger-beats-tenure-advice-for-junior-engineers/"
+},
+"blog:goo.gle/48idm3b": {
+"by": {
+"#45e2dacaf2": 1289
+},
+"first_seen": "2026-10-28T22:05:34.255750+00:00",
+"url": "https://goo.gle/48idm3b"
+},
+"blog:goo.gle/4iICkyD": {
+"by": {
+"#9fc78a4634": 2305
+},
+"first_seen": "2026-10-28T22:05:34.255750+00:00",
+"url": "https://goo.gle/4iICkyD"
+},
+"blog:hermes-agent.nousresearch.com/docs/plugins/advanced-delegation": {
+"by": {
+"#b4bf89b6f3": 444
+},
+"first_seen": "2026-10-28T22:05:34.255750+00:00",
+"url": "https://hermes-agent.nousresearch.com/docs/plugins/advanced-delegation"
+},
+"blog:hf.co/papers/2609.20807": {
+"by": {
+"#965adfa7ca": 57
+},
+"first_seen": "2026-10-28T22:05:34.255750+00:00",
+"url": "https://hf.co/papers/2609.20807"
+},
+"blog:hi3d.ai/hi3d-1-0-open-source": {
+"by": {
+"#00b4752113": 182
+},
+"first_seen": "2026-10-28T22:05:34.255750+00:00",
+"url": "https://www.hi3d.ai/hi3d-1-0-open-source"
+},
+"blog:jshen.net/flashmap": {
+"by": {
+"#eafd9cb41c": 238
+},
+"first_seen": "2026-10-28T22:05:34.255750+00:00",
+"url": "https://jshen.net/flashmap"
+},
+"blog:kitp.ucsb.edu/statement-by-the-yangmills-working-group": {
+"by": {
+"#5d746172c8": 1057
+},
+"first_seen": "2026-10-28T22:05:34.255750+00:00",
+"url": "https://www.kitp.ucsb.edu/statement-by-the-yangmills-working-group"
+},
+"blog:marktechpost.com/2026/10/25/hugging-face-carbon-x-14b-dna-language-model": {
+"by": {
+"#5ea0e7b274": 62
+},
+"first_seen": "2026-10-28T22:05:34.255750+00:00",
+"url": "https://www.marktechpost.com/2026/10/25/hugging-face-carbon-x-14b-dna-language-model/"
+},
+"blog:openai.com/index/building-scientific-understanding-with-academic-communities": {
+"by": {
+"#025bca8265": 16108,
+"#3a39724bf5": 2
+},
+"first_seen": "2026-10-28T22:05:34.255750+00:00",
+"url": "https://openai.com/index/building-scientific-understanding-with-academic-communities/"
+},
+"blog:platform.modelbest.ai/console/docs/models/document-parse": {
+"by": {
+"#4e55931bad": 34
+},
+"first_seen": "2026-10-28T22:05:34.255750+00:00",
+"url": "http://platform.modelbest.ai/console/docs/models/document-parse"
+},
+"blog:platform.modelbest.ai/console/playground/document-parse": {
+"by": {
+"#4e55931bad": 34
+},
+"first_seen": "2026-10-28T22:05:34.255750+00:00",
+"url": "http://platform.modelbest.ai/console/playground/document-parse"
+},
+"blog:research.google/blog/the-sleep-framework-a-new-way-for-llms-to-retain-knowledge-in-continual-learning": {
+"by": {
+"#9fc78a4634": 2305
+},
+"first_seen": "2026-10-28T22:05:34.255750+00:00",
+"url": "https://research.google/blog/the-sleep-framework-a-new-way-for-llms-to-retain-knowledge-in-continual-learning/?utm_source=twitter&utm_medium=social&utm_campaign=social_post&utm_content=gr-acct"
+},
+"blog:sec.gov/Archives/edgar/data/1835591/000183559124000088/exhibit991-q32024.htm": {
+"by": {
+"#57158543a5": 1321,
+"#c4e858f04e": 22571
+},
+"first_seen": "2026-10-28T22:05:34.255750+00:00",
+"url": "http://sec.gov/Archives/edgar/data/1835591/000183559124000088/exhibit991-q32024.htm"
+},
+"blog:sec.gov/Archives/edgar/data/2130357/000162828026067168/anthropicpbc-sx1.htm": {
+"by": {
+"#bd58758e87": 1174,
+"#e3cb4b9385": 41
+},
+"first_seen": "2026-10-28T22:05:34.255750+00:00",
+"url": "https://www.sec.gov/Archives/edgar/data/2130357/000162828026067168/anthropicpbc-sx1.htm"
+},
+"blog:semianalysis.com/datacenter-industry-model": {
+"by": {
+"#aa19f61d95": 143
+},
+"first_seen": "2026-10-28T22:05:34.255750+00:00",
+"url": "https://semianalysis.com/datacenter-industry-model/"
+},
+"blog:siliconangle.com/2026/10/18/deepseek-releases-updated-v4-1-flash-model-it-says-completes-tasks-faster": {
+"by": {
+"#8de1f8b8c0": 2
+},
+"first_seen": "2026-10-28T22:05:34.255750+00:00",
+"url": "https://siliconangle.com/2026/10/18/deepseek-releases-updated-v4-1-flash-model-it-says-completes-tasks-faster/"
+},
+"blog:texasattorneygeneral.gov/news/releases/attorney-general-paxton-secures-major-agreement-samsung-ensure-texans-are-protected-smart-tvs": {
+"by": {
+"#57158543a5": 1321,
+"#c4e858f04e": 22571
+},
+"first_seen": "2026-10-28T22:05:34.255750+00:00",
+"url": "http://texasattorneygeneral.gov/news/releases/attorney-general-paxton-secures-major-agreement-samsung-ensure-texans-are-protected-smart-tvs"
+},
+"blog:thehackernews.com/2026/10/php2shell-exploitation-hits-government.html": {
+"by": {
+"#baba6c442b": 515
+},
+"first_seen": "2026-10-28T22:05:34.255750+00:00",
+"url": "https://thehackernews.com/2026/10/php2shell-exploitation-hits-government.html"
+},
+"blog:tinker-docs.thinkingmachines.ai/tinker/losses/stable-reinforce": {
+"by": {
+"#821db3ebec": 1105
+},
+"first_seen": "2026-10-28T22:05:34.255750+00:00",
+"url": "https://tinker-docs.thinkingmachines.ai/tinker/losses/stable-reinforce/"
+},
+"blog:unsloth.ai/docs/models/minimax-m3.1-flash": {
+"by": {
+"#3c9c7f80c3": 294
+},
+"first_seen": "2026-10-28T22:05:34.255750+00:00",
+"url": "https://unsloth.ai/docs/models/minimax-m3.1-flash"
+},
+"blog:vllm.ai/blog/2026-10-23-deepseek-v41-flash-pd-wide-ep": {
+"by": {
+"#c29a799240": 273,
+"#cc60d3978f": 100
+},
+"first_seen": "2026-10-28T22:05:34.255750+00:00",
+"url": "https://vllm.ai/blog/2026-10-23-deepseek-v41-flash-pd-wide-ep"
+},
+"blog:wapo.st/4smNlsC": {
+"by": {
+"#82d2c273fb": 1602
+},
+"first_seen": "2026-10-28T22:05:34.255750+00:00",
+"url": "https://wapo.st/4smNlsC"
+},
+"blog:xint.io/blog/compaction-smuggling-reasoning-traces": {
+"by": {
+"#9dca26134c": 425
+},
+"first_seen": "2026-10-28T22:05:34.255750+00:00",
+"url": "https://xint.io/blog/compaction-smuggling-reasoning-traces"
+},
+"blog:ydove0324.github.io/hx_resume/blog/researchboost": {
+"by": {
+"#97f9b3c400": 19
+},
+"first_seen": "2026-10-28T22:05:34.255750+00:00",
+"url": "https://ydove0324.github.io/hx_resume/blog/researchboost/"
+}
+}
 }

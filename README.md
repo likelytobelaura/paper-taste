@@ -5,7 +5,7 @@ A daily, quality-ranked feed of new AI research, built to be read by **your codi
 1. **Scan**: every new arXiv submission in cs.LG / cs.CL / cs.AI / cs.CV / stat.ML / cs.NE / cs.RO / cs.MA,
    plus ~35 lab and researcher blogs (Anthropic, Transformer Circuits, DeepMind, Google Research, OpenAI,
    Thinking Machines, Goodfire, METR, Redwood, Lilian Weng, Karpathy, Sander Dieleman, …). See [`sources.toml`](sources.toml).
-   Optionally, also your **X timeline**: papers and posts the people you follow are sharing.
+   Plus **AI Twitter**: posts linked by daily AI-X recap newsletters, resolved for free, and optionally your own X timeline.
 2. **Filter**: each item gets a 0–100 quality score from visible evidence of thoroughness (ablations,
    tuned baselines, seeds and error bars, scale sweeps, theory, released code, length, venue), community
    attention (Hugging Face daily-paper upvotes), novelty against the last 60 days, and a hype penalty.
@@ -64,17 +64,28 @@ The heuristic is a prior; the taste comes from the second pass in [TASTE.md](TAS
 the new `data/` and `DIGEST.md`. Add an `S2_API_KEY` repository secret to enable the author signal.
 Each day keeps the top 35% of arXiv papers by quality, plus anything with ≥5 HF upvotes.
 
-## X timeline
+## X / AI Twitter
 
-With X credentials set, each run reads new posts from your home timeline. It extracts arXiv,
-Hugging Face papers, alphaXiv, and blog links, and uses them three ways:
+**Free, on by default:** X has no free read API, and Nitter/xcancel have been offline since October 2026.
+So paper-taste reads the newsletters that already digest AI Twitter every day:
+[AINews](https://news.smol.ai) (now published inside Latent Space), DAIR.AI, and AlphaSignal. It
+collects the X posts they link, then looks each one up through [FxTwitter](https://github.com/FxEmbed/FxEmbed)'s
+free public API (`api.fxtwitter.com`, no auth) to get its links and like count. Shortened links
+(goo.gle, buff.ly, …) are expanded. A typical AINews issue links 80–150 posts. The result reflects
+the AI-Twitter consensus rather than your personal timeline. Add or remove recaps under
+`[[x.curated_feeds]]` in `sources.toml`.
+
+**Optional, paid: your own timeline.** With X API credentials set, each run also reads new posts
+from your home timeline.
+
+From both sources, arXiv, Hugging Face papers, alphaXiv, and blog links are extracted and used three ways:
 
 - **Attention signal:** how many distinct accounts shared an item, with likes as a tiebreaker. For
   papers this is combined with HF upvotes.
 - **Candidates the crawl missed:** shared arXiv papers up to 30 days old or outside the 8 categories,
   and posts from blogs not in `sources.toml` once at least 2 accounts share them. These still have to
   pass the research gate.
-- **A digest section,** "On your X timeline".
+- **A digest section,** "Shared on X".
 
 Credentials, as env vars or repo secrets:
 

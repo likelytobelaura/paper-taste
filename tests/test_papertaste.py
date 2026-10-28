@@ -194,6 +194,37 @@ class XTest(unittest.TestCase):
         self.assertEqual(calls[1][1]["since_id"], "99")
         self.assertEqual(calls[2][1]["max_results"], 50)  # second page only asks for what the cap allows
 
+    def test_curated_recaps_resolve_posts_once(self):
+        now = datetime.now(timezone.utc)
+        day = now.strftime("%a, %d %b %Y %H:%M:%S GMT")
+        feed = f"""<?xml version="1.0"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+<channel><item><title>[AINews] Big day</title><link>https://latent.space/p/ainews-1</link><pubDate>{day}</pubDate>
+<content:encoded><![CDATA[<a href="https://x.com/a/status/111">x</a> <a href="https://twitter.com/b/status/222">y</a>
+<a href="https://x.com/a/status/111">dup</a> <a href="https://arxiv.org/abs/2610.00009">paper</a>]]></content:encoded></item>
+<item><title>Podcast episode</title><link>https://latent.space/p/pod</link><pubDate>{day}</pubDate>
+<content:encoded><![CDATA[<a href="https://x.com/c/status/333">z</a>]]></content:encoded></item></channel></rss>""".encode()
+
+        def fx(status_id):
+            link = {"111": "https://arxiv.org/abs/2610.00001", "222": "https://arxiv.org/pdf/2610.00001"}[status_id]
+            return {"id": status_id, "author_id": "u" + status_id, "text": "", "public_metrics": {"like_count": 10},
+                    "entities": {"urls": [{"expanded_url": link}]}}
+
+        cfg = {"curated_feeds": [{"name": "AINews", "url": "https://feed", "title_prefix": "[AINews]"}]}
+        state = {}
+        with mock.patch.object(xsource, "http_get", return_value=feed), \
+                mock.patch.object(xsource, "fx_post", side_effect=fx) as lookups, \
+                mock.patch.object(xsource.time, "sleep"), mock.patch.dict("os.environ", {}, clear=True):
+            out = xsource.update(cfg, state, now)
+            again = xsource.update(cfg, out, now)
+        self.assertEqual(lookups.call_count, 2)  # deduped, podcast skipped, issue not re-read
+        self.assertEqual(len(out["mentions"]["arxiv:2610.00001"]["by"]), 2)
+        self.assertEqual(len(out["mentions"]["arxiv:2610.00009"]["by"]), 1)  # linked by the newsletter itself
+        self.assertEqual(again["mentions"], out["mentions"])
+
+    def test_non_article_links_ignored(self):
+        for link in ("https://huggingface.co/openbmb/MiniCPM", "https://forms.gle/abc", "https://youtu.be/x"):
+            self.assertIsNone(xsource.item_key(link))
+
     def test_untracked_blog_needs_enough_sharers(self):
         now = datetime.now(timezone.utc)
         mentions = {
