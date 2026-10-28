@@ -1,0 +1,235 @@
+# Where paper-taste looks for new research.
+#
+# tier: prior on how often a source publishes careful, original research.
+#   1 = frontier-lab research blogs and researchers whose posts are routinely paper-grade
+#   2 = solid research groups / technical writers
+#   3 = mixed (product + research); only research-looking posts get through
+# Feeds use type = "rss" (RSS or Atom). Sites without a feed use type = "html":
+# the index page is scraped for links matching `link`, and each new post page is
+# opened once to read its date and description.
+
+[arxiv]
+categories = ["cs.LG", "cs.CL", "cs.AI", "cs.CV", "stat.ML", "cs.NE", "cs.RO", "cs.MA"]
+lookback_days = 4
+# keep this fraction of each day's arXiv papers (by quality) in data/items
+keep_fraction = 0.35
+
+[blogs]
+lookback_days = 21
+
+[[blog]]
+name = "Anthropic Research"
+type = "html"
+url = "https://www.anthropic.com/research"
+link = '^/research/[a-z0-9-]{6,}$'
+tier = 1
+
+[[blog]]
+name = "Anthropic Alignment Science"
+type = "html"
+url = "https://alignment.anthropic.com/"
+link = '^(https://alignment\.anthropic\.com)?/?20\d\d/[a-z0-9-]+/?$'
+tier = 1
+
+[[blog]]
+name = "Transformer Circuits"
+type = "html"
+url = "https://transformer-circuits.pub/"
+link = '^/?20\d\d/[a-z0-9-]+/(index\.html)?$'
+tier = 1
+
+[[blog]]
+name = "OpenAI"
+type = "rss"
+url = "https://openai.com/news/rss.xml"
+tier = 3
+
+[[blog]]
+name = "Google DeepMind"
+type = "rss"
+url = "https://deepmind.google/blog/rss.xml"
+tier = 2
+
+[[blog]]
+name = "Google Research"
+type = "rss"
+url = "https://research.google/blog/rss/"
+tier = 2
+
+[[blog]]
+name = "Thinking Machines"
+type = "html"
+url = "https://thinkingmachines.ai/blog/"
+link = '^/blog/[a-z0-9-]{6,}/?$'
+tier = 1
+
+[[blog]]
+name = "Goodfire Research"
+type = "html"
+url = "https://www.goodfire.ai/research"
+link = '^/research/[a-z0-9-]{6,}$'
+tier = 1
+
+[[blog]]
+name = "Apollo Research"
+type = "html"
+url = "https://www.apolloresearch.ai/research"
+link = '^https://www\.apolloresearch\.ai/(blog|research)/[a-z0-9-]{6,}$'
+tier = 2
+
+[[blog]]
+name = "METR"
+type = "rss"
+url = "https://metr.org/blog/rss.xml"
+tier = 1
+
+[[blog]]
+name = "Hazy Research"
+type = "html"
+url = "https://hazyresearch.stanford.edu/blog"
+link = '^/blog/20\d\d-\d\d-\d\d-[a-z0-9-]+$'
+tier = 2
+
+[[blog]]
+name = "BAIR"
+type = "rss"
+url = "https://bair.berkeley.edu/blog/feed.xml"
+tier = 2
+
+[[blog]]
+name = "CMU ML Blog"
+type = "rss"
+url = "https://blog.ml.cmu.edu/feed/"
+tier = 2
+
+[[blog]]
+name = "Ai2"
+type = "rss"
+url = "https://allenai.org/rss.xml"
+tier = 2
+
+[[blog]]
+name = "Hugging Face"
+type = "rss"
+url = "https://huggingface.co/blog/feed.xml"
+tier = 3
+
+[[blog]]
+name = "Microsoft Research"
+type = "rss"
+url = "https://microsoft.com/en-us/research/feed/"
+tier = 3
+
+[[blog]]
+name = "PyTorch"
+type = "rss"
+url = "https://pytorch.org/blog/feed.xml"
+tier = 3
+
+[[blog]]
+name = "Answer.AI"
+type = "rss"
+url = "https://www.answer.ai/index.xml"
+tier = 2
+
+[[blog]]
+name = "Together AI"
+type = "rss"
+url = "https://www.together.ai/blog/rss.xml"
+tier = 3
+
+[[blog]]
+name = "Mistral AI"
+type = "rss"
+url = "https://mistral.ai/rss.xml"
+tier = 3
+
+[[blog]]
+name = "AI Alignment Forum"
+type = "rss"
+url = "https://www.alignmentforum.org/feed.xml"
+tier = 2
+
+[[blog]]
+name = "Redwood Research"
+type = "rss"
+url = "https://redwoodresearch.substack.com/feed"
+tier = 2
+
+[[blog]]
+name = "Lilian Weng"
+type = "rss"
+url = "https://lilianweng.github.io/index.xml"
+tier = 1
+
+[[blog]]
+name = "Andrej Karpathy"
+type = "rss"
+url = "https://karpathy.github.io/feed.xml"
+tier = 1
+
+[[blog]]
+name = "Chris Olah"
+type = "rss"
+url = "https://colah.github.io/rss.xml"
+tier = 1
+
+[[blog]]
+name = "Sander Dieleman"
+type = "rss"
+url = "https://sander.ai/feed.xml"
+tier = 1
+
+[[blog]]
+name = "Yang Song"
+type = "rss"
+url = "https://yang-song.net/feed.xml"
+tier = 1
+
+[[blog]]
+name = "Off the Convex Path"
+type = "rss"
+url = "https://www.offconvex.org/feed.xml"
+tier = 1
+
+[[blog]]
+name = "Windows On Theory (Boaz Barak)"
+type = "rss"
+url = "https://windowsontheory.org/feed/"
+tier = 2
+
+[[blog]]
+name = "inFERENCe (Ferenc Huszár)"
+type = "rss"
+url = "https://www.inference.vc/rss/"
+tier = 2
+
+[[blog]]
+name = "Scientific Spaces (Su Jianlin)"
+type = "rss"
+url = "https://kexue.fm/feed"
+tier = 2
+
+[[blog]]
+name = "Interconnects (Nathan Lambert)"
+type = "rss"
+url = "https://www.interconnects.ai/feed"
+tier = 2
+
+[[blog]]
+name = "Ahead of AI (Sebastian Raschka)"
+type = "rss"
+url = "https://magazine.sebastianraschka.com/feed"
+tier = 2
+
+[[blog]]
+name = "Jay Alammar"
+type = "rss"
+url = "https://jalammar.github.io/feed.xml"
+tier = 2
+
+[[blog]]
+name = "Gwern"
+type = "rss"
+url = "https://gwern.net/feed"
+tier = 2
