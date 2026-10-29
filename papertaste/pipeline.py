@@ -119,6 +119,8 @@ def run(config=None, use_s2=True, now=None):
     SEEN.write_text(json.dumps(dict(sorted(seen.items())), indent=0) + "\n")
     X_STATE.write_text(json.dumps(x_state, indent=0, sort_keys=True) + "\n")
     write_digest(now)
+    from . import site
+    site.write(now=now)
     log(f"kept {len(kept)} items")
     return kept
 

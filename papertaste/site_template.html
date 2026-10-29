@@ -1,0 +1,341 @@
+<title>Paper-taste Reading List</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<meta name="description" content="Today's best new AI research papers and lab posts, ranked by evidence of thoroughness, attention, and recency.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Public+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: a reading list. Left rail = controls (sticky on desktop, stacked on phones); main column =
+   ranked entries in a ledger, each with a rank numeral, title, provenance line and evidence chips. */
+:root {
+  --bg: #f6f8fa;
+  --surface: #ffffff;
+  --fg: #15202b;
+  --muted: #586776;
+  --line: #d9e0e7;
+  --accent: #2c56c9;
+  --accent-soft: #e3eafb;
+  --warn: #b5620e;
+  --warn-soft: #f8ead9;
+  --good: #23784c;
+  --good-soft: #def0e6;
+  --display: "Instrument Serif", "Iowan Old Style", Georgia, serif;
+  --body: "Public Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --mono: "JetBrains Mono", ui-monospace, "SF Mono", Menlo, monospace;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #0e131a; --surface: #151c25; --fg: #e4e9ef; --muted: #93a1b0; --line: #26313d;
+    --accent: #84a5ff; --accent-soft: #1d2a47; --warn: #eea25a; --warn-soft: #3a2a18;
+    --good: #5cc28c; --good-soft: #17301f; color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #0e131a; --surface: #151c25; --fg: #e4e9ef; --muted: #93a1b0; --line: #26313d;
+  --accent: #84a5ff; --accent-soft: #1d2a47; --warn: #eea25a; --warn-soft: #3a2a18;
+  --good: #5cc28c; --good-soft: #17301f; color-scheme: dark;
+}
+* { box-sizing: border-box; }
+body {
+  background: var(--bg); color: var(--fg); font-family: var(--body); font-size: 15.5px; line-height: 1.55;
+  padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px));
+  padding-block: 36px 72px;
+}
+.wrap { max-width: 1120px; margin: 0 auto; display: grid; gap: 34px; }
+h1, h2, h3 { margin: 0; font-weight: 400; text-wrap: balance; }
+p { margin: 0; }
+a { color: var(--accent); }
+a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visible, select:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+.eyebrow { font-family: var(--mono); font-size: 0.72rem; letter-spacing: 0.08em; text-transform: uppercase; color: var(--accent); }
+.muted { color: var(--muted); }
+.num { font-variant-numeric: tabular-nums; }
+
+header.top { display: grid; gap: 12px; }
+header.top h1 { font-family: var(--display); font-size: clamp(2.4rem, 6vw, 3.5rem); line-height: 1.02; }
+header.top h1 em { font-style: italic; color: var(--accent); }
+.sub { color: var(--muted); max-width: 70ch; }
+.stats { display: flex; flex-wrap: wrap; gap: 8px 22px; font-family: var(--mono); font-size: 0.8rem; color: var(--muted); }
+.stats b { color: var(--fg); font-weight: 500; }
+
+.picks { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 18px; }
+@media (max-width: 760px) { .picks { grid-template-columns: minmax(0, 1fr); } }
+.pick { background: var(--surface); border: 1px solid var(--line); border-radius: 12px; padding: 20px 22px; display: grid; gap: 10px; align-content: start; min-width: 0; }
+.pick .eyebrow { color: var(--good); }
+.pick h2 { font-family: var(--display); font-size: 1.6rem; line-height: 1.15; }
+.pick h2 a { color: inherit; text-decoration: none; }
+.pick h2 a:hover { text-decoration: underline; }
+.pick p.sum { font-size: 0.92rem; color: var(--muted); }
+
+.layout { display: grid; grid-template-columns: 270px minmax(0, 1fr); gap: 34px; align-items: start; }
+@media (max-width: 860px) { .layout { grid-template-columns: minmax(0, 1fr); gap: 22px; } }
+aside.controls { position: sticky; top: calc(env(safe-area-inset-top, 0px) + 16px); display: grid; gap: 18px; }
+@media (max-width: 860px) { aside.controls { position: static; } }
+.ctl { display: grid; gap: 6px; }
+.ctl > label, .ctl > .lab { font-family: var(--mono); font-size: 0.7rem; letter-spacing: 0.07em; text-transform: uppercase; color: var(--muted); }
+.seg { display: flex; border: 1px solid var(--line); border-radius: 8px; overflow: hidden; background: var(--surface); }
+.seg button { flex: 1; font: inherit; font-size: 0.85rem; background: transparent; color: var(--fg); border: 0; padding: 7px 8px; cursor: pointer; }
+.seg button + button { border-left: 1px solid var(--line); }
+.seg button[aria-pressed="true"] { background: var(--accent); color: var(--surface); }
+input[type=search], textarea, select {
+  font: inherit; font-size: 0.9rem; color: var(--fg); background: var(--surface); border: 1px solid var(--line);
+  border-radius: 8px; padding: 8px 10px; width: 100%;
+}
+textarea { min-height: 92px; resize: vertical; line-height: 1.45; }
+.hint { font-size: 0.78rem; color: var(--muted); }
+.toggle { display: flex; gap: 8px; align-items: center; font-size: 0.88rem; }
+.ex-btns { display: flex; flex-wrap: wrap; gap: 6px; }
+.ex-btns button { font: inherit; font-size: 0.75rem; border: 1px solid var(--line); background: var(--surface); color: var(--fg); border-radius: 999px; padding: 3px 10px; cursor: pointer; }
+.ex-btns button:hover { border-color: var(--accent); }
+.clear { font: inherit; font-size: 0.8rem; background: none; border: 0; color: var(--accent); padding: 0; cursor: pointer; justify-self: start; }
+
+.listhead { display: flex; justify-content: space-between; align-items: baseline; gap: 12px; flex-wrap: wrap; border-bottom: 2px solid var(--fg); padding-bottom: 8px; }
+.listhead h2 { font-family: var(--display); font-size: 1.7rem; }
+.listhead .count { font-family: var(--mono); font-size: 0.8rem; color: var(--muted); }
+ol.list { list-style: none; margin: 0; padding: 0; display: grid; }
+li.entry { display: grid; grid-template-columns: 3.2rem minmax(0, 1fr); gap: 14px; padding: 18px 0; border-bottom: 1px solid var(--line); }
+.rank { font-family: var(--display); font-size: 1.9rem; line-height: 1; color: var(--muted); text-align: right; font-variant-numeric: tabular-nums; }
+.entry .body { display: grid; gap: 7px; min-width: 0; }
+.entry h3 { font-family: var(--body); font-weight: 600; font-size: 1.04rem; line-height: 1.35; }
+.entry h3 a { color: var(--fg); text-decoration: none; }
+.entry h3 a:hover { color: var(--accent); text-decoration: underline; }
+.prov { font-size: 0.82rem; color: var(--muted); display: flex; flex-wrap: wrap; gap: 4px 12px; align-items: center; }
+.kind { font-family: var(--mono); font-size: 0.68rem; letter-spacing: 0.06em; text-transform: uppercase; padding: 1px 7px; border-radius: 4px; background: var(--accent-soft); color: var(--accent); }
+.kind.blog { background: var(--good-soft); color: var(--good); }
+.q { font-family: var(--mono); font-size: 0.78rem; color: var(--fg); }
+.qbar { display: inline-block; width: 44px; height: 6px; background: var(--accent-soft); border-radius: 3px; vertical-align: middle; position: relative; overflow: hidden; margin-left: 4px; }
+.qbar i { position: absolute; inset: 0 auto 0 0; background: var(--accent); }
+.chips { display: flex; flex-wrap: wrap; gap: 5px; }
+.chip { font-size: 0.73rem; padding: 2px 8px; border-radius: 999px; background: var(--accent-soft); color: var(--fg); }
+.chip.social { background: var(--good-soft); }
+.chip.flag { background: var(--warn-soft); color: var(--warn); }
+.chip.match { background: transparent; border: 1px solid var(--accent); color: var(--accent); }
+details.sum summary { cursor: pointer; font-size: 0.8rem; color: var(--muted); list-style: none; }
+details.sum summary::-webkit-details-marker { display: none; }
+details.sum summary::before { content: "▸ "; }
+details.sum[open] summary::before { content: "▾ "; }
+details.sum p { font-size: 0.9rem; color: var(--muted); margin-top: 6px; max-width: 75ch; }
+.links { display: flex; gap: 12px; font-size: 0.8rem; flex-wrap: wrap; }
+.more { font: inherit; justify-self: center; margin-top: 18px; padding: 9px 18px; border-radius: 8px; border: 1px solid var(--line); background: var(--surface); color: var(--fg); cursor: pointer; }
+.empty { padding: 28px 0; color: var(--muted); }
+footer { font-size: 0.82rem; color: var(--muted); border-top: 1px solid var(--line); padding-top: 16px; display: grid; gap: 6px; }
+@media (max-width: 520px) { li.entry { grid-template-columns: 2.2rem minmax(0, 1fr); gap: 10px; } .rank { font-size: 1.4rem; } }
+</style>
+
+<div class="wrap">
+  <header class="top">
+    <div class="eyebrow">paper-taste · updated <span id="updated"></span></div>
+    <h1>What's worth reading in <em>AI research</em> this week</h1>
+    <p class="sub">New arXiv papers, lab write-ups and researcher posts, ranked by visible evidence of thoroughness (ablations,
+      baselines, variance, released code), by attention on Hugging Face, X, newsletters and Hacker News, and by how new they are.
+      Type your interests to re-rank the list for you.</p>
+    <div class="stats" id="stats"></div>
+  </header>
+
+  <section class="picks" id="picks" aria-label="Top picks"></section>
+
+  <div class="layout">
+    <aside class="controls" aria-label="Filters">
+      <div class="ctl">
+        <span class="lab" id="kind-lab">Show</span>
+        <div class="seg" role="group" aria-labelledby="kind-lab">
+          <button type="button" data-kind="all" aria-pressed="true">All</button>
+          <button type="button" data-kind="paper" aria-pressed="false">Papers</button>
+          <button type="button" data-kind="blog" aria-pressed="false">Posts</button>
+        </div>
+      </div>
+      <div class="ctl">
+        <label for="interests">Your interests</label>
+        <textarea id="interests" placeholder="e.g. RL post-training for LLMs, reward hacking, verifiers, process reward models"></textarea>
+        <div class="ex-btns" id="ex-btns"></div>
+        <span class="hint">Matching items rise: 60% match, 40% quality × recency, like <code>papertaste recommend</code>. Saved in this browser only.</span>
+        <button type="button" class="clear" id="clear-int">Clear interests</button>
+      </div>
+      <div class="ctl">
+        <label for="q">Search titles and abstracts</label>
+        <input type="search" id="q" placeholder="sparse autoencoder">
+      </div>
+      <div class="ctl">
+        <label for="sort">Sort by</label>
+        <select id="sort">
+          <option value="rank">Quality × recency</option>
+          <option value="quality">Quality only</option>
+          <option value="new">Newest</option>
+          <option value="social">Most shared</option>
+        </select>
+      </div>
+      <div class="ctl">
+        <span class="lab" id="win-lab">Published in the last</span>
+        <div class="seg" role="group" aria-labelledby="win-lab">
+          <button type="button" data-days="3" aria-pressed="false">3 days</button>
+          <button type="button" data-days="7" aria-pressed="true">7 days</button>
+          <button type="button" data-days="14" aria-pressed="false">14 days</button>
+        </div>
+      </div>
+      <label class="toggle"><input type="checkbox" id="shared"> Only items people are sharing</label>
+    </aside>
+
+    <section aria-labelledby="list-title" style="display:grid;min-width:0">
+      <div class="listhead"><h2 id="list-title">Reading list</h2><span class="count num" id="count"></span></div>
+      <ol class="list" id="list"></ol>
+      <button type="button" class="more" id="more" hidden>Show 30 more</button>
+    </section>
+  </div>
+
+  <footer>
+    <p>Scores are a first pass from metadata and abstracts, not a verdict: read <a href="https://github.com/likelytobelaura/paper-taste/blob/main/TASTE.md">TASTE.md</a>
+      for the rubric to apply before trusting a pick. For recommendations matched to your code, point your agent at
+      <a href="https://github.com/likelytobelaura/paper-taste">likelytobelaura/paper-taste</a> and follow AGENTS.md.</p>
+    <p>Sources: arXiv (26 categories), Hugging Face daily papers, 111 lab and researcher blogs, AINews and 12 newsletters (X posts resolved via FxTwitter), Hacker News, Reddit, Lobsters.</p>
+  </footer>
+</div>
+
+<script>
+const DATA = /*__DATA__*/{"generated": "", "items": []};
+const STOP = new Set("a an and are as at be by for from has have in into is it its of on or that the their this to was we were with using use based via our new show paper method methods model models results task tasks approach large".split(" "));
+const SOCIAL = ["shared on X", "Hacker News:", "Reddit:", "Lobsters:", "in newsletters:"];
+const EXAMPLES = [
+  ["RL post-training", "RL post-training of LLMs, reward models, verifiers, GRPO, reward hacking"],
+  ["Interpretability", "mechanistic interpretability, sparse autoencoders, features, circuits, activation steering, probing"],
+  ["Efficient training", "optimizers, Muon, learning rate schedules, mixed precision, scaling laws, compute-efficient pretraining"],
+  ["Agents & evals", "LLM agents, tool use, benchmarks, evaluation methodology, contamination, LLM-as-judge"],
+  ["Inference", "inference efficiency, KV cache, speculative decoding, quantization, serving, MoE"],
+];
+const $ = (id) => document.getElementById(id);
+const now = Date.now();
+const store = {
+  get(k) { try { return localStorage.getItem(k); } catch (e) { return null; } },
+  set(k, v) { try { localStorage.setItem(k, v); } catch (e) {} },
+};
+const esc = (s) => String(s ?? "").replace(/[&<>"]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
+
+const items = DATA.items.map((it) => {
+  const age = (now - Date.parse(it.published)) / 86400000;
+  const social = it.reasons.filter((r) => SOCIAL.some((p) => r.startsWith(p)));
+  const sharers = social.reduce((n, r) => n + (+(r.match(/\b(\d+)\s+(account|submission)/) || [0, r.startsWith("in newsletters") ? r.split(",").length : 0])[1]), 0);
+  const text = (it.title + " " + it.title + " " + (it.summary || "")).toLowerCase();
+  return { ...it, age, social, sharers, text, rank: it.quality * Math.pow(0.5, Math.max(0, age) / 10) };
+});
+// within-kind quality percentile, as recommend.py does (blog and paper scores are on different scales)
+for (const k of ["paper", "blog"]) {
+  const qs = items.filter((i) => i.kind === k).map((i) => i.quality).sort((a, b) => a - b);
+  for (const i of items) if (i.kind === k) {
+    let lo = 0, hi = qs.length; while (lo < hi) { const m = (lo + hi) >> 1; if (qs[m] < i.quality) lo = m + 1; else hi = m; }
+    i.qpct = lo / Math.max(1, qs.length - 1);
+  }
+}
+// document frequency for interest matching
+const DF = new Map();
+for (const i of items) for (const t of new Set(tokens(i.text))) DF.set(t, (DF.get(t) || 0) + 1);
+function tokens(s) {
+  const w = (s.toLowerCase().match(/[a-z][a-z0-9-]+/g) || []).filter((t) => t.length > 2 && !STOP.has(t));
+  return w.concat(w.slice(1).map((t, k) => w[k] + " " + t));
+}
+
+const st = { kind: "all", days: 7, q: "", sort: "rank", shared: false, interests: store.get("pt-interests") || "", shown: 30 };
+
+function interestScores() {
+  const terms = [...new Set(tokens(st.interests))].filter((t) => DF.has(t));
+  if (!terms.length) return null;
+  const N = items.length, idf = Object.fromEntries(terms.map((t) => [t, Math.log((1 + N) / (1 + DF.get(t))) + 1]));
+  const scores = new Map();
+  let max = 0;
+  for (const i of items) {
+    let s = 0; const hits = [];
+    for (const t of terms) if (i.text.includes(t)) { s += idf[t] * (t.includes(" ") ? 2 : 1); hits.push(t); }
+    scores.set(i.id, { s, hits }); max = Math.max(max, s);
+  }
+  for (const v of scores.values()) v.n = max ? v.s / max : 0;
+  return scores;
+}
+
+function view() {
+  const scores = interestScores();
+  let rows = items.filter((i) => i.age <= st.days && (st.kind === "all" || i.kind === st.kind) && (!st.shared || i.social.length));
+  if (st.q) { const q = st.q.toLowerCase(); rows = rows.filter((i) => i.text.includes(q) || (i.source || "").toLowerCase().includes(q)); }
+  const key = {
+    rank: (i) => scores ? 0.6 * scores.get(i.id).n + 0.4 * i.qpct * Math.pow(0.5, Math.max(0, i.age) / 10) : (st.kind === "all" ? i.qpct * Math.pow(0.5, Math.max(0, i.age) / 10) : i.rank),
+    quality: (i) => (st.kind === "all" ? i.qpct : i.quality),
+    new: (i) => -i.age,
+    social: (i) => i.sharers * 1000 + i.rank,
+  }[st.sort];
+  rows.sort((a, b) => key(b) - key(a));
+  return { rows, scores };
+}
+
+function provenance(i) {
+  const who = i.kind === "blog" ? esc(i.source) : esc((i.authors || []).join(", ")) + ((i.n_authors || 0) > 3 ? " et al." : "");
+  const d = new Date(i.published), date = d.toLocaleDateString(undefined, { month: "short", day: "numeric" });
+  const ago = i.age < 1 ? "today" : `${Math.floor(i.age)}d ago`;
+  return `<span class="kind ${i.kind}">${i.kind === "blog" ? "post" : "paper"}</span><span>${who}</span><span>${date} · ${ago}</span>
+    <span class="q" title="Heuristic quality, 0 to 100">quality ${Math.round(i.quality)}<span class="qbar"><i style="width:${i.quality}%"></i></span></span>`;
+}
+function chips(i, hits) {
+  const ev = i.reasons.filter((r) => !SOCIAL.some((p) => r.startsWith(p)) && !r.startsWith("source tier")).slice(0, 5);
+  return (hits || []).slice(0, 3).map((h) => `<span class="chip match">matches “${esc(h)}”</span>`).join("") +
+    ev.map((r) => `<span class="chip">${esc(r)}</span>`).join("") +
+    i.social.map((r) => `<span class="chip social">${esc(r)}</span>`).join("") +
+    i.flags.map((f) => `<span class="chip flag">${esc(f)}</span>`).join("");
+}
+function links(i) {
+  const out = [`<a href="${esc(i.url)}">${i.kind === "paper" ? "abstract" : "read post"}</a>`];
+  if (i.kind === "paper" && i.id.startsWith("arxiv:")) {
+    const a = i.id.slice(6);
+    out.push(`<a href="https://arxiv.org/pdf/${a}">PDF</a>`, `<a href="https://arxiv.org/html/${a}">HTML</a>`, `<a href="https://huggingface.co/papers/${a}">HF</a>`, `<a href="https://www.alphaxiv.org/abs/${a}">alphaXiv</a>`);
+  }
+  if (i.github) out.push(`<a href="${esc(i.github)}">code</a>`);
+  return out.join("");
+}
+
+function render() {
+  const { rows, scores } = view();
+  $("count").textContent = `${rows.length} item${rows.length === 1 ? "" : "s"}${scores ? " · personalised" : ""}`;
+  $("list").innerHTML = rows.slice(0, st.shown).map((i, k) => {
+    const hits = scores && scores.get(i.id).hits;
+    return `<li class="entry"><span class="rank">${k + 1}</span><div class="body">
+      <h3><a href="${esc(i.url)}">${esc(i.title)}</a></h3>
+      <div class="prov">${provenance(i)}</div>
+      <div class="chips">${chips(i, hits)}</div>
+      ${i.summary ? `<details class="sum"><summary>Abstract</summary><p>${esc(i.summary)}</p></details>` : ""}
+      <div class="links">${links(i)}</div></div></li>`;
+  }).join("") || `<li class="empty">Nothing matches these filters. Widen the window or clear the search.</li>`;
+  $("more").hidden = rows.length <= st.shown;
+}
+
+function renderPicks() {
+  const fresh = items.filter((i) => i.age <= 7);
+  const best = (k) => fresh.filter((i) => i.kind === k).sort((a, b) => b.rank - a.rank)[0];
+  $("picks").innerHTML = [["paper", "Top paper this week"], ["blog", "Top post this week"]].map(([k, label]) => {
+    const i = best(k); if (!i) return "";
+    return `<article class="pick"><span class="eyebrow">${label}</span><h2><a href="${esc(i.url)}">${esc(i.title)}</a></h2>
+      <div class="prov">${provenance(i)}</div><div class="chips">${chips(i)}</div>
+      ${i.summary ? `<p class="sum">${esc(i.summary.length > 260 ? i.summary.slice(0, 260).replace(/\s\S*$/, "") + "…" : i.summary)}</p>` : ""}</article>`;
+  }).join("");
+}
+
+function initControls() {
+  $("updated").textContent = DATA.generated;
+  const p = items.filter((i) => i.kind === "paper").length, b = items.length - p, s = items.filter((i) => i.social.length).length;
+  $("stats").innerHTML = `<span><b>${p}</b> papers</span><span><b>${b}</b> posts</span><span><b>${s}</b> being shared</span><span>last 14 days, after triage</span>`;
+  $("ex-btns").innerHTML = EXAMPLES.map(([l, t]) => `<button type="button" data-t="${esc(t)}">${l}</button>`).join("");
+  $("ex-btns").addEventListener("click", (e) => { const t = e.target.dataset.t; if (t) { $("interests").value = t; setInterests(t); } });
+  $("interests").value = st.interests;
+  let timer;
+  $("interests").addEventListener("input", (e) => { clearTimeout(timer); timer = setTimeout(() => setInterests(e.target.value), 200); });
+  $("clear-int").addEventListener("click", () => { $("interests").value = ""; setInterests(""); });
+  $("q").addEventListener("input", (e) => { st.q = e.target.value.trim(); st.shown = 30; render(); });
+  $("sort").addEventListener("change", (e) => { st.sort = e.target.value; render(); });
+  $("shared").addEventListener("change", (e) => { st.shared = e.target.checked; st.shown = 30; render(); });
+  $("more").addEventListener("click", () => { st.shown += 30; render(); });
+  document.querySelectorAll("[data-kind]").forEach((b) => b.addEventListener("click", () => {
+    st.kind = b.dataset.kind; st.shown = 30;
+    document.querySelectorAll("[data-kind]").forEach((x) => x.setAttribute("aria-pressed", x === b)); render();
+  }));
+  document.querySelectorAll("[data-days]").forEach((b) => b.addEventListener("click", () => {
+    st.days = +b.dataset.days; st.shown = 30;
+    document.querySelectorAll("[data-days]").forEach((x) => x.setAttribute("aria-pressed", x === b)); render();
+  }));
+}
+function setInterests(t) { st.interests = t; st.shown = 30; store.set("pt-interests", t); render(); }
+
+initControls(); renderPicks(); render();
+</script>
