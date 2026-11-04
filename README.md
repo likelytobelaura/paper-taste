@@ -25,7 +25,8 @@ A daily, quality-ranked feed of new AI research, built to be read by **your codi
 3. **Recommend**: point your agent at this repo and your own repos. It profiles your code, pulls a
    shortlist, then applies the [research-taste rubric](TASTE.md) and reads the top papers in full.
 
-**Today's list → [DIGEST.md](DIGEST.md)**
+**Today's reading list → [likelytobelaura.github.io/paper-taste](https://likelytobelaura.github.io/paper-taste/)**
+(filter it, search it, and type your interests to re-rank it), or as Markdown in [DIGEST.md](DIGEST.md).
 
 ## Use it with an agent
 
@@ -132,5 +133,7 @@ DIGEST.md     current top list (archived under data/digests/)
 TASTE.md      rubric for the agent's second pass
 AGENTS.md     instructions for agents
 ```
+
+`python3 -m papertaste site` rebuilds the page (`site/index.html`) from stored data; `update` does it automatically.
 
 Tests: `python3 -m unittest discover tests`

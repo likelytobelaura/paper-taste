@@ -281,6 +281,22 @@ class XTest(unittest.TestCase):
         self.assertEqual(out["since_id"], "5")
 
 
+class SiteTest(unittest.TestCase):
+    def test_page_inlines_data_safely(self):
+        from papertaste import site
+        row = paper("An abstract with </script><b>markup</b>.", title="Title </script>", quality=55.0,
+                    reasons=["ablations"], flags=[])
+        row["published"] = datetime.now(timezone.utc).isoformat()
+        with tempfile.TemporaryDirectory() as d, mock.patch.object(pipeline, "ITEMS", Path(d)), \
+                mock.patch.object(site, "SITE", Path(d) / "site"):
+            (Path(d) / f"{datetime.now(timezone.utc):%Y-%m-%d}.jsonl").write_text(json.dumps(row) + "\n")
+            out = site.write().read_text()
+        self.assertTrue(out.startswith("<!doctype html>"))
+        self.assertNotIn('"items": []', out)
+        self.assertEqual(out.count("</script>"), 1)  # the data can't close the script tag early
+        self.assertIn("<title>Paper-taste Reading List</title>", out.split("<body>")[0])
+
+
 class RecommendTest(unittest.TestCase):
     def test_interest_matching(self):
         rows = [

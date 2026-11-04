@@ -31,6 +31,9 @@ def main(argv=None):
     t.add_argument("--kind", choices=["paper", "blog"])
     t.add_argument("--json", action="store_true")
 
+    s = sub.add_parser("site", help="render the reading list page to site/index.html from stored data")
+    s.add_argument("--days", type=int, default=14)
+
     r = sub.add_parser("recommend", help="best recent items for your repos/interests")
     r.add_argument("--repo", action="append", default=[], help="path to a repo to profile (repeatable)")
     r.add_argument("--interests", default="", help="free-text interests, weighted heavily")
@@ -43,6 +46,9 @@ def main(argv=None):
     a = ap.parse_args(argv)
     if a.cmd == "update":
         pipeline.run(use_s2=not a.no_s2)
+    elif a.cmd == "site":
+        from . import site
+        print(site.write(a.days))
     elif a.cmd == "top":
         _emit(pipeline.top(a.days, a.n, a.kind), a.json)
     elif a.cmd == "recommend":
