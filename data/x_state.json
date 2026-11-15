@@ -34,6 +34,7 @@
 "https://latent.space/p/opus55/",
 "https://latent.space/p/resend/",
 "https://latent.space/p/supabase/",
+"https://nlp.elvissaravia.com/p/ai-agents-weekly-claude-fable-52",
 "https://nlp.elvissaravia.com/p/ai-agents-weekly-gemini-4-carbon",
 "https://nlp.elvissaravia.com/p/ai-agents-weekly-gpt-6-cyber-weight",
 "https://nlp.elvissaravia.com/p/top-ai-papers-of-the-week-d07",
@@ -55,9 +56,13 @@
 "https://therundownai.beehiiv.com/p/the-ai-bubble-meets-anthropic-real-numbers",
 "https://thesequence.substack.com/p/the-sequence-knowledge-issue-959",
 "https://thesequence.substack.com/p/the-sequence-learning-loop-issue-a23",
+"https://thesequence.substack.com/p/the-sequence-opinion-issue-970-the",
+"https://thesequence.substack.com/p/the-sequence-robotics-issue-971-robots",
+"https://thezvi.substack.com/p/ai-194-spy-versus-guy",
 "https://thezvi.substack.com/p/anthropic-files-its-s-1",
 "https://thezvi.substack.com/p/anthropic-versus-anthropic",
 "https://thezvi.substack.com/p/gemini-4-argon-the-model-and-safety",
+"https://thezvi.substack.com/p/jensen-huang-resigns-after-having",
 "https://tldr.tech/ai/2026-10-26",
 "https://tldr.tech/ai/2026-10-27",
 "https://tldr.tech/ai/2026-10-28",
@@ -162,6 +167,14 @@
 "first_seen": "2026-10-31T09:52:31.111423+00:00",
 "url": "https://arxiv.org/abs/2505.24864"
 },
+"arxiv:2507.03525": {
+"by": {
+"#9b792d63a0": 3,
+"nl:Don't Worry About the Vase (Zvi)": 0
+},
+"first_seen": "2026-11-15T11:21:41.282909+00:00",
+"url": "https://arxiv.org/abs/2507.03525"
+},
 "arxiv:2507.14843": {
 "by": {
 "#3698cc543c": 11
@@ -189,6 +202,13 @@
 },
 "first_seen": "2026-10-28T22:44:54.349664+00:00",
 "url": "https://arxiv.org/abs/2512.19428"
+},
+"arxiv:2603.05706": {
+"by": {
+"nl:Don't Worry About the Vase (Zvi)": 0
+},
+"first_seen": "2026-11-15T11:21:41.282909+00:00",
+"url": "https://arxiv.org/pdf/2603.05706"
 },
 "arxiv:2604.18556": {
 "by": {
@@ -228,7 +248,7 @@
 "arxiv:2605.29713": {
 "by": {
 "hn:50358582": 392,
-"lobsters:0aungk": 3
+"lobsters:0aungk": 12
 },
 "first_seen": "2026-11-04T11:24:00.743607+00:00",
 "url": "https://arxiv.org/abs/2605.29713"
@@ -751,6 +771,13 @@
 "first_seen": "2026-11-11T11:20:16.613564+00:00",
 "url": "https://arxiv.org/abs/2611.12122"
 },
+"arxiv:2611.12167": {
+"by": {
+"nl:Don't Worry About the Vase (Zvi)": 0
+},
+"first_seen": "2026-11-15T11:21:41.282909+00:00",
+"url": "https://arxiv.org/abs/2611.12167"
+},
 "arxiv:2611.14320": {
 "by": {
 "#017fd49b99": 164
@@ -843,6 +870,14 @@
 },
 "first_seen": "2026-10-28T22:05:34.255750+00:00",
 "url": "https://www.a16z.news/p/charts-of-the-week-attention-is-all"
+},
+"blog:aatishb.com/myriad/how-brains-learn": {
+"by": {
+"hn:50496885": 143,
+"reddit:1xwj3ht": 0
+},
+"first_seen": "2026-11-15T11:21:41.282909+00:00",
+"url": "https://aatishb.com/myriad/how-brains-learn/"
 },
 "blog:abc.net.au/news/2026-10-19/ai-stock-market-concentration-data/107261078": {
 "by": {
@@ -1186,6 +1221,14 @@
 "first_seen": "2026-10-28T22:44:54.349664+00:00",
 "url": "https://www.aclu.org/news/privacy-technology/ai-driven-police-stops"
 },
+"blog:act.controlai.org/training": {
+"by": {
+"#298f6dc8ec": 12,
+"nl:Don't Worry About the Vase (Zvi)": 0
+},
+"first_seen": "2026-11-15T11:21:41.282909+00:00",
+"url": "https://act.controlai.org/training"
+},
 "blog:activtrak.com/news/productivity-lab-ai-users-longer-workdays": {
 "by": {
 "hn:50439686": 66
@@ -1317,7 +1360,7 @@
 },
 "blog:alexwang.ai/posts/associative-memory": {
 "by": {
-"lobsters:u2h9as": 2
+"lobsters:u2h9as": 3
 },
 "first_seen": "2026-11-14T10:46:34.898037+00:00",
 "url": "https://alexwang.ai/posts/associative-memory/"
@@ -1328,6 +1371,13 @@
 },
 "first_seen": "2026-11-11T11:20:16.613564+00:00",
 "url": "https://alexwang.ai/posts/reasoning-as-pathfinding/"
+},
+"blog:alignment.anthropic.com/2026/anthropic-residency": {
+"by": {
+"nl:Don't Worry About the Vase (Zvi)": 0
+},
+"first_seen": "2026-11-15T11:21:41.282909+00:00",
+"url": "https://alignment.anthropic.com/2026/anthropic-residency/"
 },
 "blog:alignment.anthropic.com/2026/automated-em-search": {
 "by": {
@@ -1343,6 +1393,13 @@
 },
 "first_seen": "2026-10-29T10:18:48.459351+00:00",
 "url": "https://alignment.anthropic.com/2026/graft/"
+},
+"blog:alignment.openai.com/cot-monitorability-model-lifecycle": {
+"by": {
+"nl:Don't Worry About the Vase (Zvi)": 0
+},
+"first_seen": "2026-11-15T11:21:41.282909+00:00",
+"url": "https://alignment.openai.com/cot-monitorability-model-lifecycle"
 },
 "blog:alignment.openai.com/eval-production-behavior-gap": {
 "by": {
@@ -1388,6 +1445,13 @@
 "first_seen": "2026-10-30T10:20:32.566285+00:00",
 "url": "https://amal.vs.binarybit.in/blog/6ae426797027b216982aa27c"
 },
+"blog:amzn.to/4iwvCtW": {
+"by": {
+"nl:Don't Worry About the Vase (Zvi)": 0
+},
+"first_seen": "2026-11-15T11:21:41.282909+00:00",
+"url": "https://amzn.to/4iwvCtW"
+},
 "blog:anil.recoil.org/notes/language-integrated-llms": {
 "by": {
 "lobsters:savxgn": 5
@@ -1423,6 +1487,7 @@
 "nl:AI Supremacy": 0,
 "nl:AINews": 0,
 "nl:Ben's Bites": 0,
+"nl:DAIR.AI": 0,
 "nl:The Rundown AI": 0,
 "reddit:1xtzgef": 0
 },
@@ -1497,6 +1562,7 @@
 "#00b4752113": 589,
 "#c29be7a000": 4652,
 "hn:50438891": 31,
+"nl:Don't Worry About the Vase (Zvi)": 0,
 "nl:The Rundown AI": 0
 },
 "first_seen": "2026-11-11T11:20:16.613564+00:00",
@@ -1615,7 +1681,7 @@
 },
 "blog:antigravity.google/blog/gemini-4-hydrogen-in-google-antigravity": {
 "by": {
-"hn:50472260": 499,
+"hn:50472260": 503,
 "nl:AINews": 0
 },
 "first_seen": "2026-11-13T11:23:15.575808+00:00",
@@ -1937,6 +2003,34 @@
 "first_seen": "2026-11-05T11:21:33.849162+00:00",
 "url": "https://archive.is/20261103161439/https://www.nytimes.com/2026/11/03/us/google-search-schools-restrict-ai.html"
 },
+"blog:archive.is/Ubg4k": {
+"by": {
+"nl:Don't Worry About the Vase (Zvi)": 0
+},
+"first_seen": "2026-11-15T11:21:41.282909+00:00",
+"url": "https://archive.is/Ubg4k"
+},
+"blog:archive.is/o/5pHBE/https://www.axios.com/2026/11/11/bessent-lutnick-megaspeed-nvidia-china-chips": {
+"by": {
+"nl:Don't Worry About the Vase (Zvi)": 0
+},
+"first_seen": "2026-11-15T11:21:41.282909+00:00",
+"url": "https://archive.is/o/5pHBE/https://www.axios.com/2026/11/11/bessent-lutnick-megaspeed-nvidia-china-chips"
+},
+"blog:archive.is/o/eEJsX/https://www.intc.com/investor-relations/investor-education-and-news/investor-news/press-release-details/2018/Intel-CEO-Brian-Krzanich-Resigns-Board-Appoints-Bob-Swan-as-Interim-CEO/default.aspx": {
+"by": {
+"nl:Don't Worry About the Vase (Zvi)": 0
+},
+"first_seen": "2026-11-15T11:21:41.282909+00:00",
+"url": "https://archive.is/o/eEJsX/https://www.intc.com/investor-relations/investor-education-and-news/investor-news/press-release-details/2018/Intel-CEO-Brian-Krzanich-Resigns-Board-Appoints-Bob-Swan-as-Interim-CEO/default.aspx"
+},
+"blog:archive.is/o/eEJsX/https://www.nytimes.com/2018/06/21/technology/intel-ceo-resigns-consensual-relationship.html": {
+"by": {
+"nl:Don't Worry About the Vase (Zvi)": 0
+},
+"first_seen": "2026-11-15T11:21:41.282909+00:00",
+"url": "https://archive.is/o/eEJsX/https://www.nytimes.com/2018/06/21/technology/intel-ceo-resigns-consensual-relationship.html"
+},
 "blog:archive.stsci.edu/missions/dss/FitsArchive": {
 "by": {
 "reddit:1xh4iwr": 0
@@ -2104,6 +2198,9 @@
 },
 "blog:axios.com/2026/11/11/trump-lutnick-nvidia-china-chip-export-controls": {
 "by": {
+"#0a16775bcd": 3023,
+"#aac490116f": 4077,
+"nl:Don't Worry About the Vase (Zvi)": 0,
 "reddit:1xu520o": 0
 },
 "first_seen": "2026-11-12T11:39:15.708214+00:00",
@@ -2292,6 +2389,7 @@
 },
 "blog:blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-carbon-now-available": {
 "by": {
+"#f7d05f00ef": 341,
 "hn:50442303": 295,
 "nl:Ben's Bites": 0
 },
@@ -2316,7 +2414,7 @@
 "by": {
 "#3409fb9edd": 609,
 "#931b813213": 220,
-"hn:50471431": 565,
+"hn:50471431": 569,
 "nl:The Rundown AI": 0
 },
 "first_seen": "2026-11-13T11:23:15.575808+00:00",
@@ -2399,6 +2497,13 @@
 "first_seen": "2026-11-02T11:33:18.902055+00:00",
 "url": "https://blog.raed.dev/posts/proton-loser-thinking/"
 },
+"blog:blog.redwoodresearch.org/p/astra-covertly-underperforming-on": {
+"by": {
+"nl:Don't Worry About the Vase (Zvi)": 0
+},
+"first_seen": "2026-11-15T11:21:41.282909+00:00",
+"url": "https://blog.redwoodresearch.org/p/astra-covertly-underperforming-on"
+},
 "blog:blog.studiohaynes.com/2026/07/19/compilers-overrated.html": {
 "by": {
 "reddit:1xl90rr": 0
@@ -2426,6 +2531,13 @@
 },
 "first_seen": "2026-10-28T22:05:34.255750+00:00",
 "url": "https://blogs.oracle.com/cloud-infrastructure/positron-atlas-oci-ai-inference"
+},
+"blog:bloomberg.com/news/articles/2025-02-18/singapore-buys-only-small-amount-of-nvidia-chips-official-says": {
+"by": {
+"nl:Don't Worry About the Vase (Zvi)": 0
+},
+"first_seen": "2026-11-15T11:21:41.282909+00:00",
+"url": "https://www.bloomberg.com/news/articles/2025-02-18/singapore-buys-only-small-amount-of-nvidia-chips-official-says"
 },
 "blog:bloomberg.com/news/articles/2026-10-26/microsoft-to-offer-buyouts-to-60-000-workers-in-latest-cost-cut": {
 "by": {
@@ -2471,10 +2583,25 @@
 },
 "blog:bloomberg.com/news/articles/2026-11-06/openai-completes-11-billion-portion-of-funding-at-1-25-trillion-value": {
 "by": {
+"nl:Don't Worry About the Vase (Zvi)": 0,
 "nl:The Rundown AI": 0
 },
 "first_seen": "2026-11-09T11:57:09.927629+00:00",
 "url": "https://www.bloomberg.com/news/articles/2026-11-06/openai-completes-11-billion-portion-of-funding-at-1-25-trillion-value?srnd=phx-technology&utm_source=therundownai.beehiiv.com&utm_medium=newsletter&utm_campaign=rundown-1109"
+},
+"blog:bloomberg.com/news/articles/2026-11-07/ai-safety-advocates-make-gains-after-110-million-midterm-fight": {
+"by": {
+"nl:Don't Worry About the Vase (Zvi)": 0
+},
+"first_seen": "2026-11-15T11:21:41.282909+00:00",
+"url": "https://www.bloomberg.com/news/articles/2026-11-07/ai-safety-advocates-make-gains-after-110-million-midterm-fight"
+},
+"blog:bloomberg.com/news/articles/2026-11-08/nvidia-board-to-probe-spying-case-after-ceo-jensen-huang-admits-infidelity": {
+"by": {
+"nl:Don't Worry About the Vase (Zvi)": 0
+},
+"first_seen": "2026-11-15T11:21:41.282909+00:00",
+"url": "https://www.bloomberg.com/news/articles/2026-11-08/nvidia-board-to-probe-spying-case-after-ceo-jensen-huang-admits-infidelity"
 },
 "blog:bloomberg.com/news/articles/2026-11-10/openai-third-quarter-revenue-soars-nearly-50-to-10-billion": {
 "by": {
@@ -2486,13 +2613,29 @@
 "blog:bloomberg.com/news/articles/2026-11-11/anthropic-s-mega-ipo-is-said-to-be-multiple-times-oversubscribed": {
 "by": {
 "#00b4752113": 408,
+"nl:Don't Worry About the Vase (Zvi)": 0,
 "nl:The Rundown AI": 0
 },
 "first_seen": "2026-11-12T11:39:15.708214+00:00",
 "url": "https://www.bloomberg.com/news/articles/2026-11-11/anthropic-s-mega-ipo-is-said-to-be-multiple-times-oversubscribed?taid=6af46de38a00c9000124a6ff&utm_campaign=trueanthem&utm_content=business&utm_medium=social&utm_source=twitter"
 },
+"blog:bloomberg.com/news/articles/2026-11-12/nvidia-drama-triggers-difficult-search-for-huang-s-successor": {
+"by": {
+"nl:Don't Worry About the Vase (Zvi)": 0
+},
+"first_seen": "2026-11-15T11:21:41.282909+00:00",
+"url": "https://www.bloomberg.com/news/articles/2026-11-12/nvidia-drama-triggers-difficult-search-for-huang-s-successor"
+},
+"blog:bloomberg.com/news/articles/2026-11-12/openai-joins-groundswell-of-support-for-ai-chip-control-measures": {
+"by": {
+"nl:Don't Worry About the Vase (Zvi)": 0
+},
+"first_seen": "2026-11-15T11:21:41.282909+00:00",
+"url": "https://www.bloomberg.com/news/articles/2026-11-12/openai-joins-groundswell-of-support-for-ai-chip-control-measures"
+},
 "blog:bloomberg.com/news/articles/2026-11-13/banned-nvidia-chips-installed-at-china-data-center-linked-to-alice-huang": {
 "by": {
+"nl:Don't Worry About the Vase (Zvi)": 0,
 "reddit:1xvv793": 0
 },
 "first_seen": "2026-11-14T10:46:34.898037+00:00",
@@ -2533,6 +2676,20 @@
 "first_seen": "2026-11-04T11:24:00.743607+00:00",
 "url": "https://www.bloomberg.com/opinion/articles/2026-11-03/ai-investment-boom-demands-stronger-financial-oversight"
 },
+"blog:bloomberg.com/opinion/articles/2026-11-12/china-is-the-biggest-loser-from-jensen-huang-s-downfall": {
+"by": {
+"nl:Don't Worry About the Vase (Zvi)": 0
+},
+"first_seen": "2026-11-15T11:21:41.282909+00:00",
+"url": "https://www.bloomberg.com/opinion/articles/2026-11-12/china-is-the-biggest-loser-from-jensen-huang-s-downfall"
+},
+"blog:bloomberg.com/opinion/articles/2026-11-12/nvidia-ceo-jensen-huang-s-downfall-knocks-american-ai-onto-a-different-course": {
+"by": {
+"nl:Don't Worry About the Vase (Zvi)": 0
+},
+"first_seen": "2026-11-15T11:21:41.282909+00:00",
+"url": "https://www.bloomberg.com/opinion/articles/2026-11-12/nvidia-ceo-jensen-huang-s-downfall-knocks-american-ai-onto-a-different-course?re_source=postr_story_0"
+},
 "blog:bloomberg.com/opinion/newsletters/2026-10-26/anthropic-raises-concerns": {
 "by": {
 "#c866108c7c": 171,
@@ -2540,6 +2697,34 @@
 },
 "first_seen": "2026-10-28T22:44:54.349664+00:00",
 "url": "https://www.bloomberg.com/opinion/newsletters/2026-10-26/anthropic-raises-concerns"
+},
+"blog:bloomberg.com/opinion/newsletters/2026-11-12/nvidia-s-board-had-to-do-something": {
+"by": {
+"nl:Don't Worry About the Vase (Zvi)": 0
+},
+"first_seen": "2026-11-15T11:21:41.282909+00:00",
+"url": "https://www.bloomberg.com/opinion/newsletters/2026-11-12/nvidia-s-board-had-to-do-something"
+},
+"blog:bloomberg.com/quote/2696259D:SP": {
+"by": {
+"nl:Don't Worry About the Vase (Zvi)": 0
+},
+"first_seen": "2026-11-15T11:21:41.282909+00:00",
+"url": "https://www.bloomberg.com/quote/2696259D:SP"
+},
+"blog:bloomberg.com/quote/DELL:US": {
+"by": {
+"nl:Don't Worry About the Vase (Zvi)": 0
+},
+"first_seen": "2026-11-15T11:21:41.282909+00:00",
+"url": "https://www.bloomberg.com/quote/DELL:US"
+},
+"blog:bloomberg.com/quote/NVDA:US": {
+"by": {
+"nl:Don't Worry About the Vase (Zvi)": 0
+},
+"first_seen": "2026-11-15T11:21:41.282909+00:00",
+"url": "https://www.bloomberg.com/quote/NVDA:US"
 },
 "blog:boson.ai/blog/higgs-realtime-duplex": {
 "by": {
@@ -2571,7 +2756,7 @@
 },
 "blog:brave.com/blog/search-api-agentic-payments": {
 "by": {
-"hn:50477649": 260
+"hn:50477649": 261
 },
 "first_seen": "2026-11-13T11:23:15.575808+00:00",
 "url": "https://brave.com/blog/search-api-agentic-payments/"
@@ -2634,7 +2819,7 @@
 },
 "blog:businessinsider.com/dario-amodei-anthropic-cancer-cure-ipo-roadshow-backlash-doctors-2026-11": {
 "by": {
-"hn:50484110": 33
+"hn:50484110": 34
 },
 "first_seen": "2026-11-14T10:46:34.898037+00:00",
 "url": "https://www.businessinsider.com/dario-amodei-anthropic-cancer-cure-ipo-roadshow-backlash-doctors-2026-11"
@@ -2674,6 +2859,13 @@
 "first_seen": "2026-11-14T10:46:34.898037+00:00",
 "url": "https://capitalg.com/insights/doubling-down-on-langchain/"
 },
+"blog:careers.employment.senate.gov/job/national-security-advisor-washington-district-of-columbia-1301": {
+"by": {
+"nl:Don't Worry About the Vase (Zvi)": 0
+},
+"first_seen": "2026-11-15T11:21:41.282909+00:00",
+"url": "https://careers.employment.senate.gov/job/national-security-advisor-washington-district-of-columbia-1301"
+},
 "blog:cartesia.ai/blog/from-tokens-to-bytes-part-1": {
 "by": {
 "hn:50278253": 92
@@ -2702,9 +2894,16 @@
 "first_seen": "2026-11-07T10:33:43.491692+00:00",
 "url": "https://www.cbc.ca/news/world/university-libraries-ai-data-scraping-bots-9.7408287"
 },
+"blog:cbsn.ws/4sOiMMF": {
+"by": {
+"#f412aae4c8": 240
+},
+"first_seen": "2026-11-15T11:21:41.282909+00:00",
+"url": "https://cbsn.ws/4sOiMMF"
+},
 "blog:cbsnews.com/news/united-airlines-bans-ai-agents-booking-flights": {
 "by": {
-"hn:50458900": 677
+"hn:50458900": 680
 },
 "first_seen": "2026-11-12T11:39:15.708214+00:00",
 "url": "https://www.cbsnews.com/news/united-airlines-bans-ai-agents-booking-flights/"
@@ -2759,12 +2958,33 @@
 "first_seen": "2026-10-28T22:44:54.349664+00:00",
 "url": "https://charm.ing/templates/tambo/todo-board"
 },
+"blog:chatgpt.com/business-hub": {
+"by": {
+"nl:Don't Worry About the Vase (Zvi)": 0
+},
+"first_seen": "2026-11-15T11:21:41.282909+00:00",
+"url": "https://chatgpt.com/business-hub?utm_source=openai&amp;utm_medium=blog&amp;utm_campaign=business_agents_launch&amp;utm_content=smb_launch_primary_cta&amp;openaicom-did=0874099d-c7e7-4624-bc4d-2e5b2042bc86&amp;openaicom_referred=true"
+},
 "blog:chatgpt.com/finances": {
 "by": {
 "#6d4810e36a": 2430
 },
 "first_seen": "2026-11-04T11:24:00.743607+00:00",
 "url": "https://chatgpt.com/finances"
+},
+"blog:chinatalk.media/p/the-spy-who-leased-me": {
+"by": {
+"#4b95d2bc75": 31
+},
+"first_seen": "2026-11-15T11:21:41.282909+00:00",
+"url": "https://www.chinatalk.media/p/the-spy-who-leased-me"
+},
+"blog:city-journal.org/article/artificial-intelligence-china-deepseek-nvidia-broadcom-openai": {
+"by": {
+"#eb6e74b2f7": 223
+},
+"first_seen": "2026-11-15T11:21:41.282909+00:00",
+"url": "https://www.city-journal.org/article/artificial-intelligence-china-deepseek-nvidia-broadcom-openai"
 },
 "blog:clau.de/reset": {
 "by": {
@@ -2859,7 +3079,7 @@
 },
 "blog:claude.com/resources/articles/claude-meetings": {
 "by": {
-"hn:50491097": 100,
+"hn:50491097": 111,
 "nl:The Rundown AI": 0
 },
 "first_seen": "2026-11-13T11:23:15.575808+00:00",
@@ -2882,7 +3102,7 @@
 },
 "blog:claude.com/resources/articles/projects-redesigned": {
 "by": {
-"hn:50492141": 88
+"hn:50492141": 98
 },
 "first_seen": "2026-11-14T10:46:34.898037+00:00",
 "url": "https://claude.com/resources/articles/projects-redesigned"
@@ -3077,6 +3297,13 @@
 "first_seen": "2026-11-02T11:33:18.902055+00:00",
 "url": "https://www.cnn.com/2026/10/30/business/ai-stocks-bonds-debt"
 },
+"blog:cnn.com/2026/11/12/politics/alice-huang-us-intel-jensen-huang-nvidia": {
+"by": {
+"#f42321540c": 32878
+},
+"first_seen": "2026-11-15T11:21:41.282909+00:00",
+"url": "https://www.cnn.com/2026/11/12/politics/alice-huang-us-intel-jensen-huang-nvidia?cid=ios_app"
+},
 "blog:code.minimax.io/about": {
 "by": {
 "#3159596f6b": 87,
@@ -3172,6 +3399,13 @@
 "first_seen": "2026-10-28T22:44:54.349664+00:00",
 "url": "https://contraptions.venkateshrao.com/p/cognitive-mercantilism"
 },
+"blog:conversationswithtyler.com/episodes/william-macaskill": {
+"by": {
+"#e7db3e211e": 179
+},
+"first_seen": "2026-11-15T11:21:41.282909+00:00",
+"url": "https://conversationswithtyler.com/episodes/william-macaskill/#:~:text=just%20say%2C%20well%2C-,the%20utilitarian%20part%20of%20our%20calculations,-%E2%80%94%E2%80%8Ait%E2%80%99s%20embedded%20within"
+},
 "blog:convo.casa/@b/117525936178835007": {
 "by": {
 "hn:50296602": 121
@@ -3204,7 +3438,7 @@
 },
 "blog:coyotetracks.org/blog/right-amount-of-ai": {
 "by": {
-"hn:50480659": 37
+"hn:50480659": 38
 },
 "first_seen": "2026-11-14T10:46:34.898037+00:00",
 "url": "https://coyotetracks.org/blog/right-amount-of-ai/"
@@ -3345,6 +3579,13 @@
 "first_seen": "2026-10-28T22:44:54.349664+00:00",
 "url": "https://darioamodei.com/essay/the-adolescence-of-technology"
 },
+"blog:data.ornn.com/gpu-cloud-price-comparison": {
+"by": {
+"nl:TheSequence": 0
+},
+"first_seen": "2026-11-15T11:21:41.282909+00:00",
+"url": "https://data.ornn.com/gpu-cloud-price-comparison"
+},
 "blog:databricks.com/blog/introducing-agent-memory-databricks": {
 "by": {
 "nl:The Rundown AI": 0
@@ -3394,6 +3635,13 @@
 "first_seen": "2026-11-11T11:20:16.613564+00:00",
 "url": "https://dealroom.co/news/171271-mercor-raises-750m-series-d-at-20b-valuation-to-push-into-enterprise-ai"
 },
+"blog:debarshibasak.github.io/readables/blogs/agent-first-development": {
+"by": {
+"hn:50496562": 29
+},
+"first_seen": "2026-11-15T11:21:41.282909+00:00",
+"url": "https://debarshibasak.github.io/readables/blogs/agent-first-development"
+},
 "blog:deep-learning-drizzle.github.io/index.html": {
 "by": {
 "reddit:1xr75dc": 0
@@ -3411,7 +3659,7 @@
 },
 "blog:deepmind.google/blog/formal-verification-signal-protocol": {
 "by": {
-"#ee1f5c636f": 4983
+"#ee1f5c636f": 5846
 },
 "first_seen": "2026-11-11T11:20:16.613564+00:00",
 "url": "https://deepmind.google/blog/formal-verification-signal-protocol"
@@ -3472,6 +3720,14 @@
 "first_seen": "2026-11-03T11:13:02.483541+00:00",
 "url": "https://deploymentsafety.openai.com/gpt-rosalind-6"
 },
+"blog:derekthompson.org/p/this-is-an-insane-scandal-how-jensen": {
+"by": {
+"#7e1a435a11": 2103,
+"nl:Don't Worry About the Vase (Zvi)": 0
+},
+"first_seen": "2026-11-15T11:21:41.282909+00:00",
+"url": "https://www.derekthompson.org/p/this-is-an-insane-scandal-how-jensen"
+},
 "blog:designarena.ai/leaderboard": {
 "by": {
 "nl:The Rundown AI": 0
@@ -3500,6 +3756,13 @@
 },
 "first_seen": "2026-11-12T11:39:15.708214+00:00",
 "url": "https://developer.chrome.com/blog/modern-web-guidance-v1"
+},
+"blog:developer.nvidia.com/blog/when-one-gpu-isnt-enough-serving-glm-5-3-across-two-nvidia-dgx-stations-with-vllm": {
+"by": {
+"hn:50497155": 138
+},
+"first_seen": "2026-11-15T11:21:41.282909+00:00",
+"url": "https://developer.nvidia.com/blog/when-one-gpu-isnt-enough-serving-glm-5-3-across-two-nvidia-dgx-stations-with-vllm/"
 },
 "blog:developers.cloudflare.com/d1": {
 "by": {
@@ -3660,6 +3923,7 @@
 },
 "blog:dominiccummings.substack.com/p/ai-and-power": {
 "by": {
+"#879e76448d": 757,
 "reddit:1xlcw90": 0
 },
 "first_seen": "2026-11-04T11:24:00.743607+00:00",
@@ -3707,9 +3971,16 @@
 "first_seen": "2026-11-07T10:33:43.491692+00:00",
 "url": "https://dubeykartikay.com/posts/ai-agent-rearchitecture-lessons/"
 },
+"blog:dwarkesh.com/p/clocktower": {
+"by": {
+"nl:Don't Worry About the Vase (Zvi)": 0
+},
+"first_seen": "2026-11-15T11:21:41.282909+00:00",
+"url": "https://www.dwarkesh.com/p/clocktower"
+},
 "blog:dwarkesh.com/p/rsi": {
 "by": {
-"hn:50487854": 63
+"hn:50487854": 67
 },
 "first_seen": "2026-11-14T10:46:34.898037+00:00",
 "url": "https://www.dwarkesh.com/p/rsi"
@@ -3737,14 +4008,14 @@
 },
 "blog:economist.com/leaders/2026/11/12/why-you-should-expect-an-ai-crash": {
 "by": {
-"hn:50475735": 102
+"hn:50475735": 103
 },
 "first_seen": "2026-11-13T11:23:15.575808+00:00",
 "url": "https://www.economist.com/leaders/2026/11/12/why-you-should-expect-an-ai-crash"
 },
 "blog:edge0.ai/blog/introducing-edge0-145b-frontier-ai-capabilities-on-your-own-computer": {
 "by": {
-"hn:50475713": 344
+"hn:50475713": 353
 },
 "first_seen": "2026-11-13T11:23:15.575808+00:00",
 "url": "https://edge0.ai/blog/introducing-edge0-145b-frontier-ai-capabilities-on-your-own-computer"
@@ -4063,7 +4334,7 @@
 },
 "blog:forbes.com/sites/maryroeloffs/2026/08/17/ai-companies-are-buying-and-destroying-antique-books-heres-why": {
 "by": {
-"hn:50487469": 56
+"hn:50487469": 59
 },
 "first_seen": "2026-11-14T10:46:34.898037+00:00",
 "url": "https://www.forbes.com/sites/maryroeloffs/2026/08/17/ai-companies-are-buying-and-destroying-antique-books-heres-why/"
@@ -4099,10 +4370,17 @@
 },
 "blog:fortune.com/2026/11/13/openai-disbands-robotics-team-as-its-general-models-start-running-robots": {
 "by": {
-"hn:50487184": 167
+"hn:50487184": 177
 },
 "first_seen": "2026-11-14T10:46:34.898037+00:00",
 "url": "https://fortune.com/2026/11/13/openai-disbands-robotics-team-as-its-general-models-start-running-robots/"
+},
+"blog:forum.effectivealtruism.org/posts/T975ydo3mx8onH3iS/ea-is-about-maximization-and-maximization-is-perilous": {
+"by": {
+"#e7db3e211e": 179
+},
+"first_seen": "2026-11-15T11:21:41.282909+00:00",
+"url": "https://forum.effectivealtruism.org/posts/T975ydo3mx8onH3iS/ea-is-about-maximization-and-maximization-is-perilous"
 },
 "blog:forwardfuture.com/newsletter/originals/i-put-fable-5-2-to-work-5-real-world-field-tests-and-what-i-learned": {
 "by": {
@@ -4110,6 +4388,13 @@
 },
 "first_seen": "2026-11-10T11:30:29.864126+00:00",
 "url": "https://forwardfuture.com/newsletter/originals/i-put-fable-5-2-to-work-5-real-world-field-tests-and-what-i-learned"
+},
+"blog:foxbusiness.com/video/6408204801112": {
+"by": {
+"nl:Don't Worry About the Vase (Zvi)": 0
+},
+"first_seen": "2026-11-15T11:21:41.282909+00:00",
+"url": "https://www.foxbusiness.com/video/6408204801112"
 },
 "blog:friendlyai.dev/blog/freeing-your-ai-from-your-computer": {
 "by": {
@@ -4160,12 +4445,28 @@
 "first_seen": "2026-10-31T09:52:31.111423+00:00",
 "url": "https://www.ft.com/content/59383c7f-8d82-493f-bf01-d2e862a1018f"
 },
+"blog:ft.com/content/798a6321-41e3-407b-9b6d-e4521111208d": {
+"by": {
+"nl:Don't Worry About the Vase (Zvi)": 0
+},
+"first_seen": "2026-11-15T11:21:41.282909+00:00",
+"url": "https://www.ft.com/content/798a6321-41e3-407b-9b6d-e4521111208d"
+},
 "blog:ft.com/content/a55a2a22-4479-4f93-a445-6147a5c6d790": {
 "by": {
-"nl:AI Supremacy": 0
+"nl:AI Supremacy": 0,
+"nl:Don't Worry About the Vase (Zvi)": 0
 },
 "first_seen": "2026-11-09T11:57:09.927629+00:00",
 "url": "https://www.ft.com/content/a55a2a22-4479-4f93-a445-6147a5c6d790?syn-25a6b1a6=1"
+},
+"blog:ft.com/content/afb6c960-a910-4d67-9588-73ba3bea5b06": {
+"by": {
+"#e95b80df62": 124,
+"nl:Don't Worry About the Vase (Zvi)": 0
+},
+"first_seen": "2026-11-15T11:21:41.282909+00:00",
+"url": "https://www.ft.com/content/afb6c960-a910-4d67-9588-73ba3bea5b06"
 },
 "blog:futurism.com/artificial-intelligence/amazon-ai-division-failure-nova": {
 "by": {
@@ -4243,6 +4544,14 @@
 },
 "first_seen": "2026-11-06T11:19:07.955521+00:00",
 "url": "https://www.getzep.com/zep-agent-skills/?utm_source=x&utm_medium=paid-creator&utm_campaign=agent-skills-launch&utm_content=turing-post-2026-11-05"
+},
+"blog:giftarticle.ft.com/giftarticle/actions/redeem/e04a0b85-c348-4c38-9a55-56391428975d": {
+"by": {
+"#5d7c34d347": 160,
+"#e95b80df62": 124
+},
+"first_seen": "2026-11-15T11:21:41.282909+00:00",
+"url": "https://giftarticle.ft.com/giftarticle/actions/redeem/e04a0b85-c348-4c38-9a55-56391428975d"
 },
 "blog:gist.github.com/flamerix-ai/c3905705cc4205e5de3011fa2e74efce": {
 "by": {
@@ -4434,6 +4743,28 @@
 "first_seen": "2026-11-13T11:23:15.575808+00:00",
 "url": "https://grano.la/brief-claude"
 },
+"blog:guidelight.ai/blog/categories-of-misaligned-ai-behaviors": {
+"by": {
+"#e6ddf2060b": 39
+},
+"first_seen": "2026-11-15T11:21:41.282909+00:00",
+"url": "https://guidelight.ai/blog/categories-of-misaligned-ai-behaviors"
+},
+"blog:guidelight.ai/control": {
+"by": {
+"#1a845e36d7": 7
+},
+"first_seen": "2026-11-15T11:21:41.282909+00:00",
+"url": "https://guidelight.ai/control"
+},
+"blog:guidelight.ai/control:": {
+"by": {
+"#1a845e36d7": 7,
+"nl:Don't Worry About the Vase (Zvi)": 0
+},
+"first_seen": "2026-11-15T11:21:41.282909+00:00",
+"url": "https://guidelight.ai/control:"
+},
 "blog:guttikondaparthasai.medium.com/what-if-ai-could-remember-what-matters-389591c46de8": {
 "by": {
 "reddit:1xfh5kr": 0
@@ -4454,6 +4785,20 @@
 },
 "first_seen": "2026-10-29T10:18:48.459351+00:00",
 "url": "http://gym-anything.github.io/gym-anything-rt"
+},
+"blog:haaretz.com/israel-news/security-aviation/2025-03-23/ty-article-magazine/.premium/avatars-tweets-cover-ups-how-the-pro-qatar-campaign-conceived-by-netanyahu-aides-worked/00000195-c380-d10d-aff7-e3a83b720000": {
+"by": {
+"nl:Don't Worry About the Vase (Zvi)": 0
+},
+"first_seen": "2026-11-15T11:21:41.282909+00:00",
+"url": "https://www.haaretz.com/israel-news/security-aviation/2025-03-23/ty-article-magazine/.premium/avatars-tweets-cover-ups-how-the-pro-qatar-campaign-conceived-by-netanyahu-aides-worked/00000195-c380-d10d-aff7-e3a83b720000"
+},
+"blog:haaretz.com/israel-news/security-aviation/2025-05-19/ty-article-magazine/.premium/qatargate-deleted-posts-reveal-israeli-pro-qatar-campaign-continued-despite-hamas-attack/00000196-e47d-d5aa-abd7-ed7d32f70000": {
+"by": {
+"nl:Don't Worry About the Vase (Zvi)": 0
+},
+"first_seen": "2026-11-15T11:21:41.282909+00:00",
+"url": "https://www.haaretz.com/israel-news/security-aviation/2025-05-19/ty-article-magazine/.premium/qatargate-deleted-posts-reveal-israeli-pro-qatar-campaign-continued-despite-hamas-attack/00000196-e47d-d5aa-abd7-ed7d32f70000"
 },
 "blog:haoailab.com/FastVideo/cookbook/pan/pan2": {
 "by": {
@@ -4668,12 +5013,40 @@
 "first_seen": "2026-10-31T09:52:31.111423+00:00",
 "url": "https://www.interconnects.ai/p/artificial-analysis-v5-and-the-benchmarkers"
 },
+"blog:interconnects.ai/p/open-source-ai-without-jensen": {
+"by": {
+"hn:50496590": 26
+},
+"first_seen": "2026-11-15T11:21:41.282909+00:00",
+"url": "https://www.interconnects.ai/p/open-source-ai-without-jensen"
+},
 "blog:invenglobal.com/articles/27761/valve-responds-to-developers-fearing-ai-slop-and-clones": {
 "by": {
 "hn:50273192": 68
 },
 "first_seen": "2026-10-28T22:44:54.349664+00:00",
 "url": "https://www.invenglobal.com/articles/27761/valve-responds-to-developers-fearing-ai-slop-and-clones"
+},
+"blog:investing.com/equities/apple-computer-inc": {
+"by": {
+"nl:Don't Worry About the Vase (Zvi)": 0
+},
+"first_seen": "2026-11-15T11:21:41.282909+00:00",
+"url": "https://www.investing.com/equities/apple-computer-inc"
+},
+"blog:investing.com/equities/nvidia-corp": {
+"by": {
+"nl:Don't Worry About the Vase (Zvi)": 0
+},
+"first_seen": "2026-11-15T11:21:41.282909+00:00",
+"url": "https://www.investing.com/equities/nvidia-corp"
+},
+"blog:investing.com/news/stock-market-news/trump-says-ex-apple-ceo-cook-should-replace-huang-at-nvidia-5022650": {
+"by": {
+"nl:Don't Worry About the Vase (Zvi)": 0
+},
+"first_seen": "2026-11-15T11:21:41.282909+00:00",
+"url": "https://www.investing.com/news/stock-market-news/trump-says-ex-apple-ceo-cook-should-replace-huang-at-nvidia-5022650"
 },
 "blog:investor.atmeta.com/investor-news/press-release-details/2026/Meta-Announces-Launch-of-Offering-of-Depositary-Shares-Representing-Series-A-Mandatory-Convertible-Preferred-Stock-and-Offering-of-Class-A-Common-Stock-in-Connection-with-Forward-Sale-Agreements/default.aspx": {
 "by": {
@@ -4691,8 +5064,9 @@
 },
 "blog:ipo.anthropic.com/us": {
 "by": {
-"hn:50465829": 996,
-"nl:AINews": 0
+"hn:50465829": 1002,
+"nl:AINews": 0,
+"nl:Don't Worry About the Vase (Zvi)": 0
 },
 "first_seen": "2026-11-13T11:23:15.575808+00:00",
 "url": "https://ipo.anthropic.com/us/"
@@ -4809,6 +5183,13 @@
 },
 "first_seen": "2026-11-06T11:19:07.955521+00:00",
 "url": "http://juliusresearch.ai/deep-finance"
+},
+"blog:justsecurity.org/158956/any-state-ai-safety-cooperation-legal": {
+"by": {
+"nl:Don't Worry About the Vase (Zvi)": 0
+},
+"first_seen": "2026-11-15T11:21:41.282909+00:00",
+"url": "https://www.justsecurity.org/158956/any-state-ai-safety-cooperation-legal/"
 },
 "blog:justuswill.com/plm": {
 "by": {
@@ -4994,6 +5375,13 @@
 "first_seen": "2026-11-11T11:20:16.613564+00:00",
 "url": "https://www.lennysnewsletter.com/p/how-ramp-builds-product"
 },
+"blog:lesswrong.com/posts/AfoGGrJfuNzofpzWL/models-may-behave-differently-in-graded-episodes-a-tirade": {
+"by": {
+"#61b3036d37": 1
+},
+"first_seen": "2026-11-15T11:21:41.282909+00:00",
+"url": "https://www.lesswrong.com/posts/AfoGGrJfuNzofpzWL/models-may-behave-differently-in-graded-episodes-a-tirade"
+},
 "blog:lesswrong.com/posts/DALNiKBjMGMF8grme/arjun-panickssery-s-shortform": {
 "by": {
 "hn:50388513": 220
@@ -5056,6 +5444,13 @@
 },
 "first_seen": "2026-10-28T22:44:54.349664+00:00",
 "url": "https://www.liquid.ai/blog/lfm3"
+},
+"blog:litnews.ai/articles/garciaguirre-samsung-sk-hynix-micron-dram-conspiracy-suit-survives-dismissal": {
+"by": {
+"hn:50502988": 192
+},
+"first_seen": "2026-11-15T11:21:41.282909+00:00",
+"url": "https://litnews.ai/articles/garciaguirre-samsung-sk-hynix-micron-dram-conspiracy-suit-survives-dismissal"
 },
 "blog:llama.app/models": {
 "by": {
@@ -5206,12 +5601,26 @@
 "first_seen": "2026-10-28T22:44:54.349664+00:00",
 "url": "https://magazine.sebastianraschka.com/p/building-reasoning-models"
 },
+"blog:marketplace.nvidia.com/en-us/enterprise/partners/shanghai-century-litong-data-service-co-ltd": {
+"by": {
+"nl:Don't Worry About the Vase (Zvi)": 0
+},
+"first_seen": "2026-11-15T11:21:41.282909+00:00",
+"url": "https://marketplace.nvidia.com/en-us/enterprise/partners/shanghai-century-litong-data-service-co-ltd/"
+},
 "blog:marketplace.visualstudio.com/items": {
 "by": {
 "reddit:1xk66nc": 0
 },
 "first_seen": "2026-11-01T10:43:35.963021+00:00",
 "url": "https://marketplace.visualstudio.com/items?itemName=CH4LLENG3R.debugslicer-python"
+},
+"blog:marketscreener.com/news/us-holds-off-blacklisting-china-s-deepseek-more-than-100-firms-deemed-security-risks-sources-say-ce7f5cdcd88bf225": {
+"by": {
+"nl:Don't Worry About the Vase (Zvi)": 0
+},
+"first_seen": "2026-11-15T11:21:41.282909+00:00",
+"url": "https://www.marketscreener.com/news/us-holds-off-blacklisting-china-s-deepseek-more-than-100-firms-deemed-security-risks-sources-say-ce7f5cdcd88bf225"
 },
 "blog:marktechpost.com/2026/10/15/meta-muse-spark-open-816b-open-weight-model": {
 "by": {
@@ -5470,6 +5879,13 @@
 "first_seen": "2026-10-28T22:44:54.349664+00:00",
 "url": "https://microsoft.ai/news/mai-image-2-7-debut/?utm_source=therundownai.beehiiv.com&utm_medium=newsletter&utm_campaign=rundown-1029"
 },
+"blog:microsoft.com/en-us/investor/events/fy-2027/earnings-fy-2027-q1": {
+"by": {
+"nl:TheSequence": 0
+},
+"first_seen": "2026-11-15T11:21:41.282909+00:00",
+"url": "https://www.microsoft.com/en-us/investor/events/fy-2027/earnings-fy-2027-q1"
+},
 "blog:mihaileric.com/Demystifying-Claude-Code": {
 "by": {
 "nl:Latent Space (non-AINews)": 0
@@ -5658,6 +6074,13 @@
 "first_seen": "2026-11-06T11:19:07.955521+00:00",
 "url": "https://neo4j.com/nodes/?utm_source=newsletter&amp;utm_medium=latentspace&amp;utm_campaign=dev"
 },
+"blog:netmeister.org/blog/claude-delusion.html": {
+"by": {
+"hn:50496921": 148
+},
+"first_seen": "2026-11-15T11:21:41.282909+00:00",
+"url": "https://www.netmeister.org/blog/claude-delusion.html"
+},
 "blog:neuracryption.com/research": {
 "by": {
 "hn:50440359": 34
@@ -5678,6 +6101,13 @@
 },
 "first_seen": "2026-11-10T11:30:29.864126+00:00",
 "url": "https://news.adobe.com/news/2026/11/adobe-and-the-walt-disney-company-alliance?utm_source=therundownai.beehiiv.com&utm_medium=newsletter&utm_campaign=rundown-1110"
+},
+"blog:news.adobe.com/news/downloads/pdfs/2026/11/disney-corp-alliance-press-release-1.pdf": {
+"by": {
+"nl:Don't Worry About the Vase (Zvi)": 0
+},
+"first_seen": "2026-11-15T11:21:41.282909+00:00",
+"url": "https://news.adobe.com/news/downloads/pdfs/2026/11/disney-corp-alliance-press-release-1.pdf"
 },
 "blog:news.bloomberglaw.com/ip-law/spacexs-largest-3-billion-a-month-customer-b-is-anthropic": {
 "by": {
@@ -5809,6 +6239,7 @@
 "blog:nvidianews.nvidia.com/news/nvidia-announces-ceo-transition": {
 "by": {
 "nl:AINews": 0,
+"nl:Don't Worry About the Vase (Zvi)": 0,
 "nl:The Rundown AI": 0,
 "reddit:1xuivsy": 0
 },
@@ -5826,7 +6257,8 @@
 },
 "blog:nvidianews.nvidia.com/news/statement-from-the-independent-members-of-the-nvidia-board": {
 "by": {
-"nl:AINews": 0
+"nl:AINews": 0,
+"nl:Don't Worry About the Vase (Zvi)": 0
 },
 "first_seen": "2026-11-13T11:23:15.575808+00:00",
 "url": "https://nvidianews.nvidia.com/news/statement-from-the-independent-members-of-the-nvidia-board"
@@ -5940,6 +6372,13 @@
 "first_seen": "2026-11-04T11:24:00.743607+00:00",
 "url": "https://www.nytimes.com/2026/11/03/us/google-search-schools-restrict-ai.html?unlocked_article_code=1.NlE.VMKr.Cr-g-C6phyfH&smid=url-share"
 },
+"blog:nytimes.com/2026/11/05/technology/dario-amodei-anthropic-ai.html": {
+"by": {
+"nl:Don't Worry About the Vase (Zvi)": 0
+},
+"first_seen": "2026-11-15T11:21:41.282909+00:00",
+"url": "https://www.nytimes.com/2026/11/05/technology/dario-amodei-anthropic-ai.html"
+},
 "blog:nytimes.com/2026/11/06/us/politics/chinese-spy-agency-nvidia-jensen-huang.html": {
 "by": {
 "nl:AI Supremacy": 0
@@ -5970,6 +6409,9 @@
 },
 "blog:nytimes.com/2026/11/11/technology/jensen-huang-nvidia-affair.html": {
 "by": {
+"#ac9b086982": 34365,
+"#c866108c7c": 415,
+"nl:Don't Worry About the Vase (Zvi)": 0,
 "nl:The Rundown AI": 0
 },
 "first_seen": "2026-11-12T11:39:15.708214+00:00",
@@ -6023,6 +6465,14 @@
 },
 "first_seen": "2026-11-05T11:21:33.849162+00:00",
 "url": "https://on.unity.com/OpenAIPlugin"
+},
+"blog:on.wsj.com/4jcpr01": {
+"by": {
+"#8c4c940a6c": 11922,
+"#d5f9f89239": 6356
+},
+"first_seen": "2026-11-15T11:21:41.282909+00:00",
+"url": "https://on.wsj.com/4jcpr01"
 },
 "blog:oneusefulthing.org/p/fable-52-and-jagged-agi": {
 "by": {
@@ -6092,7 +6542,8 @@
 "#95453aaacd": 558,
 "hn:50372929": 488,
 "nl:AINews": 0,
-"nl:DAIR.AI": 0
+"nl:DAIR.AI": 0,
+"nl:Don't Worry About the Vase (Zvi)": 0
 },
 "first_seen": "2026-11-05T11:21:33.849162+00:00",
 "url": "https://openai.com/index/a-thousand-fewer-paths-to-root/"
@@ -6123,7 +6574,10 @@
 },
 "blog:openai.com/index/control-room": {
 "by": {
-"#95453aaacd": 3970
+"#21c9b0f10d": 2506,
+"#95453aaacd": 3970,
+"#e6ddf2060b": 57,
+"nl:Don't Worry About the Vase (Zvi)": 0
 },
 "first_seen": "2026-11-10T11:30:29.864126+00:00",
 "url": "https://openai.com/index/control-room/"
@@ -6145,7 +6599,8 @@
 "blog:openai.com/index/how-we-detect-frontier-model-misalignment": {
 "by": {
 "#95453aaacd": 3559,
-"#e1b23ad0ee": 405
+"#e1b23ad0ee": 405,
+"nl:Don't Worry About the Vase (Zvi)": 0
 },
 "first_seen": "2026-10-30T10:20:32.566285+00:00",
 "url": "https://openai.com/index/how-we-detect-frontier-model-misalignment/"
@@ -6155,6 +6610,7 @@
 "#95453aaacd": 15112,
 "hn:50443944": 38,
 "nl:Ben's Bites": 0,
+"nl:Don't Worry About the Vase (Zvi)": 0,
 "nl:The Rundown AI": 0
 },
 "first_seen": "2026-11-11T11:20:16.613564+00:00",
@@ -6171,8 +6627,11 @@
 },
 "blog:openai.com/index/introducing-gpt-6-cyber": {
 "by": {
+"#7851028182": 503,
+"#95453aaacd": 21523,
 "hn:50381590": 61,
 "nl:DAIR.AI": 0,
+"nl:Don't Worry About the Vase (Zvi)": 0,
 "nl:The Rundown AI": 0
 },
 "first_seen": "2026-11-06T11:19:07.955521+00:00",
@@ -6231,6 +6690,13 @@
 },
 "first_seen": "2026-10-28T22:44:54.349664+00:00",
 "url": "https://openai.com/index/securing-our-frontier-model-training-environment/"
+},
+"blog:openai.com/index/the-defenders-window": {
+"by": {
+"nl:Don't Worry About the Vase (Zvi)": 0
+},
+"first_seen": "2026-11-15T11:21:41.282909+00:00",
+"url": "https://openai.com/index/the-defenders-window/"
 },
 "blog:openai.com/index/updated-model-spec": {
 "by": {
@@ -6353,6 +6819,13 @@
 "first_seen": "2026-11-05T11:21:33.849162+00:00",
 "url": "https://www.pangram.com/blog/introducing-pangram-image-1-0?utm_source=therundownai.beehiiv.com&utm_medium=newsletter&utm_campaign=rundown-1105"
 },
+"blog:papercase.dev/c/rl-for-dummies": {
+"by": {
+"reddit:1xwpumg": 0
+},
+"first_seen": "2026-11-15T11:21:41.282909+00:00",
+"url": "https://papercase.dev/c/rl-for-dummies"
+},
 "blog:papercopilot.com/venue-overview/iclr-2027-venue-overview": {
 "by": {
 "reddit:1xo6yzo": 0
@@ -6425,6 +6898,13 @@
 "first_seen": "2026-11-08T10:39:44.597671+00:00",
 "url": "https://www.pcmag.com/news/good-luck-getting-a-cheap-gpu-amd-is-a-data-center-first-company-ceo-says"
 },
+"blog:peacocktv.com/watch/playback/vod/_/1a536f66-08c1-3266-aa74-011864eb050d": {
+"by": {
+"nl:Don't Worry About the Vase (Zvi)": 0
+},
+"first_seen": "2026-11-15T11:21:41.282909+00:00",
+"url": "https://www.peacocktv.com/watch/playback/vod/_/1a536f66-08c1-3266-aa74-011864eb050d"
+},
 "blog:penligent.ai/hackinglabs/cve-2026-98432": {
 "by": {
 "hn:50299182": 65
@@ -6457,7 +6937,7 @@
 "blog:perplexity.ai/hub/blog/perplexity-decider": {
 "by": {
 "#35becc2153": 445,
-"hn:50488464": 131
+"hn:50488464": 145
 },
 "first_seen": "2026-11-13T11:23:15.575808+00:00",
 "url": "http://perplexity.ai/hub/blog/perplexity-decider"
@@ -6499,7 +6979,7 @@
 },
 "blog:pietromiotti.com/latest/maya-site": {
 "by": {
-"hn:50452455": 1035
+"hn:50452455": 1036
 },
 "first_seen": "2026-11-12T11:39:15.708214+00:00",
 "url": "https://pietromiotti.com/latest/maya-site"
@@ -6610,6 +7090,20 @@
 "first_seen": "2026-10-28T22:49:45.282581+00:00",
 "url": "https://pncnmnp.github.io/blogs/economics-decision-models.html"
 },
+"blog:politico.com/live-updates/2026/11/09/congress/momentum-builds-on-chip-exports-01157548": {
+"by": {
+"nl:Don't Worry About the Vase (Zvi)": 0
+},
+"first_seen": "2026-11-15T11:21:41.282909+00:00",
+"url": "https://www.politico.com/live-updates/2026/11/09/congress/momentum-builds-on-chip-exports-01157548"
+},
+"blog:politico.com/live-updates/2026/11/10/congress/mike-johnson-supports-measures-to-restrict-u-s-chip-sales-to-china-01160213": {
+"by": {
+"nl:Don't Worry About the Vase (Zvi)": 0
+},
+"first_seen": "2026-11-15T11:21:41.282909+00:00",
+"url": "https://www.politico.com/live-updates/2026/11/10/congress/mike-johnson-supports-measures-to-restrict-u-s-chip-sales-to-china-01160213"
+},
 "blog:politico.com/news/2026/10/23/texas-sues-openai-over-product-safety-01134162": {
 "by": {
 "nl:Last Week in AI": 0
@@ -6630,6 +7124,29 @@
 },
 "first_seen": "2026-11-02T11:33:18.902055+00:00",
 "url": "https://www.politico.com/news/2026/10/31/trumps-data-centers-ballots-midterm-test-01142170?utm_source=therundownai.beehiiv.com&utm_medium=newsletter&utm_campaign=rundown-1102"
+},
+"blog:politico.com/news/2026/11/10/nvidia-ceos-spy-scandal-tilts-capitol-hills-chip-fight-01160548": {
+"by": {
+"#08bed56166": 57,
+"#fd1cd857e0": 31,
+"nl:Don't Worry About the Vase (Zvi)": 0
+},
+"first_seen": "2026-11-15T11:21:41.282909+00:00",
+"url": "https://www.politico.com/news/2026/11/10/nvidia-ceos-spy-scandal-tilts-capitol-hills-chip-fight-01160548"
+},
+"blog:politico.com/news/2026/11/10/senate-banking-republican-nvidia-ceo-resign-01160543": {
+"by": {
+"nl:Don't Worry About the Vase (Zvi)": 0
+},
+"first_seen": "2026-11-15T11:21:41.282909+00:00",
+"url": "https://www.politico.com/news/2026/11/10/senate-banking-republican-nvidia-ceo-resign-01160543"
+},
+"blog:politico.com/newsletters/playbook/2026/11/11/the-tech-right-pivots-left-01160648": {
+"by": {
+"nl:Don't Worry About the Vase (Zvi)": 0
+},
+"first_seen": "2026-11-15T11:21:41.282909+00:00",
+"url": "https://www.politico.com/newsletters/playbook/2026/11/11/the-tech-right-pivots-left-01160648?nname=playbook&amp;nid=0000014f-1646-d88f-a1cf-5f46b7bd0000&amp;nrid=0000014e-f0ed-dd93-ad7f-f8edad790000"
 },
 "blog:polso.info/why-i-will-not-be-using-llms-coding": {
 "by": {
@@ -6955,7 +7472,7 @@
 },
 "blog:respawnfirst.com/before-resigning-jensen-huang-admitted-he-was-facing-an-avalanche-of-excess-wafers-and-memory-new-report-sheds-more-light-on-the-gpu-ram-crisis": {
 "by": {
-"hn:50482992": 72
+"hn:50482992": 73
 },
 "first_seen": "2026-11-14T10:46:34.898037+00:00",
 "url": "https://respawnfirst.com/before-resigning-jensen-huang-admitted-he-was-facing-an-avalanche-of-excess-wafers-and-memory-new-report-sheds-more-light-on-the-gpu-ram-crisis/"
@@ -7016,6 +7533,13 @@
 "first_seen": "2026-11-05T11:21:33.849162+00:00",
 "url": "https://www.reuters.com/legal/transactional/amazon-google-deep-pocketed-investors-anthropic-2026-10-26/"
 },
+"blog:reuters.com/legal/transactional/banks-investors-grow-wary-ai-debt-spooked-by-market-selloff-2026-11-09": {
+"by": {
+"nl:TheSequence": 0
+},
+"first_seen": "2026-11-15T11:21:41.282909+00:00",
+"url": "https://www.reuters.com/legal/transactional/banks-investors-grow-wary-ai-debt-spooked-by-market-selloff-2026-11-09/"
+},
 "blog:reuters.com/legal/transactional/marvell-buy-lumentum-115-billion-deal-ai-data-center-bet-2026-11-02": {
 "by": {
 "nl:AI Supremacy": 0
@@ -7032,6 +7556,7 @@
 },
 "blog:reuters.com/technology/former-nvidia-ceo-huang-had-relationship-with-second-employee-sources-say-2026-11-12": {
 "by": {
+"#d3124bc520": 1362,
 "nl:The Rundown AI": 0
 },
 "first_seen": "2026-11-13T11:23:15.575808+00:00",
@@ -7051,6 +7576,13 @@
 },
 "first_seen": "2026-10-28T22:44:54.349664+00:00",
 "url": "https://www.reuters.com/world/china/china-ai-bubble-has-already-burst-2026-10-26/"
+},
+"blog:reuters.com/world/china/ex-nvidia-ceo-misled-top-lawyer-affair-with-chinese-businesswoman-sources-say-2026-11-14": {
+"by": {
+"reddit:1xwiem2": 0
+},
+"first_seen": "2026-11-15T11:21:41.282909+00:00",
+"url": "https://www.reuters.com/world/china/ex-nvidia-ceo-misled-top-lawyer-affair-with-chinese-businesswoman-sources-say-2026-11-14/"
 },
 "blog:ricuicui.com/en/local-ai": {
 "by": {
@@ -7272,6 +7804,13 @@
 },
 "first_seen": "2026-11-03T11:13:02.483541+00:00",
 "url": "https://www.seangoedecke.com/llms-are-not-superhuman-at-reading-and-writing-neural-network-weights/"
+},
+"blog:sec.gov/Archives/edgar/data/0001045810/000104581026000082/nvda-20261111.htm": {
+"by": {
+"nl:Don't Worry About the Vase (Zvi)": 0
+},
+"first_seen": "2026-11-15T11:21:41.282909+00:00",
+"url": "https://www.sec.gov/Archives/edgar/data/0001045810/000104581026000082/nvda-20261111.htm"
 },
 "blog:sec.gov/Archives/edgar/data/1045810/000104581026000078/nvda-20260902.htm": {
 "by": {
@@ -7534,16 +8073,23 @@
 "first_seen": "2026-10-28T22:44:54.349664+00:00",
 "url": "https://stanforddaily.com/2026/10/27/professors-books-pirated-to-train-claude/"
 },
+"blog:state.gov/releases/office-of-the-spokesman/2026/11/secretary-of-state-marco-rubio-remarks-to-the-press-22": {
+"by": {
+"nl:Don't Worry About the Vase (Zvi)": 0
+},
+"first_seen": "2026-11-15T11:21:41.282909+00:00",
+"url": "https://www.state.gov/releases/office-of-the-spokesman/2026/11/secretary-of-state-marco-rubio-remarks-to-the-press-22"
+},
 "blog:status.claude.com/history": {
 "by": {
-"hn:50481220": 198
+"hn:50481220": 200
 },
 "first_seen": "2026-11-13T11:23:15.575808+00:00",
 "url": "https://status.claude.com/history"
 },
 "blog:status.claude.com/incidents/nn11wk485zfn": {
 "by": {
-"hn:50481187": 488
+"hn:50481187": 493
 },
 "first_seen": "2026-11-13T11:23:15.575808+00:00",
 "url": "https://status.claude.com/incidents/nn11wk485zfn"
@@ -7723,6 +8269,13 @@
 "first_seen": "2026-10-29T10:18:48.459351+00:00",
 "url": "https://substackcdn.com/image/fetch/$s_!7nek!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fcc63e3d0-7806-42bd-a0f0-6127761947c1_1858x1045.jpeg"
 },
+"blog:substackcdn.com/image/fetch/$s_!7xyG!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Feb9c4fff-072f-4013-8fe8-00b7fb45e4cc_800x450.png": {
+"by": {
+"nl:Don't Worry About the Vase (Zvi)": 0
+},
+"first_seen": "2026-11-15T11:21:41.282909+00:00",
+"url": "https://substackcdn.com/image/fetch/$s_!7xyG!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Feb9c4fff-072f-4013-8fe8-00b7fb45e4cc_800x450.png"
+},
 "blog:substackcdn.com/image/fetch/$s_!8OzH!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F19340484-7b70-44c4-b235-b905b765b22c_1444x1689.png": {
 "by": {
 "nl:Don't Worry About the Vase (Zvi)": 0
@@ -7758,6 +8311,13 @@
 "first_seen": "2026-11-09T11:57:09.927629+00:00",
 "url": "https://substackcdn.com/image/fetch/$s_!8zrG!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F11bd130f-0d09-4520-a3ea-27673a3ac9f3_1938x978.png"
 },
+"blog:substackcdn.com/image/fetch/$s_!9buc!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F5c6ba8fe-c90b-4e34-9da3-646d739a6c35_1200x800.jpeg": {
+"by": {
+"nl:Don't Worry About the Vase (Zvi)": 0
+},
+"first_seen": "2026-11-15T11:21:41.282909+00:00",
+"url": "https://substackcdn.com/image/fetch/$s_!9buc!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F5c6ba8fe-c90b-4e34-9da3-646d739a6c35_1200x800.jpeg"
+},
 "blog:substackcdn.com/image/fetch/$s_!9f8L!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fdc86e0a8-e774-4ba2-8011-60c2e5d5445e_900x506.jpeg": {
 "by": {
 "nl:Don't Worry About the Vase (Zvi)": 0
@@ -7771,6 +8331,13 @@
 },
 "first_seen": "2026-10-29T10:18:48.459351+00:00",
 "url": "https://substackcdn.com/image/fetch/$s_!AStR!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fc7b0849c-d26c-4009-9fc2-0cdba6c7faf0_3908x2126.jpeg"
+},
+"blog:substackcdn.com/image/fetch/$s_!BG09!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F1d19ed70-2af1-4287-80aa-f388bbda2739_1200x413.jpeg": {
+"by": {
+"nl:Don't Worry About the Vase (Zvi)": 0
+},
+"first_seen": "2026-11-15T11:21:41.282909+00:00",
+"url": "https://substackcdn.com/image/fetch/$s_!BG09!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F1d19ed70-2af1-4287-80aa-f388bbda2739_1200x413.jpeg"
 },
 "blog:substackcdn.com/image/fetch/$s_!CMEg!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F8542caae-4e98-4a64-98be-66a459c8dd4c_2002x746.png": {
 "by": {
@@ -7835,6 +8402,13 @@
 "first_seen": "2026-11-09T11:57:09.927629+00:00",
 "url": "https://substackcdn.com/image/fetch/$s_!H1DW!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F0c78ea10-4174-40c3-931c-a6c3f8600114_1376x768.png"
 },
+"blog:substackcdn.com/image/fetch/$s_!HWv6!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fb99d136a-28bc-46d9-bcd3-595af9f9bf3d_1272x716.webp": {
+"by": {
+"nl:Don't Worry About the Vase (Zvi)": 0
+},
+"first_seen": "2026-11-15T11:21:41.282909+00:00",
+"url": "https://substackcdn.com/image/fetch/$s_!HWv6!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fb99d136a-28bc-46d9-bcd3-595af9f9bf3d_1272x716.webp"
+},
 "blog:substackcdn.com/image/fetch/$s_!Hu14!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fcbf2c8cb-e50c-4b75-b444-1d02eaf73c31_1109x946.png": {
 "by": {
 "nl:Don't Worry About the Vase (Zvi)": 0
@@ -7848,6 +8422,13 @@
 },
 "first_seen": "2026-11-11T11:20:16.613564+00:00",
 "url": "https://substackcdn.com/image/fetch/$s_!IwP7!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F03ccef7f-5f57-44f0-9c6c-20b8dd7aeae2_1100x1048.gif"
+},
+"blog:substackcdn.com/image/fetch/$s_!KZfE!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Ffe5531b0-a172-4a6f-a160-4efe533b8dc1_803x752.png": {
+"by": {
+"nl:Don't Worry About the Vase (Zvi)": 0
+},
+"first_seen": "2026-11-15T11:21:41.282909+00:00",
+"url": "https://substackcdn.com/image/fetch/$s_!KZfE!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Ffe5531b0-a172-4a6f-a160-4efe533b8dc1_803x752.png"
 },
 "blog:substackcdn.com/image/fetch/$s_!LaBw!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F07d3f07a-0bbf-4256-895d-be4f8b3a81d3_865x441.png": {
 "by": {
@@ -7877,6 +8458,20 @@
 "first_seen": "2026-11-11T11:20:16.613564+00:00",
 "url": "https://substackcdn.com/image/fetch/$s_!Nkfd!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fa29810c3-b89e-42c8-9c5d-c4f01d63ac0b_1100x632.gif"
 },
+"blog:substackcdn.com/image/fetch/$s_!OWL8!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F6afd13a0-8482-4afc-83ef-13c61d390383_625x680.jpeg": {
+"by": {
+"nl:Don't Worry About the Vase (Zvi)": 0
+},
+"first_seen": "2026-11-15T11:21:41.282909+00:00",
+"url": "https://substackcdn.com/image/fetch/$s_!OWL8!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F6afd13a0-8482-4afc-83ef-13c61d390383_625x680.jpeg"
+},
+"blog:substackcdn.com/image/fetch/$s_!ObR7!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Ff60a1e56-54a8-4ebb-ae27-07ed22274a88_1054x430.png": {
+"by": {
+"nl:Don't Worry About the Vase (Zvi)": 0
+},
+"first_seen": "2026-11-15T11:21:41.282909+00:00",
+"url": "https://substackcdn.com/image/fetch/$s_!ObR7!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Ff60a1e56-54a8-4ebb-ae27-07ed22274a88_1054x430.png"
+},
 "blog:substackcdn.com/image/fetch/$s_!Odx8!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F00b1a3f5-3241-4771-8c66-8897f00710b0_2057x857.png": {
 "by": {
 "nl:DAIR.AI": 0
@@ -7904,6 +8499,13 @@
 },
 "first_seen": "2026-11-03T11:13:02.483541+00:00",
 "url": "https://substackcdn.com/image/fetch/$s_!Pj0q!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fd26dfc65-36e2-4490-b725-253a76d3315f_2793x1861.jpeg"
+},
+"blog:substackcdn.com/image/fetch/$s_!PjHv!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F8eea36d7-f61d-46d9-862f-17a9a17a6e2e_1200x675.jpeg": {
+"by": {
+"nl:Don't Worry About the Vase (Zvi)": 0
+},
+"first_seen": "2026-11-15T11:21:41.282909+00:00",
+"url": "https://substackcdn.com/image/fetch/$s_!PjHv!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F8eea36d7-f61d-46d9-862f-17a9a17a6e2e_1200x675.jpeg"
 },
 "blog:substackcdn.com/image/fetch/$s_!PnUo!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fa142a30d-169f-46dc-951b-3802d95a654d_1100x1200.gif": {
 "by": {
@@ -7940,6 +8542,13 @@
 "first_seen": "2026-11-02T11:33:18.902055+00:00",
 "url": "https://substackcdn.com/image/fetch/$s_!SC0t!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F83c43583-8693-4980-9100-128a781d4dce_2048x1066.png"
 },
+"blog:substackcdn.com/image/fetch/$s_!STAA!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F86ba09fb-1f54-42e7-bf35-9e2d2bf0325f_1199x675.jpeg": {
+"by": {
+"nl:Don't Worry About the Vase (Zvi)": 0
+},
+"first_seen": "2026-11-15T11:21:41.282909+00:00",
+"url": "https://substackcdn.com/image/fetch/$s_!STAA!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F86ba09fb-1f54-42e7-bf35-9e2d2bf0325f_1199x675.jpeg"
+},
 "blog:substackcdn.com/image/fetch/$s_!Se_k!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F9e576f9b-ebf8-498d-8496-07ff211418a7_1712x750.png": {
 "by": {
 "nl:DAIR.AI": 0
@@ -7967,6 +8576,13 @@
 },
 "first_seen": "2026-10-28T22:44:54.349664+00:00",
 "url": "https://substackcdn.com/image/fetch/$s_!TwtE!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F842175c2-ddef-42bf-a67b-14e368af64b3_946x986.png"
+},
+"blog:substackcdn.com/image/fetch/$s_!ULWY!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F10a4d651-6b8c-4ce4-8c5d-fba8dfb9e4ee_720x900.jpeg": {
+"by": {
+"nl:Don't Worry About the Vase (Zvi)": 0
+},
+"first_seen": "2026-11-15T11:21:41.282909+00:00",
+"url": "https://substackcdn.com/image/fetch/$s_!ULWY!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F10a4d651-6b8c-4ce4-8c5d-fba8dfb9e4ee_720x900.jpeg"
 },
 "blog:substackcdn.com/image/fetch/$s_!VFR-!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Feed68838-dbc2-45ce-b219-b5f93f1583a2_1280x1070.png": {
 "by": {
@@ -7996,6 +8612,13 @@
 "first_seen": "2026-11-12T11:39:15.708214+00:00",
 "url": "https://substackcdn.com/image/fetch/$s_!W02F!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F21a432aa-50ce-4c18-9180-1b84f33e0158_600x419.jpeg"
 },
+"blog:substackcdn.com/image/fetch/$s_!WiYw!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Faf16b9f0-1b33-4770-ab30-8b0af3dd5075_1200x800.jpeg": {
+"by": {
+"nl:Don't Worry About the Vase (Zvi)": 0
+},
+"first_seen": "2026-11-15T11:21:41.282909+00:00",
+"url": "https://substackcdn.com/image/fetch/$s_!WiYw!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Faf16b9f0-1b33-4770-ab30-8b0af3dd5075_1200x800.jpeg"
+},
 "blog:substackcdn.com/image/fetch/$s_!WkP_!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F3ec25436-dea5-412e-a5fa-eb0aab61f16f_900x540.bin": {
 "by": {
 "nl:Last Week in AI": 0
@@ -8017,6 +8640,13 @@
 "first_seen": "2026-10-29T10:18:48.459351+00:00",
 "url": "https://substackcdn.com/image/fetch/$s_!Wvps!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fd23990dd-3a2f-479a-a7b0-a3cd94fcd07a_1600x928.jpeg"
 },
+"blog:substackcdn.com/image/fetch/$s_!Xh0j!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fc2f82590-ac58-4635-8718-cc8d45712a99_1200x675.jpeg": {
+"by": {
+"nl:Don't Worry About the Vase (Zvi)": 0
+},
+"first_seen": "2026-11-15T11:21:41.282909+00:00",
+"url": "https://substackcdn.com/image/fetch/$s_!Xh0j!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fc2f82590-ac58-4635-8718-cc8d45712a99_1200x675.jpeg"
+},
 "blog:substackcdn.com/image/fetch/$s_!Y-JV!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F7168a7c5-e4d4-42a8-82d7-449daf07314f_988x657.png": {
 "by": {
 "nl:Don't Worry About the Vase (Zvi)": 0
@@ -8024,12 +8654,26 @@
 "first_seen": "2026-10-28T22:44:54.349664+00:00",
 "url": "https://substackcdn.com/image/fetch/$s_!Y-JV!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F7168a7c5-e4d4-42a8-82d7-449daf07314f_988x657.png"
 },
+"blog:substackcdn.com/image/fetch/$s_!YcDs!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fb5785b15-de4b-4575-975d-c7f2dfd5f5f2_1200x675.jpeg": {
+"by": {
+"nl:Don't Worry About the Vase (Zvi)": 0
+},
+"first_seen": "2026-11-15T11:21:41.282909+00:00",
+"url": "https://substackcdn.com/image/fetch/$s_!YcDs!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fb5785b15-de4b-4575-975d-c7f2dfd5f5f2_1200x675.jpeg"
+},
 "blog:substackcdn.com/image/fetch/$s_!YltP!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F433d7c50-88da-433b-8575-e0a5fb7ae5c2_900x705.jpeg": {
 "by": {
 "nl:Don't Worry About the Vase (Zvi)": 0
 },
 "first_seen": "2026-10-28T22:44:54.349664+00:00",
 "url": "https://substackcdn.com/image/fetch/$s_!YltP!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F433d7c50-88da-433b-8575-e0a5fb7ae5c2_900x705.jpeg"
+},
+"blog:substackcdn.com/image/fetch/$s_!Ym5r!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fbf2078c7-bc65-44ec-83d5-3cb6059ec2b3_1200x1200.jpeg": {
+"by": {
+"nl:Don't Worry About the Vase (Zvi)": 0
+},
+"first_seen": "2026-11-15T11:21:41.282909+00:00",
+"url": "https://substackcdn.com/image/fetch/$s_!Ym5r!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fbf2078c7-bc65-44ec-83d5-3cb6059ec2b3_1200x1200.jpeg"
 },
 "blog:substackcdn.com/image/fetch/$s_!ZN1O!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F6fc1e195-24bf-4b58-8de0-a2f6ad32d14e_1100x1380.gif": {
 "by": {
@@ -8045,12 +8689,26 @@
 "first_seen": "2026-11-09T11:57:09.927629+00:00",
 "url": "https://substackcdn.com/image/fetch/$s_!_Dpu!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F3ed42f62-1e67-442d-a1df-fececc178541_760x364.png"
 },
+"blog:substackcdn.com/image/fetch/$s_!_NpB!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F7f6a6f3b-bdd1-4085-92f7-98835974769a_675x900.jpeg": {
+"by": {
+"nl:Don't Worry About the Vase (Zvi)": 0
+},
+"first_seen": "2026-11-15T11:21:41.282909+00:00",
+"url": "https://substackcdn.com/image/fetch/$s_!_NpB!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F7f6a6f3b-bdd1-4085-92f7-98835974769a_675x900.jpeg"
+},
 "blog:substackcdn.com/image/fetch/$s_!_TnU!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fa473903f-f92a-4041-bb4a-290ef245bf8a_800x977.gif": {
 "by": {
 "nl:Ben's Bites": 0
 },
 "first_seen": "2026-11-11T11:20:16.613564+00:00",
 "url": "https://substackcdn.com/image/fetch/$s_!_TnU!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fa473903f-f92a-4041-bb4a-290ef245bf8a_800x977.gif"
+},
+"blog:substackcdn.com/image/fetch/$s_!_hd8!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F8a65e471-82cb-45fb-949b-770dbff90f0b_1200x675.jpeg": {
+"by": {
+"nl:Don't Worry About the Vase (Zvi)": 0
+},
+"first_seen": "2026-11-15T11:21:41.282909+00:00",
+"url": "https://substackcdn.com/image/fetch/$s_!_hd8!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F8a65e471-82cb-45fb-949b-770dbff90f0b_1200x675.jpeg"
 },
 "blog:substackcdn.com/image/fetch/$s_!a1tK!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fef979dd9-9c21-41c5-a22e-c41750298ef1_1672x832.png": {
 "by": {
@@ -8072,6 +8730,20 @@
 },
 "first_seen": "2026-10-29T10:18:48.459351+00:00",
 "url": "https://substackcdn.com/image/fetch/$s_!a3ZY!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F35a1709b-d80c-4d99-8f87-e5b19eccae0a_1670x938.jpeg"
+},
+"blog:substackcdn.com/image/fetch/$s_!a8TY!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F1d8a2ae5-aa40-4f8c-9164-27ef9294ad0c_1200x800.jpeg": {
+"by": {
+"nl:Don't Worry About the Vase (Zvi)": 0
+},
+"first_seen": "2026-11-15T11:21:41.282909+00:00",
+"url": "https://substackcdn.com/image/fetch/$s_!a8TY!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F1d8a2ae5-aa40-4f8c-9164-27ef9294ad0c_1200x800.jpeg"
+},
+"blog:substackcdn.com/image/fetch/$s_!bU32!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F5688a0d5-79b2-4a8f-9766-ed5f2dcdbce5_1200x675.jpeg": {
+"by": {
+"nl:Don't Worry About the Vase (Zvi)": 0
+},
+"first_seen": "2026-11-15T11:21:41.282909+00:00",
+"url": "https://substackcdn.com/image/fetch/$s_!bU32!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F5688a0d5-79b2-4a8f-9766-ed5f2dcdbce5_1200x675.jpeg"
 },
 "blog:substackcdn.com/image/fetch/$s_!bvJV!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fc21c8ed6-b2ca-4e0d-afc7-991fdc6c769d_1100x1040.gif": {
 "by": {
@@ -8143,6 +8815,13 @@
 "first_seen": "2026-11-12T11:39:15.708214+00:00",
 "url": "https://substackcdn.com/image/fetch/$s_!fw2M!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F207961e0-b3ba-401d-bead-22d91f95b936_2400x1606.jpeg"
 },
+"blog:substackcdn.com/image/fetch/$s_!g2_K!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fb9f5b177-bdf9-4761-aecc-c18f02b300eb_499x680.png": {
+"by": {
+"nl:Don't Worry About the Vase (Zvi)": 0
+},
+"first_seen": "2026-11-15T11:21:41.282909+00:00",
+"url": "https://substackcdn.com/image/fetch/$s_!g2_K!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fb9f5b177-bdf9-4761-aecc-c18f02b300eb_499x680.png"
+},
 "blog:substackcdn.com/image/fetch/$s_!gYZ5!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fb343d48c-52e2-4566-a3e0-76fcc458bd90_1100x1120.gif": {
 "by": {
 "nl:Ben's Bites": 0
@@ -8163,6 +8842,13 @@
 },
 "first_seen": "2026-11-11T11:20:16.613564+00:00",
 "url": "https://substackcdn.com/image/fetch/$s_!hGV_!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F17933484-e07e-41e6-b8a7-325c48cc8484_1100x588.png"
+},
+"blog:substackcdn.com/image/fetch/$s_!hRFW!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F7f79bc9a-d013-42a4-a7b2-aeb990c8f752_1042x741.png": {
+"by": {
+"nl:Don't Worry About the Vase (Zvi)": 0
+},
+"first_seen": "2026-11-15T11:21:41.282909+00:00",
+"url": "https://substackcdn.com/image/fetch/$s_!hRFW!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F7f79bc9a-d013-42a4-a7b2-aeb990c8f752_1042x741.png"
 },
 "blog:substackcdn.com/image/fetch/$s_!hX6j!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F37b8e011-38e9-4ade-b45c-06dc292639bc_1453x604.png": {
 "by": {
@@ -8191,6 +8877,13 @@
 },
 "first_seen": "2026-11-13T11:23:15.575808+00:00",
 "url": "https://substackcdn.com/image/fetch/$s_!jNzd!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F4f45e8ff-357f-4292-a5cf-8fdccc3e952a_1100x1292.gif"
+},
+"blog:substackcdn.com/image/fetch/$s_!k1I6!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F5695b1fd-eab1-4e3f-949d-42b3a91f044d_1643x1233.png": {
+"by": {
+"nl:Don't Worry About the Vase (Zvi)": 0
+},
+"first_seen": "2026-11-15T11:21:41.282909+00:00",
+"url": "https://substackcdn.com/image/fetch/$s_!k1I6!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F5695b1fd-eab1-4e3f-949d-42b3a91f044d_1643x1233.png"
 },
 "blog:substackcdn.com/image/fetch/$s_!kVyh!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F2b95ad75-13e2-4256-b3fa-8e26fe6782d4_1427x695.png": {
 "by": {
@@ -8269,6 +8962,13 @@
 "first_seen": "2026-11-02T11:33:18.902055+00:00",
 "url": "https://substackcdn.com/image/fetch/$s_!nu6L!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fd6492e26-e647-4cd9-8cf1-d7fa65359f3a_1906x1137.png"
 },
+"blog:substackcdn.com/image/fetch/$s_!oCX8!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F7da5fd9f-8460-43be-8c72-70624672d439_1600x1360.jpeg": {
+"by": {
+"nl:DAIR.AI": 0
+},
+"first_seen": "2026-11-15T11:21:41.282909+00:00",
+"url": "https://substackcdn.com/image/fetch/$s_!oCX8!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F7da5fd9f-8460-43be-8c72-70624672d439_1600x1360.jpeg"
+},
 "blog:substackcdn.com/image/fetch/$s_!og5w!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fc1b8086f-76e1-4d21-9b19-9b1323aa2633_927x541.png": {
 "by": {
 "nl:AI Supremacy": 0
@@ -8311,12 +9011,26 @@
 "first_seen": "2026-11-09T11:57:09.927629+00:00",
 "url": "https://substackcdn.com/image/fetch/$s_!qJaE!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F074807d8-5a79-4755-bb85-e3146a40ae9c_1858x1045.jpeg"
 },
+"blog:substackcdn.com/image/fetch/$s_!qm5V!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F8f74649c-09f8-4ba3-8995-0c83a2db5d40_1280x720.jpeg": {
+"by": {
+"nl:TheSequence": 0
+},
+"first_seen": "2026-11-15T11:21:41.282909+00:00",
+"url": "https://substackcdn.com/image/fetch/$s_!qm5V!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F8f74649c-09f8-4ba3-8995-0c83a2db5d40_1280x720.jpeg"
+},
 "blog:substackcdn.com/image/fetch/$s_!qnH3!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F4714eef8-8ace-4fc8-a084-45771e8e3af4_1766x1138.jpeg": {
 "by": {
 "nl:Don't Worry About the Vase (Zvi)": 0
 },
 "first_seen": "2026-10-28T22:44:54.349664+00:00",
 "url": "https://substackcdn.com/image/fetch/$s_!qnH3!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F4714eef8-8ace-4fc8-a084-45771e8e3af4_1766x1138.jpeg"
+},
+"blog:substackcdn.com/image/fetch/$s_!rhvB!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fcd26017f-358d-48fb-9a1d-c7f6a093468a_720x900.jpeg": {
+"by": {
+"nl:Don't Worry About the Vase (Zvi)": 0
+},
+"first_seen": "2026-11-15T11:21:41.282909+00:00",
+"url": "https://substackcdn.com/image/fetch/$s_!rhvB!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fcd26017f-358d-48fb-9a1d-c7f6a093468a_720x900.jpeg"
 },
 "blog:substackcdn.com/image/fetch/$s_!sh4c!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F795c05dc-9029-4fb2-ae12-862e73c8c237_841x458.png": {
 "by": {
@@ -8353,12 +9067,40 @@
 "first_seen": "2026-10-28T22:44:54.349664+00:00",
 "url": "https://substackcdn.com/image/fetch/$s_!uQik!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F788445b8-e2b1-4aec-a52d-22dedc147225_1465x635.png"
 },
+"blog:substackcdn.com/image/fetch/$s_!vEiy!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fd5be2145-ebdf-45f3-8a4c-4b45708240f9_1240x1584.png": {
+"by": {
+"nl:Don't Worry About the Vase (Zvi)": 0
+},
+"first_seen": "2026-11-15T11:21:41.282909+00:00",
+"url": "https://substackcdn.com/image/fetch/$s_!vEiy!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fd5be2145-ebdf-45f3-8a4c-4b45708240f9_1240x1584.png"
+},
 "blog:substackcdn.com/image/fetch/$s_!vLkm!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F632e7bb8-baa8-4122-b0ce-077347972d04_1100x1120.gif": {
 "by": {
 "nl:Ben's Bites": 0
 },
 "first_seen": "2026-11-11T11:20:16.613564+00:00",
 "url": "https://substackcdn.com/image/fetch/$s_!vLkm!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F632e7bb8-baa8-4122-b0ce-077347972d04_1100x1120.gif"
+},
+"blog:substackcdn.com/image/fetch/$s_!vhCo!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Ff7af8b61-b59f-4fd6-adf4-63e175076dee_1200x1200.jpeg": {
+"by": {
+"nl:Don't Worry About the Vase (Zvi)": 0
+},
+"first_seen": "2026-11-15T11:21:41.282909+00:00",
+"url": "https://substackcdn.com/image/fetch/$s_!vhCo!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Ff7af8b61-b59f-4fd6-adf4-63e175076dee_1200x1200.jpeg"
+},
+"blog:substackcdn.com/image/fetch/$s_!vl9T!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F7ec7b5c7-bc9d-4221-87e7-1d677f4a950f_804x706.png": {
+"by": {
+"nl:Don't Worry About the Vase (Zvi)": 0
+},
+"first_seen": "2026-11-15T11:21:41.282909+00:00",
+"url": "https://substackcdn.com/image/fetch/$s_!vl9T!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F7ec7b5c7-bc9d-4221-87e7-1d677f4a950f_804x706.png"
+},
+"blog:substackcdn.com/image/fetch/$s_!w-B6!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F3e97fa5f-26fb-474c-ae9b-0a507bc02951_1280x720.jpeg": {
+"by": {
+"nl:TheSequence": 0
+},
+"first_seen": "2026-11-15T11:21:41.282909+00:00",
+"url": "https://substackcdn.com/image/fetch/$s_!w-B6!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F3e97fa5f-26fb-474c-ae9b-0a507bc02951_1280x720.jpeg"
 },
 "blog:substackcdn.com/image/fetch/$s_!w5um!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F77746319-6dca-4ae3-b3db-753ceb447ae2_800x500.gif": {
 "by": {
@@ -8374,6 +9116,20 @@
 "first_seen": "2026-11-06T11:19:07.955521+00:00",
 "url": "https://substackcdn.com/image/fetch/$s_!x-y8!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F7182b3ff-ac5e-49bb-83e0-946526961ac7_1108x619.png"
 },
+"blog:substackcdn.com/image/fetch/$s_!x2yP!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F8a1cdcd4-99c4-4e74-a8e4-834f695d41e4_675x900.jpeg": {
+"by": {
+"nl:Don't Worry About the Vase (Zvi)": 0
+},
+"first_seen": "2026-11-15T11:21:41.282909+00:00",
+"url": "https://substackcdn.com/image/fetch/$s_!x2yP!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F8a1cdcd4-99c4-4e74-a8e4-834f695d41e4_675x900.jpeg"
+},
+"blog:substackcdn.com/image/fetch/$s_!y9DD!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F8d06ddab-1c81-4512-8e63-80b00de68632_1200x681.jpeg": {
+"by": {
+"nl:Don't Worry About the Vase (Zvi)": 0
+},
+"first_seen": "2026-11-15T11:21:41.282909+00:00",
+"url": "https://substackcdn.com/image/fetch/$s_!y9DD!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F8d06ddab-1c81-4512-8e63-80b00de68632_1200x681.jpeg"
+},
 "blog:substackcdn.com/image/fetch/$s_!yERt!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F16b6aae7-6829-4487-839c-2304f361ad27_762x745.png": {
 "by": {
 "nl:AI Supremacy": 0
@@ -8388,12 +9144,26 @@
 "first_seen": "2026-11-11T11:20:16.613564+00:00",
 "url": "https://substackcdn.com/image/fetch/$s_!z-ah!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fae3c323e-c3d2-4944-bbe6-4098dc70eacc_1100x740.png"
 },
+"blog:substackcdn.com/image/fetch/$s_!zTdz!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F192a3f76-f277-43f7-b439-21d97b54a243_886x1137.png": {
+"by": {
+"nl:Don't Worry About the Vase (Zvi)": 0
+},
+"first_seen": "2026-11-15T11:21:41.282909+00:00",
+"url": "https://substackcdn.com/image/fetch/$s_!zTdz!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F192a3f76-f277-43f7-b439-21d97b54a243_886x1137.png"
+},
 "blog:substackcdn.com/image/fetch/$s_!z_aZ!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fb5c9cb41-d8fc-4ccc-885c-3d6333cf3864_1600x900.png": {
 "by": {
 "nl:Ben's Bites": 0
 },
 "first_seen": "2026-11-04T11:24:00.743607+00:00",
 "url": "https://substackcdn.com/image/fetch/$s_!z_aZ!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fb5c9cb41-d8fc-4ccc-885c-3d6333cf3864_1600x900.png"
+},
+"blog:substackcdn.com/image/fetch/$s_!zd-p!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F7ac6d5da-5a47-4ad5-94cd-74c95751c590_628x327.png": {
+"by": {
+"nl:Don't Worry About the Vase (Zvi)": 0
+},
+"first_seen": "2026-11-15T11:21:41.282909+00:00",
+"url": "https://substackcdn.com/image/fetch/$s_!zd-p!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F7ac6d5da-5a47-4ad5-94cd-74c95751c590_628x327.png"
 },
 "blog:substackcdn.com/image/fetch/$s_!zk-A!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F8c21cea3-bb93-43d5-9626-39c8a7014e1e_2048x1365.jpeg": {
 "by": {
@@ -8475,7 +9245,7 @@
 },
 "blog:synthanatomy.com/2026/11/ai-is-turning-apples-app-review-process-into-a-nightmare-for-developers.html": {
 "by": {
-"hn:50474311": 197
+"hn:50474311": 198
 },
 "first_seen": "2026-11-13T11:23:15.575808+00:00",
 "url": "https://synthanatomy.com/2026/11/ai-is-turning-apples-app-review-process-into-a-nightmare-for-developers.html"
@@ -8764,7 +9534,7 @@
 },
 "blog:techpowerup.com/354814/nvidia-allegedly-engineered-scarcity-by-funding-ai-startups-to-buy-its-gpus": {
 "by": {
-"hn:50493251": 597
+"hn:50493251": 1075
 },
 "first_seen": "2026-11-14T10:46:34.898037+00:00",
 "url": "https://www.techpowerup.com/354814/nvidia-allegedly-engineered-scarcity-by-funding-ai-startups-to-buy-its-gpus"
@@ -8792,10 +9562,17 @@
 },
 "blog:techspot.com/news/114532-chicago-schools-tell-google-they-can-live-without.html": {
 "by": {
-"hn:50476586": 89
+"hn:50476586": 90
 },
 "first_seen": "2026-11-13T11:23:15.575808+00:00",
 "url": "https://www.techspot.com/news/114532-chicago-schools-tell-google-they-can-live-without.html"
+},
+"blog:techspot.com/news/114558-nvidia-deliberately-kept-gpu-prices-high-through-circular.html": {
+"by": {
+"hn:50501631": 425
+},
+"first_seen": "2026-11-15T11:21:41.282909+00:00",
+"url": "https://www.techspot.com/news/114558-nvidia-deliberately-kept-gpu-prices-high-through-circular.html"
 },
 "blog:tencent.com/tencent-launches-hy4-joining-the-ranks-of-the-worlds-leading-open-source-ai-models": {
 "by": {
@@ -8821,7 +9598,7 @@
 },
 "blog:text.npr.org/nx-s1-6029408": {
 "by": {
-"hn:50484960": 185
+"hn:50484960": 194
 },
 "first_seen": "2026-11-14T10:46:34.898037+00:00",
 "url": "https://text.npr.org/nx-s1-6029408"
@@ -8849,7 +9626,7 @@
 },
 "blog:theatlantic.com/books/2026/11/ai-literary-scams-amazon/689391": {
 "by": {
-"hn:50481870": 342
+"hn:50481870": 366
 },
 "first_seen": "2026-11-14T10:46:34.898037+00:00",
 "url": "https://www.theatlantic.com/books/2026/11/ai-literary-scams-amazon/689391/"
@@ -8898,7 +9675,7 @@
 },
 "blog:theguardian.com/science/2026/nov/13/kurt-godel-notebooks-ai-helps-unlock-hidden-discoveries-man-who-transformed-maths": {
 "by": {
-"hn:50486748": 394
+"hn:50486748": 430
 },
 "first_seen": "2026-11-14T10:46:34.898037+00:00",
 "url": "https://www.theguardian.com/science/2026/nov/13/kurt-godel-notebooks-ai-helps-unlock-hidden-discoveries-man-who-transformed-maths"
@@ -8940,7 +9717,8 @@
 },
 "blog:theinformation.com/articles/commerce-department-finalizing-long-awaited-ai-remote-access-rule": {
 "by": {
-"#355ae36298": 92
+"#355ae36298": 92,
+"#d34e4899cd": 21
 },
 "first_seen": "2026-11-13T11:23:15.575808+00:00",
 "url": "https://www.theinformation.com/articles/commerce-department-finalizing-long-awaited-ai-remote-access-rule?rc=hwneun&shared=c246f22ce1b5c9c7"
@@ -8993,6 +9771,34 @@
 },
 "first_seen": "2026-11-05T11:21:33.849162+00:00",
 "url": "https://www.theinformation.com/articles/ubers-jill-hazelbaker-join-openai-chief-corporate-affairs-officer"
+},
+"blog:theinformation.com/briefings/anthropic-discloses-10-billion-new-deals-microsoft-google-says-lambda-deal-may-cancelled": {
+"by": {
+"nl:Don't Worry About the Vase (Zvi)": 0
+},
+"first_seen": "2026-11-15T11:21:41.282909+00:00",
+"url": "https://www.theinformation.com/briefings/anthropic-discloses-10-billion-new-deals-microsoft-google-says-lambda-deal-may-cancelled?utm_campaign=%5BREBRAND%5D+%5BTI-AM%5D+Th&amp;utm_content=1095&amp;utm_medium=email&amp;utm_source=cio&amp;utm_term=124&amp;rc=tv1dv6"
+},
+"blog:theinformation.com/briefings/anthropic-launches-new-workplace-software-sending-microsoft-shares-tanking": {
+"by": {
+"nl:Don't Worry About the Vase (Zvi)": 0
+},
+"first_seen": "2026-11-15T11:21:41.282909+00:00",
+"url": "https://www.theinformation.com/briefings/anthropic-launches-new-workplace-software-sending-microsoft-shares-tanking?utm_campaign=%5BREBRAND%5D+%5BTI-AM%5D+Th&amp;utm_content=1095&amp;utm_medium=email&amp;utm_source=cio&amp;utm_term=124&amp;rc=tv1dv6"
+},
+"blog:theinformation.com/briefings/nvidia-board-hires-wachtell-independent-investigation-ceo-relationship": {
+"by": {
+"nl:Don't Worry About the Vase (Zvi)": 0
+},
+"first_seen": "2026-11-15T11:21:41.282909+00:00",
+"url": "https://www.theinformation.com/briefings/nvidia-board-hires-wachtell-independent-investigation-ceo-relationship?utm_campaign=%5BREBRAND%5D+%5BTI-AM%5D+Th&amp;utm_content=1095&amp;utm_medium=email&amp;utm_source=cio&amp;utm_term=124&amp;rc=tv1dv6"
+},
+"blog:theinformation.com/org-charts/nvidia": {
+"by": {
+"nl:Don't Worry About the Vase (Zvi)": 0
+},
+"first_seen": "2026-11-15T11:21:41.282909+00:00",
+"url": "https://www.theinformation.com/org-charts/nvidia"
 },
 "blog:thenewstack.io/meta-muse-ember-launch": {
 "by": {
@@ -9549,6 +10355,14 @@
 "first_seen": "2026-11-12T11:39:15.708214+00:00",
 "url": "https://www.theverge.com/tech/1023763/openai-google-microsoft-ai-scraping-standard-opt-out"
 },
+"blog:thezvi.substack.com/p/nvidia-ceo-jensen-huang-had-an-affair": {
+"by": {
+"#38dd41c42f": 384,
+"#fdff4d3458": 356
+},
+"first_seen": "2026-11-15T11:21:41.282909+00:00",
+"url": "https://thezvi.substack.com/p/nvidia-ceo-jensen-huang-had-an-affair?r=7n57&utm_campaign=post-expanded-share&utm_medium=web"
+},
 "blog:thinkingmachines.ai/blog": {
 "by": {
 "nl:AINews": 0
@@ -9567,7 +10381,8 @@
 "by": {
 "#3698cc543c": 67,
 "#74c1954163": 1661,
-"#8d8be42c18": 198
+"#8d8be42c18": 198,
+"hn:50490618": 24
 },
 "first_seen": "2026-11-14T10:46:34.898037+00:00",
 "url": "https://thinkingmachines.ai/blog/end-to-end-4-bit-training"
@@ -9642,7 +10457,7 @@
 },
 "blog:thunderseethe.dev/posts/ml-modules-for-mere-mortals/intro": {
 "by": {
-"lobsters:mgiv0i": 27
+"lobsters:mgiv0i": 35
 },
 "first_seen": "2026-11-14T10:46:34.898037+00:00",
 "url": "https://thunderseethe.dev/posts/ml-modules-for-mere-mortals/intro/"
@@ -9782,12 +10597,26 @@
 "first_seen": "2026-11-01T10:43:35.963021+00:00",
 "url": "https://www.tomshardware.com/tech-industry/artificial-intelligence/anthropics-ai-model-is-now-blocking-attempts-at-video-game-recreation-and-cloning-users-also-claim-non-malicious-generic-reverse-engineering-tasks-are-blocked"
 },
+"blog:tomshardware.com/tech-industry/artificial-intelligence/mass-smuggling-of-nvidia-ai-gpus-could-be-the-underlying-cause-of-jensen-huangs-departure-analysts-claim-more-than-1-5-gigawatts-of-banned-chips-tracked-to-china-despite-export-controls": {
+"by": {
+"hn:50498051": 58
+},
+"first_seen": "2026-11-15T11:21:41.282909+00:00",
+"url": "https://www.tomshardware.com/tech-industry/artificial-intelligence/mass-smuggling-of-nvidia-ai-gpus-could-be-the-underlying-cause-of-jensen-huangs-departure-analysts-claim-more-than-1-5-gigawatts-of-banned-chips-tracked-to-china-despite-export-controls"
+},
 "blog:tomshardware.com/tech-industry/artificial-intelligence/reddits-r-opensource-bans-ai-made-and-ai-focused-projects-also-bans-non-english-speakers-sweeping-new-rules-spark-backlash-over-linux-kernel-contributions-and-solo-developers": {
 "by": {
 "hn:50242884": 20
 },
 "first_seen": "2026-10-28T22:44:54.349664+00:00",
 "url": "https://www.tomshardware.com/tech-industry/artificial-intelligence/reddits-r-opensource-bans-ai-made-and-ai-focused-projects-also-bans-non-english-speakers-sweeping-new-rules-spark-backlash-over-linux-kernel-contributions-and-solo-developers"
+},
+"blog:tomshardware.com/tech-industry/artificial-intelligence/rogue-claude-ai-tasked-with-renumbering-pages-accidentally-deletes-law-professors-entire-syllabus-one-year-of-lecture-notes-youre-right-to-be-angry-i-deleted-your-files-through-my-own-carelessness-humbled-agent-admits": {
+"by": {
+"hn:50499114": 48
+},
+"first_seen": "2026-11-15T11:21:41.282909+00:00",
+"url": "https://www.tomshardware.com/tech-industry/artificial-intelligence/rogue-claude-ai-tasked-with-renumbering-pages-accidentally-deletes-law-professors-entire-syllabus-one-year-of-lecture-notes-youre-right-to-be-angry-i-deleted-your-files-through-my-own-carelessness-humbled-agent-admits"
 },
 "blog:tomshardware.com/tech-industry/artificial-intelligence/us-intelligence-believes-jensen-huang-had-romantic-relationship-with-chinese-spy-in-honeypot-operation-spy-suspect-linked-to-company-accused-of-smuggling-usd2-billion-in-ai-chips": {
 "by": {
@@ -9845,6 +10674,13 @@
 "first_seen": "2026-11-14T10:46:34.898037+00:00",
 "url": "https://www.transformernews.ai/p/hugging-face-appears-to-be-hosting"
 },
+"blog:transformernews.ai/p/innovation-council-david-sacks-jd-vance": {
+"by": {
+"nl:Don't Worry About the Vase (Zvi)": 0
+},
+"first_seen": "2026-11-15T11:21:41.282909+00:00",
+"url": "https://www.transformernews.ai/p/innovation-council-david-sacks-jd-vance"
+},
 "blog:triplewhale.com/reports-guides/black-friday-prompt-guide": {
 "by": {
 "nl:The Rundown AI": 0
@@ -9858,6 +10694,13 @@
 },
 "first_seen": "2026-10-28T22:44:54.349664+00:00",
 "url": "https://truthsocial.com/@realDonaldTrump/posts/117513761542349273?utm_source=therundownai.beehiiv.com&utm_medium=newsletter&utm_campaign=rundown-1029"
+},
+"blog:tutorintelligence.com/blog/tutor-intelligence-and-the-next-age-of-machines": {
+"by": {
+"nl:TheSequence": 0
+},
+"first_seen": "2026-11-15T11:21:41.282909+00:00",
+"url": "https://tutorintelligence.com/blog/tutor-intelligence-and-the-next-age-of-machines"
 },
 "blog:tvm.apache.org/2026/11/03/rethinking-abstractions-in-the-agentic-era": {
 "by": {
@@ -9905,17 +10748,18 @@
 },
 "blog:unemploymentlabs.com/checkpoint-forensics": {
 "by": {
-"#4aa84d994b": 34789,
+"#4aa84d994b": 40857,
 "#77ed393bd5": 337,
 "#e72c99a412": 117,
-"hn:50474883": 365
+"hn:50474883": 402,
+"nl:Don't Worry About the Vase (Zvi)": 0
 },
 "first_seen": "2026-11-13T11:23:15.575808+00:00",
 "url": "http://unemploymentlabs.com/checkpoint-forensics"
 },
 "blog:unemploymentlabs.com/checkpoint-forensics.": {
 "by": {
-"#4aa84d994b": 34789
+"#4aa84d994b": 40857
 },
 "first_seen": "2026-11-13T11:23:15.575808+00:00",
 "url": "http://unemploymentlabs.com/checkpoint-forensics."
@@ -9929,6 +10773,7 @@
 },
 "blog:united.com/en/us/newsroom/announcements/cision-125496": {
 "by": {
+"nl:Don't Worry About the Vase (Zvi)": 0,
 "nl:The Rundown AI": 0
 },
 "first_seen": "2026-11-12T11:39:15.708214+00:00",
@@ -9960,7 +10805,7 @@
 "blog:unsloth.ai/docs/models/qwen3.8": {
 "by": {
 "#07d23f0e7a": 163,
-"hn:50491980": 149,
+"hn:50491980": 251,
 "nl:AINews": 0,
 "reddit:1xtlyhe": 0
 },
@@ -9973,6 +10818,13 @@
 },
 "first_seen": "2026-11-05T11:21:33.849162+00:00",
 "url": "https://unsloth.ai/docs/models/qwen3.8-next"
+},
+"blog:unusualwhales.com/news/commerce-approved-nvidia-chip-sales-china-companies-nyt": {
+"by": {
+"nl:Don't Worry About the Vase (Zvi)": 0
+},
+"first_seen": "2026-11-15T11:21:41.282909+00:00",
+"url": "https://unusualwhales.com/news/commerce-approved-nvidia-chip-sales-china-companies-nyt"
 },
 "blog:vals.ai/blogs/impossible-refund": {
 "by": {
@@ -10124,7 +10976,8 @@
 },
 "blog:washingtonpost.com/technology/2026/11/03/google-deepmind-staff-protest-lifetime-ban-criticizing-company": {
 "by": {
-"hn:50355504": 92
+"hn:50355504": 92,
+"nl:Don't Worry About the Vase (Zvi)": 0
 },
 "first_seen": "2026-11-04T11:24:00.743607+00:00",
 "url": "https://www.washingtonpost.com/technology/2026/11/03/google-deepmind-staff-protest-lifetime-ban-criticizing-company/"
@@ -10208,6 +11061,7 @@
 },
 "blog:wired.com/story/nvidia-employees-petition-for-jensen-huangs-return": {
 "by": {
+"nl:Don't Worry About the Vase (Zvi)": 0,
 "reddit:1xuxxmb": 0
 },
 "first_seen": "2026-11-13T11:23:15.575808+00:00",
@@ -10227,14 +11081,43 @@
 "first_seen": "2026-11-04T11:24:00.743607+00:00",
 "url": "https://www.wiz.io/lp/securing-ai-agents-101?utm_source=rundown-ai&utm_medium=paid-email&utm_campaign=FY26Q3_INB_FORM_Securing-AI-Agents-101&sfcid=701Py00000RTEWMIA5&utm_term=FY27Q4-Rundown-AI-primary-Nov&utm_content=AI-Agents-101"
 },
+"blog:wsj.com/articles/nvidia-ceos-sudden-downfall-creates-nightmare-for-white-house-04b2b977": {
+"by": {
+"nl:Don't Worry About the Vase (Zvi)": 0
+},
+"first_seen": "2026-11-15T11:21:41.282909+00:00",
+"url": "https://www.wsj.com/articles/nvidia-ceos-sudden-downfall-creates-nightmare-for-white-house-04b2b977?mod=WTRN_pos1"
+},
+"blog:wsj.com/business/a-reined-in-jensen-huang-is-nvidias-best-option-e79cb305": {
+"by": {
+"nl:Don't Worry About the Vase (Zvi)": 0
+},
+"first_seen": "2026-11-15T11:21:41.282909+00:00",
+"url": "https://www.wsj.com/business/a-reined-in-jensen-huang-is-nvidias-best-option-e79cb305?mod=WTRN_pos2"
+},
+"blog:wsj.com/business/earnings/nvidias-disappearing-singapore-sales-deepen-mystery-around-megaspeed-7d483180": {
+"by": {
+"nl:Don't Worry About the Vase (Zvi)": 0
+},
+"first_seen": "2026-11-15T11:21:41.282909+00:00",
+"url": "https://www.wsj.com/business/earnings/nvidias-disappearing-singapore-sales-deepen-mystery-around-megaspeed-7d483180?st=73pKFE&amp;reflink=article_copyURL_share"
+},
 "blog:wsj.com/business/nvidia-is-preparing-to-oust-nvidia-ceo-jensen-huang-30f421ad": {
 "by": {
+"nl:Don't Worry About the Vase (Zvi)": 0,
 "nl:The Rundown AI": 0,
 "reddit:1xtvsi7": 0,
 "reddit:1xu57j1": 0
 },
 "first_seen": "2026-11-12T11:39:15.708214+00:00",
 "url": "https://www.wsj.com/business/nvidia-is-preparing-to-oust-nvidia-ceo-jensen-huang-30f421ad?utm_source=therundownai.beehiiv.com&utm_medium=newsletter&utm_campaign=rundown-1112"
+},
+"blog:wsj.com/business/the-spy-scandal-that-lays-bare-nvidias-governance-vacuum-44f8c786": {
+"by": {
+"nl:Don't Worry About the Vase (Zvi)": 0
+},
+"first_seen": "2026-11-15T11:21:41.282909+00:00",
+"url": "https://www.wsj.com/business/the-spy-scandal-that-lays-bare-nvidias-governance-vacuum-44f8c786?mod=article_inline"
 },
 "blog:wsj.com/finance/major-investors-are-skeptical-anthropic-ipo-can-achieve-1-5-trillion-valuation-ca965d8b\u2019": {
 "by": {
@@ -10257,6 +11140,13 @@
 "first_seen": "2026-11-11T11:20:16.613564+00:00",
 "url": "https://www.wsj.com/finance/stocks/anthropic-to-seek-1-3-trillion-valuation-in-ipo-8337b669"
 },
+"blog:wsj.com/finance/stocks/nvidia-shareholders-wont-miss-jensen-huang-for-long-13429e31": {
+"by": {
+"nl:Don't Worry About the Vase (Zvi)": 0
+},
+"first_seen": "2026-11-15T11:21:41.282909+00:00",
+"url": "https://www.wsj.com/finance/stocks/nvidia-shareholders-wont-miss-jensen-huang-for-long-13429e31?mod=WTRN_pos4"
+},
 "blog:wsj.com/livecoverage/stock-market-today-dow-sp-500-nasdaq-11-05-2026": {
 "by": {
 "hn:50382179": 163
@@ -10277,6 +11167,13 @@
 },
 "first_seen": "2026-10-28T22:44:54.349664+00:00",
 "url": "https://www.wsj.com/market-data/stock/nvda?mod=article_chiclet"
+},
+"blog:wsj.com/politics/national-security/huangs-coziness-with-trump-wasnt-enough-to-save-him-from-spying-scandal-85ce06f4": {
+"by": {
+"nl:Don't Worry About the Vase (Zvi)": 0
+},
+"first_seen": "2026-11-15T11:21:41.282909+00:00",
+"url": "https://www.wsj.com/politics/national-security/huangs-coziness-with-trump-wasnt-enough-to-save-him-from-spying-scandal-85ce06f4?mod=WTRN_pos1"
 },
 "blog:wsj.com/tech/ai/ai-anthropic-rsi-recursive-self-improvement-bff4e815": {
 "by": {
@@ -10314,6 +11211,21 @@
 },
 "first_seen": "2026-11-09T11:57:09.927629+00:00",
 "url": "https://www.wsj.com/tech/ai/silicon-valley-promises-ai-will-cure-disease-drugmaker-ceos-arent-buying-it-5218511c"
+},
+"blog:wsj.com/tech/colette-kress-nvidia-interim-ceo-ff26ef3a": {
+"by": {
+"nl:Don't Worry About the Vase (Zvi)": 0
+},
+"first_seen": "2026-11-15T11:21:41.282909+00:00",
+"url": "https://www.wsj.com/tech/colette-kress-nvidia-interim-ceo-ff26ef3a?mod=WTRN_pos1"
+},
+"blog:wsj.com/tech/jensen-huang-colette-kress-nvidia-ceo-eb289097": {
+"by": {
+"#874862f96d": 2249,
+"nl:Don't Worry About the Vase (Zvi)": 0
+},
+"first_seen": "2026-11-15T11:21:41.282909+00:00",
+"url": "https://www.wsj.com/tech/jensen-huang-colette-kress-nvidia-ceo-eb289097"
 },
 "blog:www-cdn.anthropic.com/a9ceec76a54d28d27affffcdab6faf7c142cd587.pdf": {
 "by": {
@@ -10381,7 +11293,7 @@
 },
 "blog:zellij.dev/news/terminal-inbox-session-previews": {
 "by": {
-"hn:50452313": 34
+"hn:50452313": 35
 },
 "first_seen": "2026-11-12T11:39:15.708214+00:00",
 "url": "https://zellij.dev/news/terminal-inbox-session-previews/"
