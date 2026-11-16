@@ -37,6 +37,7 @@
 "https://nlp.elvissaravia.com/p/ai-agents-weekly-claude-fable-52",
 "https://nlp.elvissaravia.com/p/ai-agents-weekly-gemini-4-carbon",
 "https://nlp.elvissaravia.com/p/ai-agents-weekly-gpt-6-cyber-weight",
+"https://nlp.elvissaravia.com/p/top-ai-papers-of-the-week-cde",
 "https://nlp.elvissaravia.com/p/top-ai-papers-of-the-week-d07",
 "https://nlp.elvissaravia.com/p/top-ai-papers-of-the-week-d3d",
 "https://therundownai.beehiiv.com/p/ai-agents-can-now-make-your-phone-calls",
@@ -49,6 +50,7 @@
 "https://therundownai.beehiiv.com/p/google-gemini-4-carbon-tops-the-charts-for-now",
 "https://therundownai.beehiiv.com/p/inside-the-spy-plot-around-nvidia-ceo",
 "https://therundownai.beehiiv.com/p/jensen-huang-admits-affair-amid-spy-claims",
+"https://therundownai.beehiiv.com/p/jensen-huang-weighs-a-comeback-at-nvidia",
 "https://therundownai.beehiiv.com/p/kimi-continues-to-challenge-the-frontier-with-k3-1-pro",
 "https://therundownai.beehiiv.com/p/mit-shows-ai-improving-ai-no-training-required",
 "https://therundownai.beehiiv.com/p/nvidia-enters-life-without-jensen-huang",
@@ -152,6 +154,13 @@
 },
 "first_seen": "2026-10-28T22:49:45.282581+00:00",
 "url": "https://arxiv.org/abs/2410.17517"
+},
+"arxiv:2411.12130": {
+"by": {
+"reddit:1xx46cz": 0
+},
+"first_seen": "2026-11-16T11:53:48.079836+00:00",
+"url": "https://arxiv.org/abs/2411.12130"
 },
 "arxiv:2504.13837": {
 "by": {
@@ -705,6 +714,13 @@
 "first_seen": "2026-11-07T10:33:43.491692+00:00",
 "url": "https://arxiv.org/abs/2611.07854"
 },
+"arxiv:2611.08452": {
+"by": {
+"#d9eb6558e0": 166
+},
+"first_seen": "2026-11-16T11:53:48.079836+00:00",
+"url": "https://arxiv.org/abs/2611.08452"
+},
 "arxiv:2611.08483": {
 "by": {
 "reddit:1xrunu7": 0
@@ -714,22 +730,36 @@
 },
 "arxiv:2611.08615": {
 "by": {
-"#d9eb6558e0": 294,
+"#d9eb6558e0": 361,
 "nl:AINews": 0
 },
 "first_seen": "2026-11-10T11:30:29.864126+00:00",
 "url": "https://arxiv.org/abs/2611.08615"
 },
+"arxiv:2611.09291": {
+"by": {
+"#d9eb6558e0": 129
+},
+"first_seen": "2026-11-16T11:53:48.079836+00:00",
+"url": "https://arxiv.org/abs/2611.09291"
+},
+"arxiv:2611.09822": {
+"by": {
+"#017fd49b99": 217
+},
+"first_seen": "2026-11-16T11:53:48.079836+00:00",
+"url": "https://arxiv.org/abs/2611.09822"
+},
 "arxiv:2611.10463": {
 "by": {
-"#d9eb6558e0": 186
+"#d9eb6558e0": 203
 },
 "first_seen": "2026-11-11T11:20:16.613564+00:00",
 "url": "https://arxiv.org/abs/2611.10463"
 },
 "arxiv:2611.10719": {
 "by": {
-"#017fd49b99": 164
+"#017fd49b99": 190
 },
 "first_seen": "2026-11-13T11:23:15.575808+00:00",
 "url": "https://arxiv.org/abs/2611.10719"
@@ -759,14 +789,14 @@
 },
 "arxiv:2611.11929": {
 "by": {
-"#d9eb6558e0": 255
+"#d9eb6558e0": 307
 },
 "first_seen": "2026-11-13T11:23:15.575808+00:00",
 "url": "https://arxiv.org/abs/2611.11929"
 },
 "arxiv:2611.12122": {
 "by": {
-"#017fd49b99": 134
+"#017fd49b99": 207
 },
 "first_seen": "2026-11-11T11:20:16.613564+00:00",
 "url": "https://arxiv.org/abs/2611.12122"
@@ -778,12 +808,27 @@
 "first_seen": "2026-11-15T11:21:41.282909+00:00",
 "url": "https://arxiv.org/abs/2611.12167"
 },
+"arxiv:2611.12806": {
+"by": {
+"#d9eb6558e0": 54,
+"nl:DAIR.AI": 0
+},
+"first_seen": "2026-11-16T11:53:48.079836+00:00",
+"url": "http://arxiv.org/abs/2611.12806"
+},
 "arxiv:2611.14320": {
 "by": {
-"#017fd49b99": 164
+"#017fd49b99": 198
 },
 "first_seen": "2026-11-12T11:39:15.708214+00:00",
 "url": "https://arxiv.org/abs/2611.14320"
+},
+"arxiv:2611.16312": {
+"by": {
+"reddit:1xxg49q": 0
+},
+"first_seen": "2026-11-16T11:53:48.079836+00:00",
+"url": "https://arxiv.org/abs/2611.16312"
 },
 "arxiv:2611.17167": {
 "by": {
@@ -794,7 +839,8 @@
 },
 "arxiv:2611.17334": {
 "by": {
-"#db71b4eaa8": 478
+"#db71b4eaa8": 478,
+"reddit:1xx1k2o": 0
 },
 "first_seen": "2026-11-14T10:46:34.898037+00:00",
 "url": "https://arxiv.org/abs/2611.17334"
@@ -873,7 +919,7 @@
 },
 "blog:aatishb.com/myriad/how-brains-learn": {
 "by": {
-"hn:50496885": 143,
+"hn:50496885": 165,
 "reddit:1xwj3ht": 0
 },
 "first_seen": "2026-11-15T11:21:41.282909+00:00",
@@ -907,6 +953,13 @@
 "first_seen": "2026-10-30T10:20:32.566285+00:00",
 "url": "https://academic.oup.com/mnras/article/515/1/1380/6607509"
 },
+"blog:academy.dair.ai/papers": {
+"by": {
+"nl:DAIR.AI": 0
+},
+"first_seen": "2026-11-16T11:53:48.079836+00:00",
+"url": "https://academy.dair.ai/papers"
+},
 "blog:academy.dair.ai/papers/a-heart-means-recursion-exploring-visual-meaning-and-communication-in-vlms-2610.36449": {
 "by": {
 "#017fd49b99": 298,
@@ -938,9 +991,18 @@
 "first_seen": "2026-10-31T09:52:31.111423+00:00",
 "url": "https://academy.dair.ai/papers/agentic-backdoors-via-pretraining-poisoning-2610.37741"
 },
+"blog:academy.dair.ai/papers/autorefine-auto-calibrating-code-judges-from-workflow-outcomes-2611.09291": {
+"by": {
+"#d9eb6558e0": 129,
+"nl:DAIR.AI": 0
+},
+"first_seen": "2026-11-16T11:53:48.079836+00:00",
+"url": "https://academy.dair.ai/papers/autorefine-auto-calibrating-code-judges-from-workflow-outcomes-2611.09291"
+},
 "blog:academy.dair.ai/papers/can-llm-agents-organize-their-own-memory-2611.11929": {
 "by": {
-"#d9eb6558e0": 255
+"#d9eb6558e0": 307,
+"nl:DAIR.AI": 0
 },
 "first_seen": "2026-11-13T11:23:15.575808+00:00",
 "url": "https://academy.dair.ai/papers/can-llm-agents-organize-their-own-memory-2611.11929"
@@ -952,9 +1014,18 @@
 "first_seen": "2026-11-03T11:13:02.483541+00:00",
 "url": "https://academy.dair.ai/papers/collections/hacker-papers"
 },
+"blog:academy.dair.ai/papers/discovering-formally-verified-quantum-programs-with-ai-2611.09822": {
+"by": {
+"#017fd49b99": 217,
+"nl:DAIR.AI": 0
+},
+"first_seen": "2026-11-16T11:53:48.079836+00:00",
+"url": "https://academy.dair.ai/papers/discovering-formally-verified-quantum-programs-with-ai-2611.09822"
+},
 "blog:academy.dair.ai/papers/dont-just-trust-your-memory-evidence-linked-memory-reduces-memory-induced-degrad-2611.14320": {
 "by": {
-"#017fd49b99": 164
+"#017fd49b99": 198,
+"nl:DAIR.AI": 0
 },
 "first_seen": "2026-11-12T11:39:15.708214+00:00",
 "url": "https://academy.dair.ai/papers/dont-just-trust-your-memory-evidence-linked-memory-reduces-memory-induced-degrad-2611.14320"
@@ -1007,7 +1078,8 @@
 },
 "blog:academy.dair.ai/papers/longcapharness-capability-guided-auto-harnessing-for-long-context-reasoning-2611.10463": {
 "by": {
-"#d9eb6558e0": 186
+"#d9eb6558e0": 203,
+"nl:DAIR.AI": 0
 },
 "first_seen": "2026-11-11T11:20:16.613564+00:00",
 "url": "https://academy.dair.ai/papers/longcapharness-capability-guided-auto-harnessing-for-long-context-reasoning-2611.10463"
@@ -1036,7 +1108,8 @@
 },
 "blog:academy.dair.ai/papers/no-second-run-does-rsi-stop-at-frontier-pre-training-2611.10719": {
 "by": {
-"#017fd49b99": 164
+"#017fd49b99": 190,
+"nl:DAIR.AI": 0
 },
 "first_seen": "2026-11-13T11:23:15.575808+00:00",
 "url": "https://academy.dair.ai/papers/no-second-run-does-rsi-stop-at-frontier-pre-training-2611.10719"
@@ -1055,6 +1128,14 @@
 },
 "first_seen": "2026-11-06T11:19:07.955521+00:00",
 "url": "https://academy.dair.ai/papers/recursa-toward-recursively-self-improving-foundation-model-systems-2611.04035"
+},
+"blog:academy.dair.ai/papers/reprobridge-building-reproducibility-into-ml-research-artifacts-2611.08452": {
+"by": {
+"#d9eb6558e0": 166,
+"nl:DAIR.AI": 0
+},
+"first_seen": "2026-11-16T11:53:48.079836+00:00",
+"url": "https://academy.dair.ai/papers/reprobridge-building-reproducibility-into-ml-research-artifacts-2611.08452"
 },
 "blog:academy.dair.ai/papers/rethinking-verification-in-agent-harnesses-2610.34577": {
 "by": {
@@ -1096,7 +1177,8 @@
 },
 "blog:academy.dair.ai/papers/s-3-simple-scaling-of-swarms-via-cooperative-multi-agent-rl-2611.08615": {
 "by": {
-"#d9eb6558e0": 294
+"#d9eb6558e0": 361,
+"nl:DAIR.AI": 0
 },
 "first_seen": "2026-11-10T11:30:29.864126+00:00",
 "url": "https://academy.dair.ai/papers/s-3-simple-scaling-of-swarms-via-cooperative-multi-agent-rl-2611.08615"
@@ -1134,7 +1216,8 @@
 },
 "blog:academy.dair.ai/papers/system-optimizations-for-cost-efficient-agent-harnesses-2611.12122": {
 "by": {
-"#017fd49b99": 134
+"#017fd49b99": 207,
+"nl:DAIR.AI": 0
 },
 "first_seen": "2026-11-11T11:20:16.613564+00:00",
 "url": "https://academy.dair.ai/papers/system-optimizations-for-cost-efficient-agent-harnesses-2611.12122"
@@ -1360,7 +1443,7 @@
 },
 "blog:alexwang.ai/posts/associative-memory": {
 "by": {
-"lobsters:u2h9as": 3
+"lobsters:u2h9as": 5
 },
 "first_seen": "2026-11-14T10:46:34.898037+00:00",
 "url": "https://alexwang.ai/posts/associative-memory/"
@@ -1421,6 +1504,13 @@
 },
 "first_seen": "2026-10-28T22:44:54.349664+00:00",
 "url": "https://allmodels.io/llm/abliterated"
+},
+"blog:alloy.argonrobotics.ai/docs": {
+"by": {
+"reddit:1xxg49q": 0
+},
+"first_seen": "2026-11-16T11:53:48.079836+00:00",
+"url": "https://alloy.argonrobotics.ai/docs/"
 },
 "blog:allthingsdistributed.com/2026/11/aws-emulator-and-the-engineers-job-when-agents-write-the-code.html": {
 "by": {
@@ -1681,7 +1771,7 @@
 },
 "blog:antigravity.google/blog/gemini-4-hydrogen-in-google-antigravity": {
 "by": {
-"hn:50472260": 503,
+"hn:50472260": 506,
 "nl:AINews": 0
 },
 "first_seen": "2026-11-13T11:23:15.575808+00:00",
@@ -1806,6 +1896,13 @@
 "first_seen": "2026-11-03T11:13:02.483541+00:00",
 "url": "https://app.therundown.ai/community/posts/c8f96f27-40f3-47fb-819e-e910e649ec5e?utm_source=therundownai.beehiiv.com&utm_medium=newsletter&utm_campaign=rundown-1102"
 },
+"blog:app.therundown.ai/community/posts/ca0e6a2c-ddb1-4a29-a454-4811823ed11d": {
+"by": {
+"nl:The Rundown AI": 0
+},
+"first_seen": "2026-11-16T11:53:48.079836+00:00",
+"url": "https://app.therundown.ai/community/posts/ca0e6a2c-ddb1-4a29-a454-4811823ed11d?utm_source=therundownai.beehiiv.com&utm_medium=newsletter&utm_campaign=rundown-1116"
+},
 "blog:app.therundown.ai/community/posts/cd0d4b14-b618-4ba9-b32a-53e0337ec7e3": {
 "by": {
 "nl:The Rundown AI": 0
@@ -1896,6 +1993,13 @@
 },
 "first_seen": "2026-11-13T11:23:15.575808+00:00",
 "url": "https://app.therundown.ai/guides/claude-sheets-shared-tracker?utm_source=therundownai.beehiiv.com&utm_medium=newsletter&utm_campaign=rundown-1113"
+},
+"blog:app.therundown.ai/guides/claude-whiteboards-team-plan": {
+"by": {
+"nl:The Rundown AI": 0
+},
+"first_seen": "2026-11-16T11:53:48.079836+00:00",
+"url": "https://app.therundown.ai/guides/claude-whiteboards-team-plan?utm_source=therundownai.beehiiv.com&utm_medium=newsletter&utm_campaign=rundown-1116"
 },
 "blog:app.therundown.ai/guides/compare-free-ai-tools": {
 "by": {
@@ -2154,10 +2258,25 @@
 },
 "blog:atlas.scime.ai/research/3d-vision/gaussian-splatting/compact-and-efficient-gaussian-splatting": {
 "by": {
-"reddit:1xmk8rx": 0
+"reddit:1xmk8rx": 0,
+"reddit:1xxmw01": 0
 },
 "first_seen": "2026-11-03T11:13:02.483541+00:00",
 "url": "https://atlas.scime.ai/research/3d-vision/gaussian-splatting/compact-and-efficient-gaussian-splatting"
+},
+"blog:atlas.scime.ai/venues/eccv-2026": {
+"by": {
+"reddit:1xxmw01": 0
+},
+"first_seen": "2026-11-16T11:53:48.079836+00:00",
+"url": "https://atlas.scime.ai/venues/eccv-2026"
+},
+"blog:atlas.scime.ai/venues/iccv-2025": {
+"by": {
+"reddit:1xxmw01": 0
+},
+"first_seen": "2026-11-16T11:53:48.079836+00:00",
+"url": "https://atlas.scime.ai/venues/iccv-2025"
 },
 "blog:atlassian.com/webinars/software/state-of-devex-2026": {
 "by": {
@@ -2311,6 +2430,13 @@
 "first_seen": "2026-10-31T09:52:31.111423+00:00",
 "url": "https://bit.ly/47LJ09d"
 },
+"blog:bland.ai/speech-to-speech": {
+"by": {
+"nl:The Rundown AI": 0
+},
+"first_seen": "2026-11-16T11:53:48.079836+00:00",
+"url": "https://www.bland.ai/speech-to-speech?utm_source=therundownai.beehiiv.com&utm_medium=newsletter&utm_campaign=rundown-1116"
+},
 "blog:block.xyz/dessa": {
 "by": {
 "nl:Ben's Bites": 0,
@@ -2414,7 +2540,7 @@
 "by": {
 "#3409fb9edd": 609,
 "#931b813213": 220,
-"hn:50471431": 569,
+"hn:50471431": 572,
 "nl:The Rundown AI": 0
 },
 "first_seen": "2026-11-13T11:23:15.575808+00:00",
@@ -2756,7 +2882,7 @@
 },
 "blog:brave.com/blog/search-api-agentic-payments": {
 "by": {
-"hn:50477649": 261
+"hn:50477649": 262
 },
 "first_seen": "2026-11-13T11:23:15.575808+00:00",
 "url": "https://brave.com/blog/search-api-agentic-payments/"
@@ -2823,6 +2949,13 @@
 },
 "first_seen": "2026-11-14T10:46:34.898037+00:00",
 "url": "https://www.businessinsider.com/dario-amodei-anthropic-cancer-cure-ipo-roadshow-backlash-doctors-2026-11"
+},
+"blog:businessinsider.com/petition-reinstate-jensen-huang-nvidia-elon-musk-2026-11": {
+"by": {
+"nl:The Rundown AI": 0
+},
+"first_seen": "2026-11-16T11:53:48.079836+00:00",
+"url": "https://www.businessinsider.com/petition-reinstate-jensen-huang-nvidia-elon-musk-2026-11?utm_source=therundownai.beehiiv.com&utm_medium=newsletter&utm_campaign=rundown-1116"
 },
 "blog:cabird.com/talks/shipping-faster": {
 "by": {
@@ -3079,7 +3212,7 @@
 },
 "blog:claude.com/resources/articles/claude-meetings": {
 "by": {
-"hn:50491097": 111,
+"hn:50491097": 113,
 "nl:The Rundown AI": 0
 },
 "first_seen": "2026-11-13T11:23:15.575808+00:00",
@@ -3102,7 +3235,7 @@
 },
 "blog:claude.com/resources/articles/projects-redesigned": {
 "by": {
-"hn:50492141": 98
+"hn:50492141": 100
 },
 "first_seen": "2026-11-14T10:46:34.898037+00:00",
 "url": "https://claude.com/resources/articles/projects-redesigned"
@@ -3128,6 +3261,13 @@
 },
 "first_seen": "2026-11-10T11:30:29.864126+00:00",
 "url": "https://claude.dev/blog/safely-scaling-multi-agent-teams-with-fable-5-2/"
+},
+"blog:claude.dev/blog/what-a-task-costs-on-opus-5-5": {
+"by": {
+"hn:50503241": 24
+},
+"first_seen": "2026-11-16T11:53:48.079836+00:00",
+"url": "https://claude.dev/blog/what-a-task-costs-on-opus-5-5/"
 },
 "blog:claude.dev/blog/which-claude-model-should-you-build-with": {
 "by": {
@@ -3349,6 +3489,13 @@
 "first_seen": "2026-10-30T10:20:32.566285+00:00",
 "url": "https://cohere.com/blog/who-gets-to-build-the-frontier-for-ai?utm_source=therundownai.beehiiv.com&utm_medium=newsletter&utm_campaign=rundown-1030"
 },
+"blog:collibra.com/resources/stay-in-control-of-your-ai-agent-fleet-playbook": {
+"by": {
+"nl:The Rundown AI": 0
+},
+"first_seen": "2026-11-16T11:53:48.079836+00:00",
+"url": "https://www.collibra.com/resources/stay-in-control-of-your-ai-agent-fleet-playbook?utm_source=mediadirect&utm_medium=paid-display&utm_campaign=GBL-26-Q4-BAN-ai-agent-fleet-ebook"
+},
 "blog:colossus.com/article/sane-asylum-turbopuffer": {
 "by": {
 "nl:Ben's Bites": 0
@@ -3442,6 +3589,13 @@
 },
 "first_seen": "2026-11-14T10:46:34.898037+00:00",
 "url": "https://coyotetracks.org/blog/right-amount-of-ai/"
+},
+"blog:crates.io/crates/pure-sift": {
+"by": {
+"reddit:1xu7ari": 0
+},
+"first_seen": "2026-11-16T11:53:48.079836+00:00",
+"url": "https://crates.io/crates/pure-sift"
 },
 "blog:crowdstrike.com/en-us/blog/crowdstrike-introduces-ai-kill-switch": {
 "by": {
@@ -3637,7 +3791,7 @@
 },
 "blog:debarshibasak.github.io/readables/blogs/agent-first-development": {
 "by": {
-"hn:50496562": 29
+"hn:50496562": 32
 },
 "first_seen": "2026-11-15T11:21:41.282909+00:00",
 "url": "https://debarshibasak.github.io/readables/blogs/agent-first-development"
@@ -3759,7 +3913,7 @@
 },
 "blog:developer.nvidia.com/blog/when-one-gpu-isnt-enough-serving-glm-5-3-across-two-nvidia-dgx-stations-with-vllm": {
 "by": {
-"hn:50497155": 138
+"hn:50497155": 147
 },
 "first_seen": "2026-11-15T11:21:41.282909+00:00",
 "url": "https://developer.nvidia.com/blog/when-one-gpu-isnt-enough-serving-glm-5-3-across-two-nvidia-dgx-stations-with-vllm/"
@@ -3945,7 +4099,7 @@
 },
 "blog:doug.sh/posts/gpu-bars-behind-a-pcie-switch": {
 "by": {
-"hn:50468720": 93
+"hn:50468720": 94
 },
 "first_seen": "2026-11-13T11:23:15.575808+00:00",
 "url": "https://doug.sh/posts/gpu-bars-behind-a-pcie-switch/"
@@ -3980,7 +4134,7 @@
 },
 "blog:dwarkesh.com/p/rsi": {
 "by": {
-"hn:50487854": 67
+"hn:50487854": 68
 },
 "first_seen": "2026-11-14T10:46:34.898037+00:00",
 "url": "https://www.dwarkesh.com/p/rsi"
@@ -4015,7 +4169,7 @@
 },
 "blog:edge0.ai/blog/introducing-edge0-145b-frontier-ai-capabilities-on-your-own-computer": {
 "by": {
-"hn:50475713": 353
+"hn:50475713": 357
 },
 "first_seen": "2026-11-13T11:23:15.575808+00:00",
 "url": "https://edge0.ai/blog/introducing-edge0-145b-frontier-ai-capabilities-on-your-own-computer"
@@ -4334,7 +4488,7 @@
 },
 "blog:forbes.com/sites/maryroeloffs/2026/08/17/ai-companies-are-buying-and-destroying-antique-books-heres-why": {
 "by": {
-"hn:50487469": 59
+"hn:50487469": 61
 },
 "first_seen": "2026-11-14T10:46:34.898037+00:00",
 "url": "https://www.forbes.com/sites/maryroeloffs/2026/08/17/ai-companies-are-buying-and-destroying-antique-books-heres-why/"
@@ -4370,10 +4524,18 @@
 },
 "blog:fortune.com/2026/11/13/openai-disbands-robotics-team-as-its-general-models-start-running-robots": {
 "by": {
-"hn:50487184": 177
+"hn:50487184": 179,
+"nl:The Rundown AI": 0
 },
 "first_seen": "2026-11-14T10:46:34.898037+00:00",
 "url": "https://fortune.com/2026/11/13/openai-disbands-robotics-team-as-its-general-models-start-running-robots/"
+},
+"blog:fortune.com/2026/11/14/alpha-school-ai-students-tuition-learning-goals": {
+"by": {
+"hn:50509953": 66
+},
+"first_seen": "2026-11-16T11:53:48.079836+00:00",
+"url": "https://fortune.com/2026/11/14/alpha-school-ai-students-tuition-learning-goals/"
 },
 "blog:forum.effectivealtruism.org/posts/T975ydo3mx8onH3iS/ea-is-about-maximization-and-maximization-is-perilous": {
 "by": {
@@ -4430,6 +4592,13 @@
 },
 "first_seen": "2026-11-09T11:57:09.927629+00:00",
 "url": "https://www.ft.com/content/41bf5c6a-9735-4f1a-a8e3-2bcccad58ba0"
+},
+"blog:ft.com/content/45383d86-33c4-4d99-86e5-5e058d3567c1": {
+"by": {
+"nl:The Rundown AI": 0
+},
+"first_seen": "2026-11-16T11:53:48.079836+00:00",
+"url": "https://www.ft.com/content/45383d86-33c4-4d99-86e5-5e058d3567c1?syn-25a6b1a6=1&utm_source=therundownai.beehiiv.com&utm_medium=newsletter&utm_campaign=rundown-1116"
 },
 "blog:ft.com/content/4d91dbab-6fe4-45ab-beee-d77e091cb37f": {
 "by": {
@@ -4530,6 +4699,13 @@
 },
 "first_seen": "2026-11-11T11:20:16.613564+00:00",
 "url": "https://www.geodesiclab.com/news/introducing-novaatom-lite"
+},
+"blog:geoffstearns.com/blog/your-agent-will-pick-the-hackable-one": {
+"by": {
+"hn:50510799": 75
+},
+"first_seen": "2026-11-16T11:53:48.079836+00:00",
+"url": "https://geoffstearns.com/blog/your-agent-will-pick-the-hackable-one/"
 },
 "blog:getbasis.ai/blogs/how-we-made-our-monorepo-ergonomic-for-agents": {
 "by": {
@@ -4878,6 +5054,13 @@
 "first_seen": "2026-11-07T10:33:43.491692+00:00",
 "url": "https://hightouch.com/blog/llm-judges-identity-resolution"
 },
+"blog:hntrends.com/2026/november.html": {
+"by": {
+"hn:50512950": 87
+},
+"first_seen": "2026-11-16T11:53:48.079836+00:00",
+"url": "https://www.hntrends.com/2026/november.html"
+},
 "blog:honnibal.dev/blog/astra-read-write-misleading": {
 "by": {
 "hn:50351111": 1039
@@ -5015,7 +5198,7 @@
 },
 "blog:interconnects.ai/p/open-source-ai-without-jensen": {
 "by": {
-"hn:50496590": 26
+"hn:50496590": 27
 },
 "first_seen": "2026-11-15T11:21:41.282909+00:00",
 "url": "https://www.interconnects.ai/p/open-source-ai-without-jensen"
@@ -5098,6 +5281,13 @@
 },
 "first_seen": "2026-10-28T22:44:54.349664+00:00",
 "url": "https://jack-clark.net/2026/06/15/import-ai-461-alignment-is-not-on-track-frontiercode-and-synthetic-research-interns/"
+},
+"blog:jakub.jankiewicz.org/blog/ai-code-open-source": {
+"by": {
+"hn:50507303": 1174
+},
+"first_seen": "2026-11-16T11:53:48.079836+00:00",
+"url": "https://jakub.jankiewicz.org/blog/ai-code-open-source/"
 },
 "blog:jakub.kr/writing/the-era-of-personal-software": {
 "by": {
@@ -5447,7 +5637,7 @@
 },
 "blog:litnews.ai/articles/garciaguirre-samsung-sk-hynix-micron-dram-conspiracy-suit-survives-dismissal": {
 "by": {
-"hn:50502988": 192
+"hn:50502988": 514
 },
 "first_seen": "2026-11-15T11:21:41.282909+00:00",
 "url": "https://litnews.ai/articles/garciaguirre-samsung-sk-hynix-micron-dram-conspiracy-suit-survives-dismissal"
@@ -5573,12 +5763,26 @@
 "first_seen": "2026-11-09T11:57:09.927629+00:00",
 "url": "https://lukasniessen.medium.com/llms-are-not-actually-probabilistic-e38613431102"
 },
+"blog:luminpdf.com/claude-integration": {
+"by": {
+"nl:The Rundown AI": 0
+},
+"first_seen": "2026-11-16T11:53:48.079836+00:00",
+"url": "https://www.luminpdf.com/claude-integration?utm_source=newsletter+&utm_medium=pr_newsletter&utm_campaign=newsletter_therundown&utm_content=PR"
+},
 "blog:lynchlab.net/llm-skin-cancer": {
 "by": {
 "hn:50233779": 669
 },
 "first_seen": "2026-10-28T22:44:54.349664+00:00",
 "url": "https://lynchlab.net/llm-skin-cancer"
+},
+"blog:maccus.fr/en/eu-open-ai-model-europa": {
+"by": {
+"reddit:1xwr917": 0
+},
+"first_seen": "2026-11-16T11:53:48.079836+00:00",
+"url": "https://maccus.fr/en/eu-open-ai-model-europa/"
 },
 "blog:machinelearning.apple.com/research/attention-mamba-distillation": {
 "by": {
@@ -5600,6 +5804,13 @@
 },
 "first_seen": "2026-10-28T22:44:54.349664+00:00",
 "url": "https://magazine.sebastianraschka.com/p/building-reasoning-models"
+},
+"blog:magazine.sebastianraschka.com/p/understanding-positional-embeddings": {
+"by": {
+"hn:50506376": 232
+},
+"first_seen": "2026-11-16T11:53:48.079836+00:00",
+"url": "https://magazine.sebastianraschka.com/p/understanding-positional-embeddings"
 },
 "blog:marketplace.nvidia.com/en-us/enterprise/partners/shanghai-century-litong-data-service-co-ltd": {
 "by": {
@@ -5929,6 +6140,13 @@
 "first_seen": "2026-10-28T22:44:54.349664+00:00",
 "url": "https://mirendil.com/news/pretraining-at-scale-without-a-pretraining-team/"
 },
+"blog:miscellaneousstuff.github.io/2026/11/13/superhuman-league-of-legends-part-4-brokenwings-5v5.html": {
+"by": {
+"reddit:1xryv1l": 0
+},
+"first_seen": "2026-11-16T11:53:48.079836+00:00",
+"url": "https://miscellaneousstuff.github.io/2026/11/13/superhuman-league-of-legends-part-4-brokenwings-5v5.html#overview"
+},
 "blog:mistral.ai/news/mistral-large-4-oss": {
 "by": {
 "#7a7078ffe7": 260,
@@ -6076,7 +6294,7 @@
 },
 "blog:netmeister.org/blog/claude-delusion.html": {
 "by": {
-"hn:50496921": 148
+"hn:50496921": 152
 },
 "first_seen": "2026-11-15T11:21:41.282909+00:00",
 "url": "https://www.netmeister.org/blog/claude-delusion.html"
@@ -6424,6 +6642,20 @@
 "first_seen": "2026-11-13T11:23:15.575808+00:00",
 "url": "https://www.nytimes.com/2026/11/12/business/economy/jensen-huang-economy-nvidia-ai.html"
 },
+"blog:nytimes.com/2026/11/15/business/anthropic-ipo-filing-prospectus.html": {
+"by": {
+"hn:50507517": 22
+},
+"first_seen": "2026-11-16T11:53:48.079836+00:00",
+"url": "https://www.nytimes.com/2026/11/15/business/anthropic-ipo-filing-prospectus.html"
+},
+"blog:nytimes.com/2026/11/15/us/politics/trump-lutnick-ai-chips-nvidia-cantor-fitzgerald.html": {
+"by": {
+"reddit:1xx8isq": 0
+},
+"first_seen": "2026-11-16T11:53:48.079836+00:00",
+"url": "https://www.nytimes.com/2026/11/15/us/politics/trump-lutnick-ai-chips-nvidia-cantor-fitzgerald.html"
+},
 "blog:nytimes.com/live/2026/11/12/business/nvidia-jensen-huang-resigns": {
 "by": {
 "nl:AINews": 0
@@ -6494,6 +6726,13 @@
 },
 "first_seen": "2026-10-31T09:52:31.111423+00:00",
 "url": "https://openai.com/business/private-intelligence/"
+},
+"blog:openai.com/careers/search": {
+"by": {
+"#a71b35d434": 1075
+},
+"first_seen": "2026-11-16T11:53:48.079836+00:00",
+"url": "https://openai.com/careers/search/?q=robotics"
 },
 "blog:openai.com/cyber-at-the-frontier": {
 "by": {
@@ -6616,6 +6855,13 @@
 "first_seen": "2026-11-11T11:20:16.613564+00:00",
 "url": "https://openai.com/index/introducing-businesses-chatgpt/"
 },
+"blog:openai.com/index/introducing-chatgpt-wallet": {
+"by": {
+"nl:The Rundown AI": 0
+},
+"first_seen": "2026-11-16T11:53:48.079836+00:00",
+"url": "https://openai.com/index/introducing-chatgpt-wallet/?utm_source=therundownai.beehiiv.com&utm_medium=newsletter&utm_campaign=rundown-1116"
+},
 "blog:openai.com/index/introducing-gpt-6-1-terra": {
 "by": {
 "hn:50248124": 636,
@@ -6713,6 +6959,13 @@
 "first_seen": "2026-10-30T10:20:32.566285+00:00",
 "url": "https://openart.ai/home?quickStart=launch-video&utm_source=online&utm_medium=email&utm_campaign=email-rundown-launchvideo-na-acq-web&utm_content=cta"
 },
+"blog:openart.ai/mcp": {
+"by": {
+"nl:The Rundown AI": 0
+},
+"first_seen": "2026-11-16T11:53:48.079836+00:00",
+"url": "https://openart.ai/mcp/?utm_source=online&utm_medium=email&utm_campaign=email-rundown-mcp-na-acq-web"
+},
 "blog:openart.ai/suite/home": {
 "by": {
 "nl:The Rundown AI": 0
@@ -6783,6 +7036,13 @@
 },
 "first_seen": "2026-10-28T22:49:45.282581+00:00",
 "url": "https://opentextdetector.com/%5D(https://opentextdetector.com/"
+},
+"blog:operator0x.com/field-notes/qwen-conversation-state-space": {
+"by": {
+"hn:50481321": 124
+},
+"first_seen": "2026-11-16T11:53:48.079836+00:00",
+"url": "https://operator0x.com/field-notes/qwen-conversation-state-space/"
 },
 "blog:optimizely.com/field-notes/guides/ai-use-case-discovery-template": {
 "by": {
@@ -6937,7 +7197,7 @@
 "blog:perplexity.ai/hub/blog/perplexity-decider": {
 "by": {
 "#35becc2153": 445,
-"hn:50488464": 145
+"hn:50488464": 146
 },
 "first_seen": "2026-11-13T11:23:15.575808+00:00",
 "url": "http://perplexity.ai/hub/blog/perplexity-decider"
@@ -7298,6 +7558,13 @@
 "first_seen": "2026-11-03T11:13:02.483541+00:00",
 "url": "https://pydantic.dev/articles/pydantic-ai-e2b-sandboxes"
 },
+"blog:pypi.org/project/wormocr": {
+"by": {
+"reddit:1xwqhaz": 0
+},
+"first_seen": "2026-11-16T11:53:48.079836+00:00",
+"url": "https://pypi.org/project/wormocr/"
+},
 "blog:pytorch.org/blog/optimizing-muse-spark-open-on-tpu-v7-with-sglang-torchtpu": {
 "by": {
 "#165ff687db": 45
@@ -7333,6 +7600,13 @@
 },
 "first_seen": "2026-10-28T22:44:54.349664+00:00",
 "url": "https://www.quickbase.com/pave?utm_source=rundown_ai&utm_medium=Email&utm_campaign=NL_05-26_PAVE_Rundown-AI-Newsletter-Pave-Feature"
+},
+"blog:qwen.ai/blog": {
+"by": {
+"hn:50513215": 592
+},
+"first_seen": "2026-11-16T11:53:48.079836+00:00",
+"url": "https://qwen.ai/blog?id=qwen4-max"
 },
 "blog:qz.com/deepseek-15-billion-funding-round-possible-ipo-102226": {
 "by": {
@@ -7383,6 +7657,13 @@
 },
 "first_seen": "2026-11-04T11:24:00.743607+00:00",
 "url": "https://redis.io/resources/videos/redis-iris-full-spectrum/?utm_medium=paid-newsletter&utm_source=therundownai"
+},
+"blog:redpanda.com/agentic-data-summit": {
+"by": {
+"nl:The Rundown AI": 0
+},
+"first_seen": "2026-11-16T11:53:48.079836+00:00",
+"url": "https://www.redpanda.com/agentic-data-summit?utm_source=rundownai&utm_medium=sponsored&utm_campaign=tradeshow_20261209_agenticdatasummit"
 },
 "blog:redwoodresearch.org/blog/red-teaming-openais-internal-agent": {
 "by": {
@@ -8416,12 +8697,26 @@
 "first_seen": "2026-10-28T22:44:54.349664+00:00",
 "url": "https://substackcdn.com/image/fetch/$s_!Hu14!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fcbf2c8cb-e50c-4b75-b444-1d02eaf73c31_1109x946.png"
 },
+"blog:substackcdn.com/image/fetch/$s_!I33C!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F632d8ae7-72f4-49a6-a26a-faf576b97f2d_1865x695.png": {
+"by": {
+"nl:DAIR.AI": 0
+},
+"first_seen": "2026-11-16T11:53:48.079836+00:00",
+"url": "https://substackcdn.com/image/fetch/$s_!I33C!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F632d8ae7-72f4-49a6-a26a-faf576b97f2d_1865x695.png"
+},
 "blog:substackcdn.com/image/fetch/$s_!IwP7!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F03ccef7f-5f57-44f0-9c6c-20b8dd7aeae2_1100x1048.gif": {
 "by": {
 "nl:Ben's Bites": 0
 },
 "first_seen": "2026-11-11T11:20:16.613564+00:00",
 "url": "https://substackcdn.com/image/fetch/$s_!IwP7!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F03ccef7f-5f57-44f0-9c6c-20b8dd7aeae2_1100x1048.gif"
+},
+"blog:substackcdn.com/image/fetch/$s_!K56J!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F11eb4d84-5d7c-4080-8c5a-28e0dffba90d_832x325.png": {
+"by": {
+"nl:DAIR.AI": 0
+},
+"first_seen": "2026-11-16T11:53:48.079836+00:00",
+"url": "https://substackcdn.com/image/fetch/$s_!K56J!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F11eb4d84-5d7c-4080-8c5a-28e0dffba90d_832x325.png"
 },
 "blog:substackcdn.com/image/fetch/$s_!KZfE!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Ffe5531b0-a172-4a6f-a160-4efe533b8dc1_803x752.png": {
 "by": {
@@ -8521,6 +8816,13 @@
 "first_seen": "2026-10-28T22:44:54.349664+00:00",
 "url": "https://substackcdn.com/image/fetch/$s_!Qkwq!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F1a41ca8f-cdb0-4fa3-af4e-99e2d5739f06_1454x534.png"
 },
+"blog:substackcdn.com/image/fetch/$s_!R8yU!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F0ed4aad1-09b6-4dab-80b2-1e4e0adf0a25_1375x645.png": {
+"by": {
+"nl:DAIR.AI": 0
+},
+"first_seen": "2026-11-16T11:53:48.079836+00:00",
+"url": "https://substackcdn.com/image/fetch/$s_!R8yU!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F0ed4aad1-09b6-4dab-80b2-1e4e0adf0a25_1375x645.png"
+},
 "blog:substackcdn.com/image/fetch/$s_!RKZy!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F52a2b255-cb1c-414b-8ae4-7e06458173d2_1920x1080.webp": {
 "by": {
 "nl:AI Supremacy": 0
@@ -8576,6 +8878,13 @@
 },
 "first_seen": "2026-10-28T22:44:54.349664+00:00",
 "url": "https://substackcdn.com/image/fetch/$s_!TwtE!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F842175c2-ddef-42bf-a67b-14e368af64b3_946x986.png"
+},
+"blog:substackcdn.com/image/fetch/$s_!U7aa!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F3922ca92-782e-423b-be0e-beb02cd8ebe3_2520x1248.png": {
+"by": {
+"nl:DAIR.AI": 0
+},
+"first_seen": "2026-11-16T11:53:48.079836+00:00",
+"url": "https://substackcdn.com/image/fetch/$s_!U7aa!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F3922ca92-782e-423b-be0e-beb02cd8ebe3_2520x1248.png"
 },
 "blog:substackcdn.com/image/fetch/$s_!ULWY!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F10a4d651-6b8c-4ce4-8c5d-fba8dfb9e4ee_720x900.jpeg": {
 "by": {
@@ -8752,6 +9061,13 @@
 "first_seen": "2026-11-11T11:20:16.613564+00:00",
 "url": "https://substackcdn.com/image/fetch/$s_!bvJV!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fc21c8ed6-b2ca-4e0d-afc7-991fdc6c769d_1100x1040.gif"
 },
+"blog:substackcdn.com/image/fetch/$s_!cRX_!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F864431c4-ee7d-457c-bf75-0edd1a7bb030_844x461.png": {
+"by": {
+"nl:DAIR.AI": 0
+},
+"first_seen": "2026-11-16T11:53:48.079836+00:00",
+"url": "https://substackcdn.com/image/fetch/$s_!cRX_!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F864431c4-ee7d-457c-bf75-0edd1a7bb030_844x461.png"
+},
 "blog:substackcdn.com/image/fetch/$s_!dAFt!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F62c8be0c-c940-43d1-84a3-5a94586ee64b_729x517.png": {
 "by": {
 "nl:AI Supremacy": 0
@@ -8863,6 +9179,13 @@
 },
 "first_seen": "2026-11-09T11:57:09.927629+00:00",
 "url": "https://substackcdn.com/image/fetch/$s_!hx5n!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F3acc63c0-0250-4d42-ac1f-d0b9191a19b0_2043x941.png"
+},
+"blog:substackcdn.com/image/fetch/$s_!iKyj!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fd66cba38-879f-435c-83f4-3dbc00a2a338_1610x750.png": {
+"by": {
+"nl:DAIR.AI": 0
+},
+"first_seen": "2026-11-16T11:53:48.079836+00:00",
+"url": "https://substackcdn.com/image/fetch/$s_!iKyj!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fd66cba38-879f-435c-83f4-3dbc00a2a338_1610x750.png"
 },
 "blog:substackcdn.com/image/fetch/$s_!j5by!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F04e26b08-a5af-479b-a80c-02dc0abd339c_1206x908.jpeg": {
 "by": {
@@ -9032,6 +9355,13 @@
 "first_seen": "2026-11-15T11:21:41.282909+00:00",
 "url": "https://substackcdn.com/image/fetch/$s_!rhvB!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fcd26017f-358d-48fb-9a1d-c7f6a093468a_720x900.jpeg"
 },
+"blog:substackcdn.com/image/fetch/$s_!sMSC!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fe4717f74-beec-49db-b36e-45cd576c05f6_759x423.png": {
+"by": {
+"nl:DAIR.AI": 0
+},
+"first_seen": "2026-11-16T11:53:48.079836+00:00",
+"url": "https://substackcdn.com/image/fetch/$s_!sMSC!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fe4717f74-beec-49db-b36e-45cd576c05f6_759x423.png"
+},
 "blog:substackcdn.com/image/fetch/$s_!sh4c!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F795c05dc-9029-4fb2-ae12-862e73c8c237_841x458.png": {
 "by": {
 "nl:Don't Worry About the Vase (Zvi)": 0
@@ -9136,6 +9466,13 @@
 },
 "first_seen": "2026-11-09T11:57:09.927629+00:00",
 "url": "https://substackcdn.com/image/fetch/$s_!yERt!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F16b6aae7-6829-4487-839c-2304f361ad27_762x745.png"
+},
+"blog:substackcdn.com/image/fetch/$s_!yT_n!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F013d6f9f-3383-4543-ad80-995cba251fe6_637x322.png": {
+"by": {
+"nl:DAIR.AI": 0
+},
+"first_seen": "2026-11-16T11:53:48.079836+00:00",
+"url": "https://substackcdn.com/image/fetch/$s_!yT_n!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F013d6f9f-3383-4543-ad80-995cba251fe6_637x322.png"
 },
 "blog:substackcdn.com/image/fetch/$s_!z-ah!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fae3c323e-c3d2-4944-bbe6-4098dc70eacc_1100x740.png": {
 "by": {
@@ -9245,7 +9582,7 @@
 },
 "blog:synthanatomy.com/2026/11/ai-is-turning-apples-app-review-process-into-a-nightmare-for-developers.html": {
 "by": {
-"hn:50474311": 198
+"hn:50474311": 199
 },
 "first_seen": "2026-11-13T11:23:15.575808+00:00",
 "url": "https://synthanatomy.com/2026/11/ai-is-turning-apples-app-review-process-into-a-nightmare-for-developers.html"
@@ -9534,7 +9871,7 @@
 },
 "blog:techpowerup.com/354814/nvidia-allegedly-engineered-scarcity-by-funding-ai-startups-to-buy-its-gpus": {
 "by": {
-"hn:50493251": 1075
+"hn:50493251": 1103
 },
 "first_seen": "2026-11-14T10:46:34.898037+00:00",
 "url": "https://www.techpowerup.com/354814/nvidia-allegedly-engineered-scarcity-by-funding-ai-startups-to-buy-its-gpus"
@@ -9569,7 +9906,7 @@
 },
 "blog:techspot.com/news/114558-nvidia-deliberately-kept-gpu-prices-high-through-circular.html": {
 "by": {
-"hn:50501631": 425
+"hn:50501631": 446
 },
 "first_seen": "2026-11-15T11:21:41.282909+00:00",
 "url": "https://www.techspot.com/news/114558-nvidia-deliberately-kept-gpu-prices-high-through-circular.html"
@@ -9588,6 +9925,13 @@
 "first_seen": "2026-11-03T11:13:02.483541+00:00",
 "url": "https://terrytao.wordpress.com/2026/11/02/egoless-mathematics-in-the-ai-era/"
 },
+"blog:testflight.apple.com/join/yaEWGBGW": {
+"by": {
+"reddit:1xxk8pi": 0
+},
+"first_seen": "2026-11-16T11:53:48.079836+00:00",
+"url": "https://testflight.apple.com/join/yaEWGBGW"
+},
 "blog:texasattorneygeneral.gov/news/releases/attorney-general-paxton-secures-major-agreement-samsung-ensure-texans-are-protected-smart-tvs": {
 "by": {
 "#57158543a5": 1321,
@@ -9598,7 +9942,7 @@
 },
 "blog:text.npr.org/nx-s1-6029408": {
 "by": {
-"hn:50484960": 194
+"hn:50484960": 196
 },
 "first_seen": "2026-11-14T10:46:34.898037+00:00",
 "url": "https://text.npr.org/nx-s1-6029408"
@@ -9626,7 +9970,7 @@
 },
 "blog:theatlantic.com/books/2026/11/ai-literary-scams-amazon/689391": {
 "by": {
-"hn:50481870": 366
+"hn:50481870": 370
 },
 "first_seen": "2026-11-14T10:46:34.898037+00:00",
 "url": "https://www.theatlantic.com/books/2026/11/ai-literary-scams-amazon/689391/"
@@ -9675,7 +10019,7 @@
 },
 "blog:theguardian.com/science/2026/nov/13/kurt-godel-notebooks-ai-helps-unlock-hidden-discoveries-man-who-transformed-maths": {
 "by": {
-"hn:50486748": 430
+"hn:50486748": 441
 },
 "first_seen": "2026-11-14T10:46:34.898037+00:00",
 "url": "https://www.theguardian.com/science/2026/nov/13/kurt-godel-notebooks-ai-helps-unlock-hidden-discoveries-man-who-transformed-maths"
@@ -9722,6 +10066,13 @@
 },
 "first_seen": "2026-11-13T11:23:15.575808+00:00",
 "url": "https://www.theinformation.com/articles/commerce-department-finalizing-long-awaited-ai-remote-access-rule?rc=hwneun&shared=c246f22ce1b5c9c7"
+},
+"blog:theinformation.com/articles/elon-musks-ai-group-guts-grok-video-generation-team": {
+"by": {
+"nl:The Rundown AI": 0
+},
+"first_seen": "2026-11-16T11:53:48.079836+00:00",
+"url": "https://www.theinformation.com/articles/elon-musks-ai-group-guts-grok-video-generation-team?utm_source=therundownai.beehiiv.com&utm_medium=newsletter&utm_campaign=rundown-1116"
 },
 "blog:theinformation.com/articles/meta-plans-sales-team-consulting-partnerships-win-big-companies": {
 "by": {
@@ -9942,12 +10293,26 @@
 "first_seen": "2026-11-06T11:19:07.955521+00:00",
 "url": "https://www.therundown.ai/articles/meta-turns-mac-into-an-ai-supercomputer?utm_source=therundownai.beehiiv.com&utm_medium=newsletter&utm_campaign=rundown-1106"
 },
+"blog:therundown.ai/articles/microsoft-s-outlook-outage-hits-day-two": {
+"by": {
+"nl:The Rundown AI": 0
+},
+"first_seen": "2026-11-16T11:53:48.079836+00:00",
+"url": "https://www.therundown.ai/articles/microsoft-s-outlook-outage-hits-day-two?utm_source=therundownai.beehiiv.com&utm_medium=newsletter&utm_campaign=rundown-1116"
+},
 "blog:therundown.ai/articles/mit-shows-ai-improving-ai-no-training-required": {
 "by": {
 "nl:The Rundown AI": 0
 },
 "first_seen": "2026-11-04T11:24:00.743607+00:00",
 "url": "https://www.therundown.ai/articles/mit-shows-ai-improving-ai-no-training-required?utm_source=therundownai.beehiiv.com&utm_medium=newsletter&utm_campaign=rundown-1104"
+},
+"blog:therundown.ai/articles/nvidia-enters-life-without-jensen-huang": {
+"by": {
+"nl:The Rundown AI": 0
+},
+"first_seen": "2026-11-16T11:53:48.079836+00:00",
+"url": "https://www.therundown.ai/articles/nvidia-enters-life-without-jensen-huang?utm_source=therundownai.beehiiv.com&utm_medium=newsletter&utm_campaign=rundown-1116"
 },
 "blog:therundown.ai/articles/openai-invites-brands-to-set-up-shop-in-chatgpt": {
 "by": {
@@ -10082,6 +10447,13 @@
 "first_seen": "2026-11-09T11:57:09.927629+00:00",
 "url": "https://www.therundown.ai/tools/muse?utm_source=therundownai.beehiiv.com&utm_medium=newsletter&utm_campaign=rundown-1109"
 },
+"blog:therundown.ai/tools/rayline-arc": {
+"by": {
+"nl:The Rundown AI": 0
+},
+"first_seen": "2026-11-16T11:53:48.079836+00:00",
+"url": "https://www.therundown.ai/tools/rayline-arc?utm_source=therundownai.beehiiv.com&utm_medium=newsletter&utm_campaign=rundown-1116"
+},
 "blog:therundown.ai/tools/riverside-agents": {
 "by": {
 "nl:The Rundown AI": 0
@@ -10186,6 +10558,13 @@
 },
 "first_seen": "2026-11-09T11:57:09.927629+00:00",
 "url": "https://therundownai.beehiiv.com/p/jensen-huang-admits-affair-amid-spy-claims"
+},
+"blog:therundownai.beehiiv.com/p/jensen-huang-weighs-a-comeback-at-nvidia": {
+"by": {
+"nl:The Rundown AI": 0
+},
+"first_seen": "2026-11-16T11:53:48.079836+00:00",
+"url": "https://therundownai.beehiiv.com/p/jensen-huang-weighs-a-comeback-at-nvidia"
 },
 "blog:therundownai.beehiiv.com/p/kimi-continues-to-challenge-the-frontier-with-k3-1-pro": {
 "by": {
@@ -10457,7 +10836,7 @@
 },
 "blog:thunderseethe.dev/posts/ml-modules-for-mere-mortals/intro": {
 "by": {
-"lobsters:mgiv0i": 35
+"lobsters:mgiv0i": 38
 },
 "first_seen": "2026-11-14T10:46:34.898037+00:00",
 "url": "https://thunderseethe.dev/posts/ml-modules-for-mere-mortals/intro/"
@@ -10599,7 +10978,7 @@
 },
 "blog:tomshardware.com/tech-industry/artificial-intelligence/mass-smuggling-of-nvidia-ai-gpus-could-be-the-underlying-cause-of-jensen-huangs-departure-analysts-claim-more-than-1-5-gigawatts-of-banned-chips-tracked-to-china-despite-export-controls": {
 "by": {
-"hn:50498051": 58
+"hn:50498051": 61
 },
 "first_seen": "2026-11-15T11:21:41.282909+00:00",
 "url": "https://www.tomshardware.com/tech-industry/artificial-intelligence/mass-smuggling-of-nvidia-ai-gpus-could-be-the-underlying-cause-of-jensen-huangs-departure-analysts-claim-more-than-1-5-gigawatts-of-banned-chips-tracked-to-china-despite-export-controls"
@@ -10613,7 +10992,7 @@
 },
 "blog:tomshardware.com/tech-industry/artificial-intelligence/rogue-claude-ai-tasked-with-renumbering-pages-accidentally-deletes-law-professors-entire-syllabus-one-year-of-lecture-notes-youre-right-to-be-angry-i-deleted-your-files-through-my-own-carelessness-humbled-agent-admits": {
 "by": {
-"hn:50499114": 48
+"hn:50499114": 50
 },
 "first_seen": "2026-11-15T11:21:41.282909+00:00",
 "url": "https://www.tomshardware.com/tech-industry/artificial-intelligence/rogue-claude-ai-tasked-with-renumbering-pages-accidentally-deletes-law-professors-entire-syllabus-one-year-of-lecture-notes-youre-right-to-be-angry-i-deleted-your-files-through-my-own-carelessness-humbled-agent-admits"
@@ -10751,7 +11130,7 @@
 "#4aa84d994b": 40857,
 "#77ed393bd5": 337,
 "#e72c99a412": 117,
-"hn:50474883": 402,
+"hn:50474883": 443,
 "nl:Don't Worry About the Vase (Zvi)": 0
 },
 "first_seen": "2026-11-13T11:23:15.575808+00:00",
@@ -10805,7 +11184,7 @@
 "blog:unsloth.ai/docs/models/qwen3.8": {
 "by": {
 "#07d23f0e7a": 163,
-"hn:50491980": 251,
+"hn:50491980": 259,
 "nl:AINews": 0,
 "reddit:1xtlyhe": 0
 },
@@ -10982,6 +11361,13 @@
 "first_seen": "2026-11-04T11:24:00.743607+00:00",
 "url": "https://www.washingtonpost.com/technology/2026/11/03/google-deepmind-staff-protest-lifetime-ban-criticizing-company/"
 },
+"blog:washingtonpost.com/technology/2026/11/14/nvidia-faces-daunting-challenge-replacing-ceo-jensen-huang": {
+"by": {
+"nl:The Rundown AI": 0
+},
+"first_seen": "2026-11-16T11:53:48.079836+00:00",
+"url": "https://www.washingtonpost.com/technology/2026/11/14/nvidia-faces-daunting-challenge-replacing-ceo-jensen-huang/?utm_source=therundownai.beehiiv.com&utm_medium=newsletter&utm_campaign=rundown-1116"
+},
 "blog:wccftech.com/amazon-allegedly-canceling-gpu-orders-closing-accounts-compute-hardware-tim-sweeney": {
 "by": {
 "reddit:1xm8o8g": 0
@@ -10991,6 +11377,7 @@
 },
 "blog:wccftech.com/jensen-huang-financed-ai-startups-absorb-excess-silicon": {
 "by": {
+"hn:50505905": 63,
 "reddit:1xvsb5f": 0
 },
 "first_seen": "2026-11-14T10:46:34.898037+00:00",
@@ -11023,6 +11410,13 @@
 },
 "first_seen": "2026-10-28T22:49:45.282581+00:00",
 "url": "https://whissleai.github.io/steer-tts/"
+},
+"blog:willdady.com/why-platform-teams-fail": {
+"by": {
+"hn:50496525": 23
+},
+"first_seen": "2026-11-16T11:53:48.079836+00:00",
+"url": "https://willdady.com/why-platform-teams-fail"
 },
 "blog:wired.com/story/a-defense-contractor-gave-their-personal-ai-agent-access-to-a-secure-pentagon-system": {
 "by": {
@@ -11196,6 +11590,13 @@
 "first_seen": "2026-10-28T22:44:54.349664+00:00",
 "url": "https://www.wsj.com/tech/ai/anthropic-revenue-growth-ipo-accaf0f1"
 },
+"blog:wsj.com/tech/ai/nvidias-days-as-an-open-checkbook-for-the-ai-economy-are-numbered-90c7b388": {
+"by": {
+"hn:50513876": 27
+},
+"first_seen": "2026-11-16T11:53:48.079836+00:00",
+"url": "https://www.wsj.com/tech/ai/nvidias-days-as-an-open-checkbook-for-the-ai-economy-are-numbered-90c7b388"
+},
 "blog:wsj.com/tech/ai/openai-raises-less-than-half-of-30-billion-target-in-latest-round-91aecdc5": {
 "by": {
 "hn:50312922": 187,
@@ -11262,6 +11663,13 @@
 },
 "first_seen": "2026-10-28T22:44:54.349664+00:00",
 "url": "https://www.yahoo.com/entertainment/articles/im-danger-meme-story-behind-153000343.html"
+},
+"blog:yahoo.com/news/politics/articles/bipartisan-efforts-restrict-chinese-access-141336975.html": {
+"by": {
+"nl:The Rundown AI": 0
+},
+"first_seen": "2026-11-16T11:53:48.079836+00:00",
+"url": "https://www.yahoo.com/news/politics/articles/bipartisan-efforts-restrict-chinese-access-141336975.html?utm_source=therundownai.beehiiv.com&utm_medium=newsletter&utm_campaign=rundown-1116"
 },
 "blog:ydove0324.github.io/hx_resume/blog/researchboost": {
 "by": {
