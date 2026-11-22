@@ -1,10 +1,10 @@
-# paper-taste digest — 2026-11-21
+# paper-taste digest — 2026-11-22
 
 Ranked by heuristic quality × recency (10-day half-life). Scores are a first pass from metadata and abstracts; see [TASTE.md](TASTE.md) for the rubric an agent applies on top, and [AGENTS.md](AGENTS.md) to get recommendations matched to your own repos.
 
-## Papers (last 7 days, 2229 kept in the last 14)
+## Papers (last 7 days, 2098 kept in the last 14)
 
-1. **[Coda-DaVinci: Reimagining Video Generation with Code2Video](https://arxiv.org/abs/2611.26595)** — quality 63  
+1. **[Coda-DaVinci: Reimagining Video Generation with Code2Video](https://arxiv.org/abs/2611.26595)** — quality 64  
    Yiyan Ji, Qixun Wang, Yang Shi et al. · 2026-11-19  
    _why:_ strong baselines; controlled experiments; negative results / limitations; human evaluation; code released; 47 pages  
    > Code2Video uses agent-authored 3D proxies to guide video generation, enabling explicit control over structure and dynamics. However, how to construct proxies and prompts for optimal downstream quality remains underexplored, as do the capabilities and limitations of this…
@@ -16,33 +16,33 @@ Ranked by heuristic quality × recency (10-day half-life). Scores are a first pa
 
 3. **[TabBioMed: A Large-Scale Benchmark for Biomedical Tabular Learning](https://arxiv.org/abs/2611.23779)** — quality 64  
    Pau Mateo-Bernadó, Saivenkata Nagavyjayanthi Polapragada, David Bonet et al. · 2026-11-18  
-   _why:_ strong baselines; code released; weights/data released; 87 pages; HF daily papers: 12 upvotes; senior author (h-index 185)  
+   _why:_ strong baselines; code released; weights/data released; 87 pages; HF daily papers: 13 upvotes; senior author (h-index 185)  
    > Recent advances in machine learning have accelerated biomedical prediction, but evaluation on structured biomedical data remains fragmented, especially for datasets with high dimensionality, large sample size, missingness, and class imbalance. We introduce TabBioMed, a…
 
-4. **[AutoMaster: Autonomous Post-Training by Making the Same Model a Better Teacher](https://arxiv.org/abs/2611.26510)** — quality 55  
+4. **[EgoCaptioner: Towards Comprehensive and Fine-Grained Egocentric Video Captioning](https://arxiv.org/abs/2611.26380)** — quality 56  
+   Yuqi Tang, Yang Shi, Yuran Wang et al. · 2026-11-19  
+   _why:_ ablations; strong baselines; code released; HF daily papers: 25 upvotes; 17-author team  
+   > Egocentric video captioning requires fine-grained detail and accurate timing, yet current multimodal large language models (MLLMs) often miss brief actions, confuse their order, or misinterpret the wearer's motion. Existing caption formats also offer limited support for…
+
+5. **[WeMM-Video: Pushing the Frontiers of Open-Source Omni-Modal Video Understanding](https://arxiv.org/abs/2611.26409)** — quality 55  
+   Changli Tang, Jie Yang, Tianyi Wang et al. · 2026-11-19  
+   _why:_ reproduction / replication; weights/data released; code released; HF daily papers: 45 upvotes  
+   > Video understanding, particularly with accompanying audio, remains a central challenge in multimodal intelligence. In this report, we introduce \textbf{WeMM-Video}, a family of Chinese-English bilingual omni-modal foundation models spanning 2B, 4B, 9B, and 35B-A3B variants.…
+
+6. **[Mind2Act World: A Diagnostic Benchmark for Embodied Mind, Physical Action, and Mind-Action Composition in Robotic Manipulation](https://arxiv.org/abs/2611.26444)** — quality 55  
+   Yuzhi Huang, Jie Wu, Fanding Huang et al. · 2026-11-19  
+   _why:_ negative results / limitations; code released; HF daily papers: 51 upvotes; 43-author team  
+   > Embodied intelligence aims to let robots perform complex physical tasks with human-like adaptability and reliability, which requires three complementary capabilities: history-based cognitive reasoning, precise and timely physical execution, and the composition of reasoning and…
+
+7. **[Posterior Matching Distillation](https://arxiv.org/abs/2611.26629)** — quality 55  
+   Hidir Yesiltepe, Julius Berner, Arash Vahdat et al. · 2026-11-19  
+   _why:_ theory; code released; HF daily papers: 38 upvotes  
+   > Diffusion distillation accelerates image and video generation by compressing a pretrained teacher's iterative sampling process into a few network evaluations. Distribution-based methods achieve this by matching the student's output distribution to the teacher's. This matching is…
+
+8. **[AutoMaster: Autonomous Post-Training by Making the Same Model a Better Teacher](https://arxiv.org/abs/2611.26510)** — quality 55  
    Guoxin Chen, Shuang Sun, Fanzhe Meng et al. · 2026-11-19  
    _why:_ ablations; code released; weights/data released; HF daily papers: 14 upvotes  
    > Task success alone does not specify which behaviors post-training should reinforce. Even successful teacher trajectories can contain unsupported assumptions, unproductive repetition, or superficial verification. We propose Skill-FT (Skill-Guided Fine-Tuning), which uses…
-
-5. **[Posterior Matching Distillation](https://arxiv.org/abs/2611.26629)** — quality 54  
-   Hidir Yesiltepe, Julius Berner, Arash Vahdat et al. · 2026-11-19  
-   _why:_ theory; code released; HF daily papers: 35 upvotes  
-   > Diffusion distillation accelerates image and video generation by compressing a pretrained teacher's iterative sampling process into a few network evaluations. Distribution-based methods achieve this by matching the student's output distribution to the teacher's. This matching is…
-
-6. **[WeMM-Video: Pushing the Frontiers of Open-Source Omni-Modal Video Understanding](https://arxiv.org/abs/2611.26409)** — quality 55  
-   Changli Tang, Jie Yang, Tianyi Wang et al. · 2026-11-19  
-   _why:_ reproduction / replication; weights/data released; code released; HF daily papers: 40 upvotes  
-   > Video understanding, particularly with accompanying audio, remains a central challenge in multimodal intelligence. In this report, we introduce \textbf{WeMM-Video}, a family of Chinese-English bilingual omni-modal foundation models spanning 2B, 4B, 9B, and 35B-A3B variants.…
-
-7. **[Mind2Act World: A Diagnostic Benchmark for Embodied Mind, Physical Action, and Mind-Action Composition in Robotic Manipulation](https://arxiv.org/abs/2611.26444)** — quality 55  
-   Yuzhi Huang, Jie Wu, Fanding Huang et al. · 2026-11-19  
-   _why:_ negative results / limitations; code released; HF daily papers: 46 upvotes; 43-author team  
-   > Embodied intelligence aims to let robots perform complex physical tasks with human-like adaptability and reliability, which requires three complementary capabilities: history-based cognitive reasoning, precise and timely physical execution, and the composition of reasoning and…
-
-8. **[EgoCaptioner: Towards Comprehensive and Fine-Grained Egocentric Video Captioning](https://arxiv.org/abs/2611.26380)** — quality 55  
-   Yuqi Tang, Yang Shi, Yuran Wang et al. · 2026-11-19  
-   _why:_ ablations; strong baselines; code released; HF daily papers: 24 upvotes; 17-author team  
-   > Egocentric video captioning requires fine-grained detail and accurate timing, yet current multimodal large language models (MLLMs) often miss brief actions, confuse their order, or misinterpret the wearer's motion. Existing caption formats also offer limited support for…
 
 9. **[WM^MLLM: Turning MLLMs into World Models](https://arxiv.org/abs/2611.24193)** — quality 58  
    Baiang Li, Enze Xie, Jincheng Yu et al. · 2026-11-18  
@@ -51,7 +51,7 @@ Ranked by heuristic quality × recency (10-day half-life). Scores are a first pa
 
 10. **[AltRA-Test: An Alternative Annotator Test for LLM Judges Without Shared Annotators](https://arxiv.org/abs/2611.26073)** — quality 53  
    Nagham Omar, Rotem Dror, Almog Gueta et al. · 2026-11-19  
-   _why:_ strong baselines; variance / significance; human evaluation; HF daily papers: 22 upvotes; senior author (h-index 45)  
+   _why:_ strong baselines; variance / significance; human evaluation; HF daily papers: 23 upvotes; senior author (h-index 45)  
    > Large language models (LLMs) are increasingly used as judges and graders to replace human annotators, raising the question of when such replacement is statistically justified. To support such decisions, the Alternative Annotator Test (Alt-Test) was introduced for dense settings…
 
 11. **[K2-Horizon: A Frontier Fleet of Open Source Language Models](https://arxiv.org/abs/2611.21003)** — quality 65  
@@ -89,25 +89,25 @@ Ranked by heuristic quality × recency (10-day half-life). Scores are a first pa
    _why:_ strong baselines; variance / significance; negative results / limitations; code released; accepted: NeurIPS  
    > Auto-bidding is a core algorithmic component in online advertising auctions. In practical cold-start settings, iterative training is commonly used to compensate for low-quality, narrowly supported historical data. Unfortunately, in iterative training, representative…
 
-18. **[Jeveration: System One Models Now Generate](https://arxiv.org/abs/2611.24738)** — quality 53  
+18. **[ZeroVLN: Learning to Navigate without Supervised Fine-Tuning of the VLM Brain](https://arxiv.org/abs/2611.26414)** — quality 50  
+   Zixuan Huang, Yang Zhou, Guli Zhang et al. · 2026-11-19  
+   _why:_ code released; HF daily papers: 22 upvotes; senior author (h-index 58)  
+   > Representative vision-language navigation (VLN) methods typically couple a vision-language model (VLM) brain with a learnable action head and fine-tune the VLM brain on navigation-domain data to predict geometric goals. However, such adaptation can substantially alter base VLM…
+
+19. **[Jeveration: System One Models Now Generate](https://arxiv.org/abs/2611.24738)** — quality 53  
    Yuhe Liu, Qi Li, Shihua Zhang et al. · 2026-11-18  
-   _why:_ code released; HF daily papers: 148 upvotes; shared on X by 1 account  
+   _why:_ code released; HF daily papers: 149 upvotes; shared on X by 1 account  
    > System One models such as Jev return decisions through fast, parallel prediction. In this paper, we introduce Jeveration, showing that the same decision paradigm can also generate high-quality images in a single forward pass. Jeveration builds on a frozen vision-language model,…
 
-19. **[SEEC: A Large-Scale Dataset and Benchmark for Self-Supervised External-Eye Representation Learning](https://arxiv.org/abs/2611.26386)** — quality 50  
+20. **[SEEC: A Large-Scale Dataset and Benchmark for Self-Supervised External-Eye Representation Learning](https://arxiv.org/abs/2611.26386)** — quality 50  
    George R. Nahass, Michelle Fleishaker, Sanjay Ganesh et al. · 2026-11-19  
    _why:_ strong baselines; reproduction / replication; contamination check; weights/data released; 36 pages; senior author (h-index 45)  
    > External-eye photography captures clinically relevant periocular anatomy at low acquisition cost, yet no large-scale standardized resource exists for evaluating self-supervised external-eye representations. We introduce a 4.35-million-image Standardized External-Eye Corpus…
 
-20. **[Heave-Ho: Decentralized Long-Horizon Multi-Humanoid Collaboration](https://arxiv.org/abs/2611.22275)** — quality 59  
+21. **[Heave-Ho: Decentralized Long-Horizon Multi-Humanoid Collaboration](https://arxiv.org/abs/2611.22275)** — quality 59  
    Ting-Hsuan Chen, Siheng Zhao, Han Jiang et al. · 2026-11-17  
    _why:_ strong baselines; mechanistic / causal analysis; controlled experiments; code released; HF daily papers: 22 upvotes  
    > Collaboration promises to extend humanoid capabilities beyond what individual robots can achieve. However, realizing this potential requires coordinated whole-body interactions, coherent long-horizon planning, and precise synchronization across robots. We introduce Heave-Ho, a…
-
-21. **[ZeroVLN: Learning to Navigate without Supervised Fine-Tuning of the VLM Brain](https://arxiv.org/abs/2611.26414)** — quality 50  
-   Zixuan Huang, Yang Zhou, Guli Zhang et al. · 2026-11-19  
-   _why:_ code released; HF daily papers: 21 upvotes; senior author (h-index 58)  
-   > Representative vision-language navigation (VLN) methods typically couple a vision-language model (VLM) brain with a learnable action head and fine-tune the VLM brain on navigation-domain data to predict geometric goals. However, such adaptation can substantially alter base VLM…
 
 22. **[AdsNet: A Graph Neural Network for Direct Adsorption Energy Prediction](https://arxiv.org/abs/2611.25646)** — quality 51  
    Changzhi Ai, Frank Abild-Pedersen, Johannes Voss · 2026-11-19  
@@ -142,15 +142,15 @@ Ranked by heuristic quality × recency (10-day half-life). Scores are a first pa
    _why:_ mechanistic / causal analysis; source tier 1; in newsletters: Don't Worry About the Vase (Zvi)  
    > Anthropic Residency: applications open for established technical leaders Alignment Science Blog Anthropic Residency: applications open for established technical leaders Today we are opening applications for the Anthropic Residency, our paid, fixed-term research program with…
 
-3. **[Interpreting Inkling 2 Mini](https://www.goodfire.ai/research/interpreting-inkling-2-mini)** — quality 56  
-   Goodfire Research · 2026-11-20  
-   _why:_ mechanistic / causal analysis; long-form (32k chars); source tier 1  
-   > We studied how this looped model propagates information across blocks and loops. Decomposing the inputs at each layer allows us to easily understand which layers, blocks, and loops communicate with one another.
-
-4. **[Introducing the Sakana AI Applied Research Lab](/applied-research-lab/)** — quality 49  
+3. **[Introducing the Sakana AI Applied Research Lab](/applied-research-lab/)** — quality 49  
    Sakana AI · 2026-11-23  
    _why:_ source tier 1  
    > （＊日本語は英文の後に） Today we are announcing the Sakana AI Applied Research Lab, a research group within Sakana AI that applies the company’s research to large, complex real-world systems, advancing the state of the art in their understanding and delivering it as value to Sakana AI…
+
+4. **[Interpreting Inkling 2 Mini](https://www.goodfire.ai/research/interpreting-inkling-2-mini)** — quality 56  
+   Goodfire Research · 2026-11-20  
+   _why:_ mechanistic / causal analysis; long-form (32k chars); source tier 1  
+   > We studied how this looped model propagates information across blocks and loops. Decomposing the inputs at each layer allows us to easily understand which layers, blocks, and loops communicate with one another.
 
 5. **[A game you cannot win unless you have a quantum computer](https://research.google/blog/a-game-you-cannot-win-unless-you-have-a-quantum-computer/)** — quality 54  
    Google Research · 2026-11-19  
@@ -227,12 +227,12 @@ Ranked by heuristic quality × recency (10-day half-life). Scores are a first pa
 
 7. **[Jeveration: System One Models Now Generate](https://arxiv.org/abs/2611.24738)** — quality 53  
    Yuhe Liu, Qi Li, Shihua Zhang et al. · 2026-11-18  
-   _why:_ code released; HF daily papers: 148 upvotes; shared on X by 1 account  
+   _why:_ code released; HF daily papers: 149 upvotes; shared on X by 1 account  
    > System One models such as Jev return decisions through fast, parallel prediction. In this paper, we introduce Jeveration, showing that the same decision paradigm can also generate high-quality images in a single forward pass. Jeveration builds on a frozen vision-language model,…
 
 8. **[Claude Fable 5.2 solves two open problems in the physics of black holes](https://www.anthropic.com/research/claude-black-hole-physics)** — quality 59  
    Anthropic Research · 2026-11-17  
-   _why:_ variance / significance; long-form (29k chars); source tier 1; Hacker News: 1 submission, 559 points ⚠ hype: astonishing, remarkably  
+   _why:_ variance / significance; long-form (29k chars); source tier 1; Hacker News: 1 submission, 572 points ⚠ hype: astonishing, remarkably  
    > Claude Fable 5.2 has solved two open problems in theoretical physics. Both concern black holes and the search for a theory of quantum gravity.
 
 9. **[End‑to‑End 4‑Bit Training](https://thinkingmachines.ai/blog/end-to-end-4-bit-training/)** — quality 77  
