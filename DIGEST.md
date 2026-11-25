@@ -1,196 +1,196 @@
-# paper-taste digest — 2026-11-23
+# paper-taste digest — 2026-11-25
 
 Ranked by heuristic quality × recency (10-day half-life). Scores are a first pass from metadata and abstracts; see [TASTE.md](TASTE.md) for the rubric an agent applies on top, and [AGENTS.md](AGENTS.md) to get recommendations matched to your own repos.
 
-## Papers (last 7 days, 2192 kept in the last 14)
+## Papers (last 7 days, 2535 kept in the last 14)
 
-1. **[Coda-DaVinci: Reimagining Video Generation with Code2Video](https://arxiv.org/abs/2611.26595)** — quality 64  
-   Yiyan Ji, Qixun Wang, Yang Shi et al. · 2026-11-19  
-   _why:_ strong baselines; controlled experiments; negative results / limitations; human evaluation; code released; 47 pages  
-   > Code2Video uses agent-authored 3D proxies to guide video generation, enabling explicit control over structure and dynamics. However, how to construct proxies and prompts for optimal downstream quality remains underexplored, as do the capabilities and limitations of this…
+1. **[Embo-Harness: Towards Understanding Frontier-Model-as-Policy Harness](https://arxiv.org/abs/2611.31201)** — quality 64  
+   Xiao-Ming Wu, Kang Liao, Yuexiao Ma et al. · 2026-11-23  
+   _why:_ strong baselines; controlled experiments; code released; HF daily papers: 101 upvotes; 15-author team  
+   > Frontier multimodal models exhibit extraordinary generalization in generating robot actions from observations and instructions, enabling a new paradigm in which they serve directly as policies within closed-loop robotic harnesses. However, the design principles of such…
 
-2. **[cmHC: Balancing Stream Mixing in Hyper-Connections via Geometric Contraction](https://arxiv.org/abs/2611.27193)** — quality 58  
-   Haowei He, Ziwen Zhao, Chenshuo Pan et al. · 2026-11-20  
-   _why:_ theory; code released; HF daily papers: 79 upvotes  
-   > Manifold-constrained Hyper-Connections (mHC) extends residual connections to multiple streams and stabilizes residual propagation by constraining stream-mixing residual matrices to the Birkhoff polytope, the set of doubly stochastic matrices. In this work, we investigate how to…
+2. **[Embodied AI Fails the Mirror Test: How a Simple Mirror Breaks Robot Policies](https://arxiv.org/abs/2611.33010)** — quality 59  
+   Xuanchen Liu, Hejun Zhang, Boxuan Dong et al. · 2026-11-24  
+   _why:_ strong baselines; negative results / limitations; code released; HF daily papers: 26 upvotes  
+   > Can a simple mirror expose the limitations of today's robotic manipulation policies? Inspired by the mirror self-recognition test in animal cognition, we investigate whether robot policies can reliably manipulate physical objects in scenes containing their reflections. We…
 
-3. **[ShadowTransfer: A Geographic Transfer Benchmark for Overhead Shadow Detection](https://arxiv.org/abs/2611.24904)** — quality 62  
-   Shagun Mittal, Raymond A. Yeh, Satish Ukkusuri · 2026-11-18  
-   _why:_ theory; reproduction / replication; contamination check; code released; weights/data released; accepted: NeurIPS  
-   > Overhead aerial imagery feeds dense-prediction pipelines that are routinely trained in one geographic region and deployed in another, yet no benchmark measures how shadow detection models transfer across regions. Existing overhead shadow datasets either lack a geographic…
+3. **[ICLWorld: Benchmarking In-Context Learning of Agents from Digital to Physical Worlds](https://arxiv.org/abs/2611.32649)** — quality 59  
+   Qingle Liu, Jieming Li, Pei-lin Li et al. · 2026-11-24  
+   _why:_ ablations; contamination check; code released; weights/data released; HF daily papers: 13 upvotes  
+   > In-context learning (ICL) lets agents acquire new rules from context and adapt to user-specific requirements at inference time. The same frontier agents now operate both computers and robots, yet their ICL remains insufficiently assessed: existing benchmarks are largely offline,…
 
-4. **[TabBioMed: A Large-Scale Benchmark for Biomedical Tabular Learning](https://arxiv.org/abs/2611.23779)** — quality 64  
-   Pau Mateo-Bernadó, Saivenkata Nagavyjayanthi Polapragada, David Bonet et al. · 2026-11-18  
-   _why:_ strong baselines; code released; weights/data released; 87 pages; HF daily papers: 13 upvotes; senior author (h-index 185)  
-   > Recent advances in machine learning have accelerated biomedical prediction, but evaluation on structured biomedical data remains fragmented, especially for datasets with high dimensionality, large sample size, missingness, and class imbalance. We introduce TabBioMed, a…
+4. **[Rewirable Circuits in Transformers with Loom Attention](https://arxiv.org/abs/2611.30634)** — quality 58  
+   Da Xiao, Qingye Meng, Shengping Li et al. · 2026-11-23  
+   _why:_ strong baselines; mechanistic / causal analysis; code released; HF daily papers: 73 upvotes  
+   > We propose loom attention, which allows a Transformer to dynamically rewire its circuits at every token by interweaving a head's vertical attention over the outputs of earlier heads (to obtain its query, key and value) with its horizontal attention over tokens. We instantiate…
 
-5. **[EgoCaptioner: Towards Comprehensive and Fine-Grained Egocentric Video Captioning](https://arxiv.org/abs/2611.26380)** — quality 57  
-   Yuqi Tang, Yang Shi, Yuran Wang et al. · 2026-11-19  
-   _why:_ ablations; strong baselines; code released; HF daily papers: 26 upvotes; 17-author team  
-   > Egocentric video captioning requires fine-grained detail and accurate timing, yet current multimodal large language models (MLLMs) often miss brief actions, confuse their order, or misinterpret the wearer's motion. Existing caption formats also offer limited support for…
+5. **[OWE-Bench: A long-horizon benchmark for measuring real-world engineering](https://arxiv.org/abs/2611.30017)** — quality 59  
+   Jacob Cole, Martin Dimakis, Victor Barres et al. · 2026-11-23  
+   _why:_ negative results / limitations; code released; weights/data released; 35 pages; shared on X by 1 account  
+   > We present OWE-Bench (OpenWorldEngineer-Bench), a benchmark of 26 long-horizon engineering tasks written by domain experts in software engineering, physical engineering, machine learning, and scientific computing. Tasks range from optimizing kernels and designing an aircraft, to…
 
-6. **[Non-penetrating World Models](https://arxiv.org/abs/2611.27963)** — quality 52  
-   Yuhang Dai, Yinwei Wu, Ziyue Lin et al. · 2026-11-20  
-   _why:_ code released; weights/data released; HF daily papers: 49 upvotes ⚠ hype: remarkably  
-   > We study a new problem of preventing object penetration in interactive video world models. To understand how existing models handle this, we introduce NoPeBench, a benchmark that evaluates how world models respond to physical obstacles. Our evaluation reveals that none of the…
+6. **[RUIBench: What Makes a Good Robot-Use Interface?](https://arxiv.org/abs/2611.31115)** — quality 56  
+   Yanzhe Chen, Zhijun Cao, Zechen Bai et al. · 2026-11-23  
+   _why:_ controlled experiments; code released; HF daily papers: 22 upvotes; senior author (h-index 53)  
+   > Foundation models can reason about complex physical tasks, yet translating this intelligence into reliable robot execution remains challenging. We argue that a critical, often overlooked factor is the robot-use interface (RUI), which determines how agents express and execute…
 
-7. **[WeMM-Video: Pushing the Frontiers of Open-Source Omni-Modal Video Understanding](https://arxiv.org/abs/2611.26409)** — quality 56  
-   Changli Tang, Jie Yang, Tianyi Wang et al. · 2026-11-19  
-   _why:_ reproduction / replication; weights/data released; code released; HF daily papers: 49 upvotes  
-   > Video understanding, particularly with accompanying audio, remains a central challenge in multimodal intelligence. In this report, we introduce \textbf{WeMM-Video}, a family of Chinese-English bilingual omni-modal foundation models spanning 2B, 4B, 9B, and 35B-A3B variants.…
+7. **[What Makes Good Data for Training Coding Agents? A Systematic Study on SWE-Gym](https://arxiv.org/abs/2611.30207)** — quality 56  
+   Yikai Zhang, Mai Xu, Yunbei Zhang et al. · 2026-11-23  
+   _why:_ controlled experiments; contamination check; code released; weights/data released; HF daily papers: 17 upvotes  
+   > Reinforcement learning (RL) trains coding agents on software tasks whose hidden tests decide the reward, yet task collections check these tests only against the reference fix. We ask what makes a task good training data, focusing on the correctness of its reward labels. We audit…
 
-8. **[Mind2Act World: A Diagnostic Benchmark for Embodied Mind, Physical Action, and Mind-Action Composition in Robotic Manipulation](https://arxiv.org/abs/2611.26444)** — quality 55  
-   Yuzhi Huang, Jie Wu, Fanding Huang et al. · 2026-11-19  
-   _why:_ negative results / limitations; code released; HF daily papers: 56 upvotes; 43-author team  
-   > Embodied intelligence aims to let robots perform complex physical tasks with human-like adaptability and reliability, which requires three complementary capabilities: history-based cognitive reasoning, precise and timely physical execution, and the composition of reasoning and…
+8. **[Measuring Layer-wise Intrinsic Dimensionality of FFNs in LLMs via PCA](https://arxiv.org/abs/2611.32782)** — quality 51  
+   Daehee Kim · 2026-11-24  
+   _why:_ model-scale sweep; mechanistic / causal analysis; code released; accepted: NeurIPS  
+   > Modern large language models (LLMs) keep the feed-forward network (FFN) intermediate width identical across every layer, a convention inherited from the original Transformer. Yet mechanistic work suggests layers at different depths do qualitatively different work, raising a…
 
-9. **[Posterior Matching Distillation](https://arxiv.org/abs/2611.26629)** — quality 55  
-   Hidir Yesiltepe, Julius Berner, Arash Vahdat et al. · 2026-11-19  
-   _why:_ theory; code released; HF daily papers: 42 upvotes  
-   > Diffusion distillation accelerates image and video generation by compressing a pretrained teacher's iterative sampling process into a few network evaluations. Distribution-based methods achieve this by matching the student's output distribution to the teacher's. This matching is…
+9. **[Unlocking the Power of Loops in Pretrained LLMs with Loop Residuals](https://arxiv.org/abs/2611.31094)** — quality 54  
+   Xuanlei Zhao, Hailun Xu, Kai Wang et al. · 2026-11-23  
+   _why:_ strong baselines; model-scale sweep; code released; HF daily papers: 16 upvotes  
+   > Looped Transformers iterate a shared block of layers to increase computation without adding parameters, offering stronger performance and test-time scaling. However, this power has so far required training from scratch and yielded only modest gains for LLMs. Finetuning existing…
 
-10. **[AutoMaster: Autonomous Post-Training by Making the Same Model a Better Teacher](https://arxiv.org/abs/2611.26510)** — quality 55  
-   Guoxin Chen, Shuang Sun, Fanzhe Meng et al. · 2026-11-19  
-   _why:_ ablations; code released; weights/data released; HF daily papers: 15 upvotes  
-   > Task success alone does not specify which behaviors post-training should reinforce. Even successful teacher trajectories can contain unsupported assumptions, unproductive repetition, or superficial verification. We propose Skill-FT (Skill-Guided Fine-Tuning), which uses…
+10. **[MMMem: Self-Improving Agents with Task-Aware Multimodal Experience Consolidation](https://arxiv.org/abs/2611.30287)** — quality 54  
+   Yuxuan Chen, Changwei Lv, Yunfei Li et al. · 2026-11-23  
+   _why:_ ablations; strong baselines; mechanistic / causal analysis; code released; HF daily papers: 10 upvotes  
+   > AI agents accumulate conversations, images, and documents through long-term interactions with users. Answering later questions often requires connecting evidence across these records, yet the resulting understanding is rarely retained, allowing mistakes to recur on related…
 
-11. **[WM^MLLM: Turning MLLMs into World Models](https://arxiv.org/abs/2611.24193)** — quality 58  
-   Baiang Li, Enze Xie, Jincheng Yu et al. · 2026-11-18  
-   _why:_ strong baselines; code released; 25 pages; HF daily papers: 15 upvotes; senior author (h-index 66)  
-   > Video world models keep the world in the context of a generator, so a revisit is synthesized again and earlier edits can drift or disappear. We present WM^MLLM, the first interactive world model built on multimodal large language models (MLLMs), for persistent, editable world…
+11. **[World Models as Native Latent Action Models](https://arxiv.org/abs/2611.30898)** — quality 52  
+   Qinyue Li, Weijie Qiao, Qingyi Tao et al. · 2026-11-23  
+   _why:_ strong baselines; weights/data released; HF daily papers: 28 upvotes  
+   > Large and diverse video sources, such as egocentric human video and heterogeneous robot recordings, carry rich dynamics but come either without actions or without a shared action space. Latent action models (LAMs) can recover these dynamics, but they train their inverse- and…
 
-12. **[AltRA-Test: An Alternative Annotator Test for LLM Judges Without Shared Annotators](https://arxiv.org/abs/2611.26073)** — quality 53  
-   Nagham Omar, Rotem Dror, Almog Gueta et al. · 2026-11-19  
-   _why:_ strong baselines; variance / significance; human evaluation; HF daily papers: 23 upvotes; senior author (h-index 45)  
-   > Large language models (LLMs) are increasingly used as judges and graders to replace human annotators, raising the question of when such replacement is statistically justified. To support such decisions, the Alternative Annotator Test (Alt-Test) was introduced for dense settings…
+12. **[Lazy Agents Answer Against Their Own Beliefs: Reinforcement Learning with Verifiable Beliefs Teaches Them to Act on What They Believe](https://arxiv.org/abs/2611.32884)** — quality 48  
+   Richmond Sin Jing Xuan, Peilin Feng, Wenbin Wang et al. · 2026-11-24  
+   _why:_ code released; HF daily papers: 54 upvotes  
+   > AI agents working on long tasks often commit to an answer before they have enough evidence, a behavior called laziness. In our evaluations, they frequently commit even while their stated belief still names several possible answers. An outcome reward at the end of the episode…
 
-13. **[Direct3D-V3: Latent-Free Diffusion Transformers in the Native Voxel Domain](https://arxiv.org/abs/2611.26511)** — quality 52  
-   Shuang Wu, Jiachen Qian, Youtian Lin et al. · 2026-11-19  
-   _why:_ code released; accepted: SIGGRAPH; HF daily papers: 6 upvotes; senior author (h-index 117)  
-   > Native 3D generation has largely been built around latent diffusion, with recent advances concentrating on stronger variational autoencoders (VAE) and increasingly elaborate latent representations, from vecset and triplanes to structured sparse voxels. Despite their…
+13. **[TrialAgentBench: Evaluating AI Agents for Clinical-Trial Analysis and Long-Horizon Drug-Development Decisions](https://arxiv.org/abs/2611.30916)** — quality 52  
+   Bradley Segal, William Bolton, Philip Torr et al. · 2026-11-23  
+   _why:_ variance / significance; weights/data released; accepted: NeurIPS; senior author (h-index 117)  
+   > Clinical drug development is a long-horizon, high-stakes process requiring sequential decisions based on information that costs money and time to acquire. AI agents have demonstrated capabilities for scientific analysis, but there is no established way to evaluate them on these…
 
-14. **[Deep Cross-Division Network for Product-and-Ratio Feature Interactions in Industrial Ranking](https://arxiv.org/abs/2611.27514)** — quality 50  
-   Mikhail Trapeznikov, Sofia Gulevskaia, Maksim Utushkin et al. · 2026-11-20  
-   _why:_ strong baselines; variance / significance; code released; weights/data released  
-   > Learning effective feature interactions is essential for industrial recommender systems. DCN and DCNv2 efficiently automate polynomial feature crossing. However, their cross layers construct interactions using only non-negative integer powers of the input features, with the…
+14. **[LeCellModel: Interpretable Density Estimation over the Gene Expression Manifold](https://arxiv.org/abs/2611.30955)** — quality 51  
+   Gil Karin, Artemii Bakulin, Nir Yosef · 2026-11-23  
+   _why:_ multiple benchmarks; theory; mechanistic / causal analysis; accepted: NeurIPS; senior author (h-index 75)  
+   > Representation learning for single-cell RNA-seq has been evaluated by the identities representations capture -- cell types, lineages, perturbations -- rather than how faithfully they model the distribution of cell states on the gene expression manifold. As a result, density…
 
-15. **[ForceHarness: Turning Force into Action and Physics for Frozen Frontier Models](https://arxiv.org/abs/2611.21099)** — quality 64  
-   Ke Sun, Kevin Yuchen Ma, Yike Zhang et al. · 2026-11-16  
-   _why:_ ablations; code released; 31 pages; HF daily papers: 44 upvotes; senior author (h-index 53)  
-   > Frontier multimodal models can now control robots zero-shot from images, yet many manipulation tasks depend on contact forces that images cannot show. Bringing force to an API-only frozen model raises two challenges. First, contact evolves much faster than an API model can…
+15. **[OmniEVIE: Evidence-Vector-Informed Embedding for Multi-modal Retrieval](https://arxiv.org/abs/2611.32203)** — quality 48  
+   Zifei Wang, Wei Wen, Qiang Ji et al. · 2026-11-24  
+   _why:_ strong baselines; code released; weights/data released; 28 pages  
+   > Multimodal retrieval must match dense pages, fine-grained entities, ordered video, and agent tools and memory. Single-vector embeddings lose local evidence, cross-encoders reread every recalled item online, and uncompressed late interaction is too large to serve. We present…
 
-16. **[Late Entry in Looped Language Models](https://arxiv.org/abs/2611.24576)** — quality 54  
-   Ziqi Jin, Jiaxi Li, Weiwen Xu et al. · 2026-11-18  
-   _why:_ code released; 25 pages; HF daily papers: 10 upvotes; senior author (h-index 66)  
-   > Looped language models deepen reasoning at a compact parameter count by iterating a shared layer stack T times per token, turning recurrence depth directly into sequential decoding latency. Conventional early-exit decoding halts after initial passes without cache completion,…
+16. **[XMind: Thinking Twice via Cross-Memory Reasoning for LLM-Based Autonomous Driving](https://arxiv.org/abs/2611.32209)** — quality 48  
+   Zuyi Guo, Xianjie Dai, Lei Yang et al. · 2026-11-24  
+   _why:_ ablations; strong baselines; negative results / limitations; code released  
+   > Memory-augmented large language model (LLM) driving agents can reuse past experience, yet previously learned corrections often fail to transfer when traffic conditions change. A key limitation is that existing memories mainly record observed outcomes, providing little evidence…
 
-17. **[AVTR: Adaptive Multimodal Reasoning with Visual Imagination](https://arxiv.org/abs/2611.24161)** — quality 55  
-   Xiaoqian Shen, Yunyang Xiong, Changsheng Zhao et al. · 2026-11-18  
-   _why:_ strong baselines; multiple benchmarks; negative results / limitations; code released; HF daily papers: 8 upvotes; 18-author team  
-   > Vision-Language Models increasingly rely on textual reasoning to solve advanced multimodal tasks. Despite its effectiveness, this paradigm faces two fundamental limitations. First, relying on textual reasoning alone can limit perceptual ability in vision-centric questions, where…
+17. **[WeMM-Ecom: Advancing Multimodal Content Understanding for WeChat E-Commerce](https://arxiv.org/abs/2611.30662)** — quality 50  
+   Binhui Xie, Jinmin Li, Haomiao Tang et al. · 2026-11-23  
+   _why:_ code released; weights/data released; HF daily papers: 55 upvotes  
+   > We present WeMM-Ecom, a family of multimodal large language models that deliver frontier e-commerce capabilities while achieving state-of-the-art general-purpose performance at their respective scales. The family spans five sizes, from a 0.8B dense model to a 35B…
 
-18. **[The Mask Is Not the Object: Volumetric Supervision for 3D Gaussian Segmentation](https://arxiv.org/abs/2611.21383)** — quality 62  
-   Jeonghwan Cho, Minsu Kim, Junyoung Hong et al. · 2026-11-16  
-   _why:_ strong baselines; reproduction / replication; negative results / limitations; code released; accepted: NeurIPS; HF daily papers: 27 upvotes  
-   > 3D Gaussian Splatting enables object-level operations on Gaussian primitives, yet existing segmentation methods are largely trained and evaluated through rendered views. This mismatch can produce accurate rendered masks from incomplete 3D selections since alpha-blended feature…
+18. **[Residual Guidance for Real-Time Interactive Video Generation](https://arxiv.org/abs/2611.32820)** — quality 46  
+   NaHyeon Park, Kyeong-Hwan Moon, Youjin Jeon et al. · 2026-11-24  
+   _why:_ mechanistic / causal analysis; code released; HF daily papers: 6 upvotes  
+   > Real-time interactive video generation allows users to change the prompt during generation to steer the evolving video. However, existing streaming models, which generate videos chunk by chunk, often keep following the previous prompt after a switch. We trace this failure to…
 
-19. **[Iterative Scarcity-Guided Exploration: Bootstrapping Generative Auto-bidding from Narrow Support](https://arxiv.org/abs/2611.26060)** — quality 51  
-   Qingmao Yao, Guangzheng Hu, Yusen Huo et al. · 2026-11-19  
-   _why:_ strong baselines; variance / significance; negative results / limitations; code released; accepted: NeurIPS  
-   > Auto-bidding is a core algorithmic component in online advertising auctions. In practical cold-start settings, iterative training is commonly used to compensate for low-quality, narrowly supported historical data. Unfortunately, in iterative training, representative…
+19. **[SpecEngineeringBench: Evaluating Coding Agents as Autonomous Specification Engineers](https://arxiv.org/abs/2611.32973)** — quality 46  
+   Xingjian Wang, Shijian Wang, Minghao Liu et al. · 2026-11-24  
+   _why:_ code released; 31 pages; HF daily papers: 5 upvotes  
+   > Autonomous specification engineering requires coding agents to translate functional requirements into executable tests and use the results to discover and validate defects. However, existing benchmarks evaluate coding agents on explicitly specified test generation tasks,…
 
-20. **[ZeroVLN: Learning to Navigate without Supervised Fine-Tuning of the VLM Brain](https://arxiv.org/abs/2611.26414)** — quality 50  
-   Zixuan Huang, Yang Zhou, Guli Zhang et al. · 2026-11-19  
-   _why:_ code released; HF daily papers: 22 upvotes; senior author (h-index 58)  
-   > Representative vision-language navigation (VLN) methods typically couple a vision-language model (VLM) brain with a learnable action head and fine-tune the VLM brain on navigation-domain data to predict geometric goals. However, such adaptation can substantially alter base VLM…
+20. **[Reliable and grounded reporting of any computed tomography scan with FORA](https://arxiv.org/abs/2611.32823)** — quality 46  
+   Sezgin Er, Utku Turkbey, Alperen Gur et al. · 2026-11-24  
+   _why:_ mechanistic / causal analysis; contamination check; code released; 58 pages; 24-author team  
+   > Artificial intelligence systems for computed tomography (CT) remain largely restricted to specific anatomical regions, examination types or predefined abnormalities, limiting their ability to provide comprehensive and spatially grounded interpretations. Here we present FORA, a…
 
-21. **[Jeveration: System One Models Now Generate](https://arxiv.org/abs/2611.24738)** — quality 53  
-   Yuhe Liu, Qi Li, Shihua Zhang et al. · 2026-11-18  
-   _why:_ code released; HF daily papers: 150 upvotes; shared on X by 1 account  
-   > System One models such as Jev return decisions through fast, parallel prediction. In this paper, we introduce Jeveration, showing that the same decision paradigm can also generate high-quality images in a single forward pass. Jeveration builds on a frozen vision-language model,…
+21. **[MAGPIE: Agentic Multi-Reference Image Generation via Executable Scene Construction](https://arxiv.org/abs/2611.32462)** — quality 46  
+   Yifan Dai, Daili Hua, Bohan Zeng et al. · 2026-11-24  
+   _why:_ negative results / limitations; HF daily papers: 12 upvotes; 18-author team  
+   > Multi-reference image generation requires a model to preserve the appearance of selected subjects while arranging them according to an instruction. Despite recent progress in reference-based generation and compositional control, reliably organizing selected subjects into the…
 
-22. **[SEEC: A Large-Scale Dataset and Benchmark for Self-Supervised External-Eye Representation Learning](https://arxiv.org/abs/2611.26386)** — quality 50  
-   George R. Nahass, Michelle Fleishaker, Sanjay Ganesh et al. · 2026-11-19  
-   _why:_ strong baselines; reproduction / replication; contamination check; weights/data released; 36 pages; senior author (h-index 45)  
-   > External-eye photography captures clinically relevant periocular anatomy at low acquisition cost, yet no large-scale standardized resource exists for evaluating self-supervised external-eye representations. We introduce a 4.35-million-image Standardized External-Eye Corpus…
+22. **[Motion Mamba 2.0: Autoregressive Diffusion Mamba for Long-Horizon Humanoid Control](https://arxiv.org/abs/2611.29897)** — quality 51  
+   Yue Huang, Tianshan Zhang, Zeyu Zhang et al. · 2026-11-23  
+   _why:_ code released; HF daily papers: 194 upvotes  
+   > Long-horizon, real-time controllable motion generation is essential for interactive animation and humanoid robotics, where an agent must respond to changing instructions and spatial goals while moving. Existing autoregressive diffusion methods generate motion incrementally, but…
 
-23. **[Heave-Ho: Decentralized Long-Horizon Multi-Humanoid Collaboration](https://arxiv.org/abs/2611.22275)** — quality 59  
-   Ting-Hsuan Chen, Siheng Zhao, Han Jiang et al. · 2026-11-17  
-   _why:_ strong baselines; mechanistic / causal analysis; controlled experiments; code released; HF daily papers: 22 upvotes  
-   > Collaboration promises to extend humanoid capabilities beyond what individual robots can achieve. However, realizing this potential requires coordinated whole-body interactions, coherent long-horizon planning, and precise synchronization across robots. We introduce Heave-Ho, a…
+23. **[Single-Transformer Latent Diffusion](https://arxiv.org/abs/2611.29064)** — quality 55  
+   Hao-Yu Hsu, Shenlong Wang, Alexander G. Schwing · 2026-11-21  
+   _why:_ negative results / limitations; code released; HF daily papers: 16 upvotes; senior author (h-index 69)  
+   > Latent generative models typically rely on three separate networks: an encoder that tokenizes pixels, a generator that models the latent distribution, and a decoder that maps latents back to pixels. UNITE recently merged the first two into a single generative encoder trained in…
 
-24. **[AdsNet: A Graph Neural Network for Direct Adsorption Energy Prediction](https://arxiv.org/abs/2611.25646)** — quality 51  
-   Changzhi Ai, Frank Abild-Pedersen, Johannes Voss · 2026-11-19  
-   _why:_ mechanistic / causal analysis; code released; weights/data released; senior author (h-index 77)  
-   > Fast and accurate prediction of adsorption energies is critical for high-throughput computational catalyst screening, existing methods compromise either on evaluation speed (full-graph machine learning potentials) or geometric sensitivity (coordination-based models like the…
+24. **[C3H: Compression-to-Consensus Criteria Hijacking in Multimodal LLM Recommender Systems](https://arxiv.org/abs/2611.32780)** — quality 46  
+   Guowei Guan, Yurong Hao, Jiaming Zhang et al. · 2026-11-24  
+   _why:_ mechanistic / causal analysis; code released; accepted: NeurIPS  
+   > Multimodal large language models (MLLMs) are transforming recommender systems into content-aware decision systems. In these systems, multimodal compression and cross-modal fusion are often viewed as robustness-enhancing mechanisms against content manipulation, as compression can…
 
-25. **[Reference-Guided Data Curation for 3D Medical Vision-Language Pretraining](https://arxiv.org/abs/2611.23484)** — quality 56  
-   Faidra Patsatzi, Ashwin Kumar, Chong Wang et al. · 2026-11-17  
-   _why:_ ablations; strong baselines; negative results / limitations; code released; weights/data released; senior author (h-index 78)  
-   > Training 3D vision-language models (VLMs) on large medical imaging datasets collected across institutions is constrained by data quality. Vast, uncurated pools of image-report pairs are characterized by redundancy, class imbalance, and cross-institutional heterogeneity. We…
+25. **[PartAgent: Agentic 3D Part Segmentation via Expert Integration and Closed-Loop Refinement](https://arxiv.org/abs/2611.32554)** — quality 46  
+   Yang Cao, Zhe Zhu, Yiheng Zhang et al. · 2026-11-24  
+   _why:_ code released; HF daily papers: 31 upvotes  
+   > Segmenting a 3D object into semantically meaningful parts requires joint reasoning about geometric structure and semantic context. Pretrained 3D experts provide spatially grounded region proposals, while 2D experts provide semantic cues for identifying object parts. The…
 
 
 ## Blog posts & lab write-ups (last 14 days)
 
-1. **[AI R&D-relevant model capabilities are improving rapidly and are getting harder to measure](https://metr.org/blog/2026-11-20-q4-2026-capability-update/)** — quality 75  
+1. **[Building stronger biological reasoning models](https://www.goodfire.ai/research/building-stronger-biological-reasoning-models)** — quality 66  
+   Goodfire Research · 2026-11-24  
+   _why:_ strong baselines; variance / significance; mechanistic / causal analysis; long-form (82k chars); source tier 1  
+   > Working with NVIDIA and the Arc Institute, we used interpretability to improve how a multimodal biological reasoning model uses protein information and test the evidence behind its predictions.
+
+2. **[Interpreting a recent acceleration in pretraining loss](https://metr.org/blog/2026-11-24-interpreting-a-recent-acceleration-in-pretraining-loss/)** — quality 57  
+   METR · 2026-11-24  
+   _why:_ model-scale sweep; contamination check; source tier 1  
+   > OpenAI recently published the base-model log-perplexity of 13 models it has trained since GPT-3.5, measured on a fixed held-out dataset sourced from its own codebase. It shows a very striking acceleration in pretraining loss: since early 2026, it has been falling about seven…
+
+3. **[AI R&D-relevant model capabilities are improving rapidly and are getting harder to measure](https://metr.org/blog/2026-11-20-q4-2026-capability-update/)** — quality 75  
    METR · 2026-11-20  
    _why:_ strong baselines; variance / significance; reproduction / replication; negative results / limitations; contamination check; long-form (185k chars)  
    > Contents Overview 1 Background 2 Methodology 3 Results 4 Robustness Checks 5 Discussion 6 Acknowledgments Appendices A Difficulty Estimation and Baselining B Time Horizon Diagnostics C MCI Modelling Methodology D Limitations of IRT E MCI Robustness Checks F Estimating Lifecycle…
 
-2. **[Anthropic Residency: applications open for established technical leaders](https://alignment.anthropic.com/2026/anthropic-residency/)** — quality 58  
-   Anthropic Alignment Science · 2026-11-22  
-   _why:_ mechanistic / causal analysis; source tier 1; in newsletters: Don't Worry About the Vase (Zvi)  
-   > Anthropic Residency: applications open for established technical leaders Alignment Science Blog Anthropic Residency: applications open for established technical leaders Today we are opening applications for the Anthropic Residency, our paid, fixed-term research program with…
+4. **[Supercharging transformer residual connections](https://research.google/blog/supercharging-transformer-residual-connections/)** — quality 59  
+   Google Research · 2026-11-23  
+   _why:_ strong baselines; mechanistic / causal analysis; negative results / limitations; source tier 2; shared on X by 1 account  
+   > Algorithms & Theory
 
-3. **[Introducing the Sakana AI Applied Research Lab](/applied-research-lab/)** — quality 49  
-   Sakana AI · 2026-11-23  
-   _why:_ source tier 1  
-   > （＊日本語は英文の後に） Today we are announcing the Sakana AI Applied Research Lab, a research group within Sakana AI that applies the company’s research to large, complex real-world systems, advancing the state of the art in their understanding and delivering it as value to Sakana AI…
+5. **[Pacing AI via Compute Reallocation](https://www.lesswrong.com/posts/dBEDh2WeZfhuiDnJ5/pacing-ai-via-compute-reallocation)** — quality 56  
+   LessWrong (curated) · 2026-11-24  
+   _why:_ strong baselines; mechanistic / causal analysis; reproduction / replication; negative results / limitations; long-form (33k chars); source tier 2  
+   > This is a linkpost for pacing-ai.com . I encourage folks to read it via the site (which has interactive graphs and expandables), but we’ve copied the text here as well . We offer a concrete proposal for pacing the frontier. 1. Transparency: Verified Compute Allocation…
 
-4. **[Skip the DRAM Tier: MoRI UMBP Runs the Agentic KV Cache on NVMe](https://vllm.ai/blog/2026-11-23-skip-the-dram-tier)** — quality 50  
+6. **[Plato’s Key](https://hazyresearch.stanford.edu/blog/2026-11-25-platos-key)** — quality 53  
+   Hazy Research · 2026-11-25  
+   _why:_ model-scale sweep; negative results / limitations; contamination check; source tier 2  
+   > A rotation and one global scale, fit in closed form, let one LLM use another’s representations. We test the Platonic Representation Hypothesis on factual recall across 12 LLMs.
+
+7. **[vLLM Day-0 Support for ERNIE 5.5 Flash Preview: Plugin Deployment and E2E Inference Acceleration](https://vllm.ai/blog/2026-11-24-ernie-5-5-flash-preview)** — quality 56  
+   vLLM · 2026-11-24  
+   _why:_ reproduction / replication; code released; source tier 2; shared on X by 1 account  
+   > vLLM supports Baidu's ERNIE 5.5 Flash Preview on day 0 through the vLLM-ERNIE plugin on the released vllm==0.32.0 wheel, with structure-aware kernel fusion, Fla
+
+8. **[Sakana Namazu Small](/namazu-small/)** — quality 52  
+   Sakana AI · 2026-11-24  
+   _why:_ multiple benchmarks; weights/data released; source tier 1  
+   > （English Announcement Below.） Sakana AIは本日、Sakana Namazu Smallを発表します。Sakana Namazu Smallは、NVIDIA®社のオープンモデルであるNVIDIA Nemotron™ 3 Nanoのベースモデル（事前学習モデル）に対して、継続事前学習から事後学習までを自社で行った、300億パラメータの大規模言語モデル（LLM）です。 Sakana Namazu…
+
+9. **[Returning to the Neuron Basis for Interpretability, Part 1: Answering Three Objections](https://alignment.anthropic.com/2026/neuron-basis-theory/)** — quality 58  
+   Anthropic Alignment Science · 2026-11-23  
+   _why:_ ablations; variance / significance; mechanistic / causal analysis; long-form (66k chars); source tier 1  
+   > Returning to the Neuron Basis for Interpretability, Part 1: Answering Three Objections Alignment Science Blog Returning to the Neuron Basis for Interpretability, Part 1: Answering Three Objections Jasmine Shone 1,* , Lisa Dunlap 1 November 23, 2026 1 Anthropic * Work done as…
+
+10. **[Skip the DRAM Tier: MoRI UMBP Runs the Agentic KV Cache on NVMe](https://vllm.ai/blog/2026-11-23-skip-the-dram-tier)** — quality 58  
    vLLM · 2026-11-23  
-   _why:_ negative results / limitations; long-form (41k chars); source tier 2  
+   _why:_ negative results / limitations; long-form (41k chars); source tier 2; shared on X by 1 account  
    > On AMD Instinct™ MI355X GPUs, a MoRI UMBP KV pool on NVMe matched a DRAM pool of the same size within 1% for Kimi-K3 on vLLM, and drives that hold a day of agen
 
-5. **[How Public Evals Work, Where They Break, and What Should Change](https://eugeneyan.com/writing/public-evals)** — quality 54  
-   Eugene Yan · 2026-11-22  
-   _why:_ strong baselines; reproduction / replication; contamination check; source tier 2  
-   > Some critiques and suggestions based on a teardown of 12 benchmarks.
+11. **[GPT-6 models demonstrate intrinsic protein-design capabilities](https://openai.com/index/gpt-6-models-demonstrate-intrinsic-protein-design-capabilities)** — quality 50  
+   OpenAI · 2026-11-24  
+   _why:_ negative results / limitations; source tier 3; shared on X by 2 accounts; Hacker News: 1 submission, 295 points  
+   > GPT-6 models design protein structures and sequences using reasoning and code. Lab tests found evidence of binding across five targets.
 
-6. **[Interpreting Inkling 2 Mini](https://www.goodfire.ai/research/interpreting-inkling-2-mini)** — quality 56  
-   Goodfire Research · 2026-11-20  
-   _why:_ mechanistic / causal analysis; long-form (32k chars); source tier 1  
-   > We studied how this looped model propagates information across blocks and loops. Decomposing the inputs at each layer allows us to easily understand which layers, blocks, and loops communicate with one another.
-
-7. **[Combatting adversarial distillation](https://openai.com/index/combatting-adversarial-distillation)** — quality 52  
-   OpenAI · 2026-11-20  
-   _why:_ strong baselines; reproduction / replication; source tier 3; shared on X by 1 account; Hacker News: 1 submission, 34 points; in newsletters: The Rundown AI  
-   > OpenAI’s layered approach to adversarial distillation combines model training, safeguards, detection, and enforcement to protect against capability extraction.
-
-8. **[A game you cannot win unless you have a quantum computer](https://research.google/blog/a-game-you-cannot-win-unless-you-have-a-quantum-computer/)** — quality 54  
-   Google Research · 2026-11-19  
-   _why:_ variance / significance; theory; mechanistic / causal analysis; source tier 2  
-   > Quantum
-
-9. **[Introducing Sakana AI’s Security Research Group](/security-research-group/)** — quality 53  
-   Sakana AI · 2026-11-19  
-   _why:_ long-form (27k chars); source tier 1  
-   > --> （＊日本語は英文の後に） Sakana AI is launching the Security Research Group, an independent R&D team studying collective, AI-driven cyber defense and the security and safety of AI itself. Our research starts from the idea that intelligence and resilience emerge from collectives, like a…
-
-10. **[Introducing Inkling 2 Mini](https://thinkingmachines.ai/news/inkling-2-mini/)** — quality 52  
-   thinkingmachines.ai · 2026-11-20  
-   _why:_ strong baselines; mechanistic / causal analysis; negative results / limitations; long-form (34k chars); source tier 3; shared on X by 9 accounts ⚠ hype: agi  
-   > Inkling 2 Mini is an open-weights model small enough to run on your laptop. It loops its middle layers to reason more per token and reach answers in fewer tokens.
-
-11. **[Towards a Science of Capable Autonomous Agents & Provable Safety — Part II](https://blog.ml.cmu.edu/2026/11/19/towards-a-science-of-capable-autonomous-agents-provable-safety-part-ii/)** — quality 53  
-   CMU ML Blog · 2026-11-19  
-   _why:_ strong baselines; multiple benchmarks; variance / significance; theory; reproduction / replication; human evaluation ⚠ hype: remarkably  
-   > Part II: Provable Safety In Part I, I talked about what agents must contain as they become increasingly capable. Here, I talk about having provable guarantees on their safety, in spite of these capabilities. This is in large part a contrast from what AI safety used to be like,…
-
-12. **[A thousand fewer paths to root](https://openai.com/index/a-thousand-fewer-paths-to-root/)** — quality 57  
-   openai.com · 2026-11-18  
-   _why:_ theory; reproduction / replication; long-form (28k chars); source tier 3; shared on X by 1 account; Hacker News: 1 submission, 488 points  
-   > OpenAI built an autonomous pipeline that found, validated, and generated patches for 948 local privilege-escalation vulnerabilities in the Linux kernel.
+12. **[Comparing AI R&D compute caps and deployment lags](https://www.alignmentforum.org/posts/e758PJCpwAwyodvEj/comparing-ai-r-and-d-compute-caps-and-deployment-lags)** — quality 51  
+   AI Alignment Forum · 2026-11-24  
+   _why:_ strong baselines; mechanistic / causal analysis; source tier 2  
+   > I’m publishing this a bit rougher than usual because it’s very pertinent to Evan Hubinger’s recent shortform , which advocates for blocking internal deployment as a pacing mechanism over compute reallocation (he mostly discusses it in the context of a risk-assessment-based…
 
 
 ## Shared on X, in newsletters & on HN/Reddit (last 14 days)
@@ -200,57 +200,57 @@ Ranked by heuristic quality × recency (10-day half-life). Scores are a first pa
    _why:_ strong baselines; variance / significance; reproduction / replication; negative results / limitations; contamination check; long-form (185k chars)  
    > Contents Overview 1 Background 2 Methodology 3 Results 4 Robustness Checks 5 Discussion 6 Acknowledgments Appendices A Difficulty Estimation and Baselining B Time Horizon Diagnostics C MCI Modelling Methodology D Limitations of IRT E MCI Robustness Checks F Estimating Lifecycle…
 
-2. **[Anthropic Residency: applications open for established technical leaders](https://alignment.anthropic.com/2026/anthropic-residency/)** — quality 58  
+2. **[Supercharging transformer residual connections](https://research.google/blog/supercharging-transformer-residual-connections/)** — quality 59  
+   Google Research · 2026-11-23  
+   _why:_ strong baselines; mechanistic / causal analysis; negative results / limitations; source tier 2; shared on X by 1 account  
+   > Algorithms & Theory
+
+3. **[vLLM Day-0 Support for ERNIE 5.5 Flash Preview: Plugin Deployment and E2E Inference Acceleration](https://vllm.ai/blog/2026-11-24-ernie-5-5-flash-preview)** — quality 56  
+   vLLM · 2026-11-24  
+   _why:_ reproduction / replication; code released; source tier 2; shared on X by 1 account  
+   > vLLM supports Baidu's ERNIE 5.5 Flash Preview on day 0 through the vLLM-ERNIE plugin on the released vllm==0.32.0 wheel, with structure-aware kernel fusion, Fla
+
+4. **[OWE-Bench: A long-horizon benchmark for measuring real-world engineering](https://arxiv.org/abs/2611.30017)** — quality 59  
+   Jacob Cole, Martin Dimakis, Victor Barres et al. · 2026-11-23  
+   _why:_ negative results / limitations; code released; weights/data released; 35 pages; shared on X by 1 account  
+   > We present OWE-Bench (OpenWorldEngineer-Bench), a benchmark of 26 long-horizon engineering tasks written by domain experts in software engineering, physical engineering, machine learning, and scientific computing. Tasks range from optimizing kernels and designing an aircraft, to…
+
+5. **[Skip the DRAM Tier: MoRI UMBP Runs the Agentic KV Cache on NVMe](https://vllm.ai/blog/2026-11-23-skip-the-dram-tier)** — quality 58  
+   vLLM · 2026-11-23  
+   _why:_ negative results / limitations; long-form (41k chars); source tier 2; shared on X by 1 account  
+   > On AMD Instinct™ MI355X GPUs, a MoRI UMBP KV pool on NVMe matched a DRAM pool of the same size within 1% for Kimi-K3 on vLLM, and drives that hold a day of agen
+
+6. **[GPT-6 models demonstrate intrinsic protein-design capabilities](https://openai.com/index/gpt-6-models-demonstrate-intrinsic-protein-design-capabilities)** — quality 50  
+   OpenAI · 2026-11-24  
+   _why:_ negative results / limitations; source tier 3; shared on X by 2 accounts; Hacker News: 1 submission, 295 points  
+   > GPT-6 models design protein structures and sequences using reasoning and code. Lab tests found evidence of binding across five targets.
+
+7. **[Anthropic Residency: applications open for established technical leaders](https://alignment.anthropic.com/2026/anthropic-residency/)** — quality 58  
    Anthropic Alignment Science · 2026-11-22  
    _why:_ mechanistic / causal analysis; source tier 1; in newsletters: Don't Worry About the Vase (Zvi)  
    > Anthropic Residency: applications open for established technical leaders Alignment Science Blog Anthropic Residency: applications open for established technical leaders Today we are opening applications for the Anthropic Residency, our paid, fixed-term research program with…
 
-3. **[Combatting adversarial distillation](https://openai.com/index/combatting-adversarial-distillation)** — quality 52  
+8. **[The KL Divergence Is Never Negative, Except in PyTorch](https://arxiv.org/abs/2611.30835)** — quality 46  
+   Zhen Yang, Wei Tang, Chu Chen et al. · 2026-11-23  
+   _why:_ mechanistic / causal analysis; code released; Hacker News: 1 submission, 94 points  
+   > A Kullback--Leibler (KL) divergence is never negative, yet PyTorch users have reported negative values for years, and the standard advice is to clamp them at zero. The sign is only the visible part of a silent failure. Many machine-learning applications compare nearby…
+
+9. **[RoboUniverse-10K: Toward the Scaling Era of Agentic Robotics via Real-to-Sim Environments](https://arxiv.org/abs/2611.31002)** — quality 44  
+   Jinkun Liu, Yingze Wang, Situ Wang et al. · 2026-11-23  
+   _why:_ strong baselines; weights/data released; 24-author team; shared on X by 1 account  
+   > Agentic Robotics, in which foundation models act as coding agents to control robots through executable programs, has emerged as a compelling paradigm for embodied intelligence. Yet unlike software engineering, where massive executable environments power post-training, robotics…
+
+10. **[OpenAI and Cisco introduce Shirudo](https://openai.com/index/introducing-shirudo)** — quality 42  
+   OpenAI · 2026-11-23  
+   _why:_ source tier 3; shared on X by 1 account; Hacker News: 1 submission, 85 points; in newsletters: The Rundown AI  
+   > OpenAI and Cisco introduce Shirudo, an open-source runtime for Linux. It helps teams protect running systems while they roll out patches.
+
+11. **[Combatting adversarial distillation](https://openai.com/index/combatting-adversarial-distillation)** — quality 52  
    OpenAI · 2026-11-20  
    _why:_ strong baselines; reproduction / replication; source tier 3; shared on X by 1 account; Hacker News: 1 submission, 34 points; in newsletters: The Rundown AI  
    > OpenAI’s layered approach to adversarial distillation combines model training, safeguards, detection, and enforcement to protect against capability extraction.
 
-4. **[Introducing Inkling 2 Mini](https://thinkingmachines.ai/news/inkling-2-mini/)** — quality 52  
+12. **[Introducing Inkling 2 Mini](https://thinkingmachines.ai/news/inkling-2-mini/)** — quality 52  
    thinkingmachines.ai · 2026-11-20  
    _why:_ strong baselines; mechanistic / causal analysis; negative results / limitations; long-form (34k chars); source tier 3; shared on X by 9 accounts ⚠ hype: agi  
    > Inkling 2 Mini is an open-weights model small enough to run on your laptop. It loops its middle layers to reason more per token and reach answers in fewer tokens.
-
-5. **[A thousand fewer paths to root](https://openai.com/index/a-thousand-fewer-paths-to-root/)** — quality 57  
-   openai.com · 2026-11-18  
-   _why:_ theory; reproduction / replication; long-form (28k chars); source tier 3; shared on X by 1 account; Hacker News: 1 submission, 488 points  
-   > OpenAI built an autonomous pipeline that found, validated, and generated patches for 948 local privilege-escalation vulnerabilities in the Linux kernel.
-
-6. **[Jeveration: System One Models Now Generate](https://arxiv.org/abs/2611.24738)** — quality 53  
-   Yuhe Liu, Qi Li, Shihua Zhang et al. · 2026-11-18  
-   _why:_ code released; HF daily papers: 150 upvotes; shared on X by 1 account  
-   > System One models such as Jev return decisions through fast, parallel prediction. In this paper, we introduce Jeveration, showing that the same decision paradigm can also generate high-quality images in a single forward pass. Jeveration builds on a frozen vision-language model,…
-
-7. **[Claude Fable 5.2 solves two open problems in the physics of black holes](https://www.anthropic.com/research/claude-black-hole-physics)** — quality 59  
-   Anthropic Research · 2026-11-17  
-   _why:_ variance / significance; long-form (29k chars); source tier 1; Hacker News: 1 submission, 577 points ⚠ hype: astonishing, remarkably  
-   > Claude Fable 5.2 has solved two open problems in theoretical physics. Both concern black holes and the search for a theory of quantum gravity.
-
-8. **[End‑to‑End 4‑Bit Training](https://thinkingmachines.ai/blog/end-to-end-4-bit-training/)** — quality 77  
-   Thinking Machines · 2026-11-13  
-   _why:_ model-scale sweep; controlled experiments; negative results / limitations; long-form (26k chars); source tier 1; shared on X by 3 accounts  
-   > Training large language models involves calculating and storing a lot of numbers. Using fewer bits for each value reduces memory usage and allows GPUs to perform calculations faster. However, there is a tradeoff: fewer bits also mean fewer representable numbers, leading to more…
-
-9. **[Research acceleration: The jagged frontier](https://openai.com/index/research-acceleration-jagged-frontier)** — quality 52  
-   OpenAI · 2026-11-18  
-   _why:_ ablations; source tier 3; shared on X by 2 accounts; in newsletters: AINews, The Rundown AI  
-   > OpenAI measures how coding agents are accelerating AI research, where their performance remains uneven, and what this signals about recursive self-improvement.
-
-10. **[Updating our coordinated vulnerability disclosure policy timelines](https://www.anthropic.com/research/coordinated-vulnerability-disclosure-timelines)** — quality 59  
-   Anthropic Research · 2026-11-16  
-   _why:_ theory; source tier 1; shared on X by 1 account  
-   > We’re shortening our vulnerability disclosure window from 90 days to 30 days for high- and critical-severity issues, and to 45 days for all other issues.
-
-11. **[Forget Freely, Grep Later: Lossless, Index-Free Memory for Long-Horizon LLM Agents](https://arxiv.org/abs/2611.25123)** — quality 49  
-   Ziyan Yang, Taiwei Shi, Jieyu Zhao · 2026-11-18  
-   _why:_ strong baselines; mechanistic / causal analysis; negative results / limitations; shared on X by 1 account  
-   > Long-horizon LLM agents often exceed their context windows, forcing them to discard information that may be needed later. Existing context management strategies rely on summarization, masking, or structured memory, requiring decisions about what to preserve or how to retrieve it…
-
-12. **[K2-Horizon: A Frontier Fleet of Open Source Language Models](https://arxiv.org/abs/2611.21003)** — quality 57  
-   K2 Team, Zhengzhong Liu, Haonan Li et al. · 2026-11-16  
-   _why:_ model-scale sweep; weights/data released; senior author (h-index 126); 95-author team; shared on X by 1 account  
-   > We present K2-Horizon, a fleet of six fully open language models, from a 0.9B dense model to a 375B-A23B MoE, built for general-purpose reasoning and agentic work across math and science, software engineering, deep research, office automation, and beyond. The models lead or are…
